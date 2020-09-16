@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
+<link rel="icon" type="image/x-icon" href="zapp.ico"/>
+<title>ZAPP</title>
+<base target="_self">
+<style>
+html, body {
+height: 100%;
+margin: 0;
+background:black;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#wrapper {
+height: 100%;
+display: flex;
+flex-direction: column;
+}
+#header, #footer {
+background-color:#330000;
+/*text-align:center;*/
+color:whitesmoke;
+font:italic 18pt georgia;
+padding:4px;
+}
+#header {
+text-align:center;
+}
+#content {
+flex: 1;
+overflow: auto;
+font-family: Georgia, Times, serif;
+font-size:16pt;
+background-image:url('sfondouno.png');
+background-repeat: no-repeat;
+background-position: center; 
+background-size: cover;
+text-align:center;
+}
+#content::-webkit-scrollbar {display:none}
+a {text-decoration:none; color:cyan;}
+.voce {
+font: bold 36pt monospace; 
+color:lime;
+cursor:pointer;
+}
+.elenco {
+display:none;
+font: normal 28pt monospace; 
+border:1px solid lime;
+}
+</style>
+
+<script type="text/javascript">
+
+prima = "";
+bell = new Audio('audioclick.mp3');
+conta=0
+
+fisa = function (o) {
+    bell.play();
+	var d = o.innerHTML;
+    var p = document.getElementById(prima);
+    if (p && d != prima) {
+        p.style.display = "none";
+    }
+    var z = document.getElementById(d);
+    prima = d;
+    var v = z.style.display;
+    v = (v == "" || v == "none") ? "block" : "none";
+    z.style.display = v;
+	var y = (v=="none")?0:o.offsetTop - document.getElementById("header").offsetHeight;
+	document.getElementById("content").scrollTo(0,y);
+}
+acaso = function () {
+    if(conta>0) bell.play();
+	conta++;
+	var db = document.getElementById("aforismi");
+    var tutti = db.getElementsByTagName("p");
+    var n = Math.floor(Math.random() * tutti.length);
+    document.getElementById("footer").innerHTML = tutti[n].innerHTML;
+}
+document.onreadystatechange = function () {
+    if (document.readyState == "complete") {
+        if (screen.width > 640) {
+            document.getElementById("wrapper").style.width = "428px";
+        }
+        acaso();
+    }
+}
+
+
+</script>
+
+</head>
+<body>
+
+<div id="wrapper">
+<div id="header">Ego sum memoria amoris</div>
+<div id="content">
+<div id="centro">
+<p><img border="0" src="YinYang.png" onclick="javascript:acaso()" ondblclick="javascript:location.href='./ARTEMI/Cripta.html'"></p>
+<!-- inizio contenuto calcolato -->
+
+
+<h1 onclick="fisa(this)" class="voce">ARTEMI</h1>
+<div id="ARTEMI" class="elenco">
+<p><a href="ARTEMI/Buonumore.html">Buonumore</a></p>
+<p><a href="ARTEMI/Cripta.html">Cripta</a></p>
+<p><a href="ARTEMI/MidiPlay.html">MidiPlay</a></p>
+<p><a href="ARTEMI/MyCats.html">MyCats</a></p>
+<p><a href="ARTEMI/NOI.html">NOI</a></p>
+<p><a href="ARTEMI/PlayWeb.html">PlayWeb</a></p>
+<p><a href="ARTEMI/Sterco.html">Sterco</a></p>
+<p><a href="ARTEMI/Visus1.html">Visus1</a></p>
+<p><a href="ARTEMI/Visus2.html">Visus2</a></p>
+</div>
+<h1 onclick="fisa(this)" class="voce">LECTIO</h1>
+<div id="LECTIO" class="elenco">
+<p><a href="LECTIO/CatechismoSanPioX.html">CatechismoSanPioX</a></p>
+<p><a href="LECTIO/Confessioni.html">Confessioni</a></p>
+<p><a href="LECTIO/Detti.html">Detti</a></p>
+<p><a href="LECTIO/Didache.html">Didache</a></p>
+<p><a href="LECTIO/DonFabrizio.html">DonFabrizio</a></p>
+<p><a href="LECTIO/Filocalia.html">Filocalia</a></p>
+<p><a href="LECTIO/Motus.html">Motus</a></p>
+<p><a href="LECTIO/Parola.html">Parola</a></p>
+<p><a href="LECTIO/Patema.html">Patema</a></p>
+<p><a href="LECTIO/Spiritualia.html">Spiritualia</a></p>
+<p><a href="LECTIO/Sunto.html">Sunto</a></p>
+</div>
+<h1 onclick="fisa(this)" class="voce">PRAXIS</h1>
+<div id="PRAXIS" class="elenco">
+<p><a href="PRAXIS/Agape.html">Agape</a></p>
+<p><a href="PRAXIS/Compieta.html">Compieta</a></p>
+<p><a href="PRAXIS/Concisa.html">Concisa</a></p>
+<p><a href="PRAXIS/CorMeum.html">CorMeum</a></p>
+<p><a href="PRAXIS/Imitazione.html">Imitazione</a></p>
+<p><a href="PRAXIS/Kowalska.html">Kowalska</a></p>
+<p><a href="PRAXIS/Messa.html">Messa</a></p>
+<p><a href="PRAXIS/Preces.html">Preces</a></p>
+<p><a href="PRAXIS/Rosarium.html">Rosarium</a></p>
+<p><a href="PRAXIS/Spiritus.html">Spiritus</a></p>
+<p><a href="PRAXIS/Tau.html">Tau</a></p>
+<p><a href="PRAXIS/ViaCrucis.html">ViaCrucis</a></p>
+<p><a href="PRAXIS/XBIBBIA.html">XBIBBIA</a></p>
+<p><a href="PRAXIS/ZZZ.html">ZZZ</a></p>
+</div>
+<h1 onclick="fisa(this)" class="voce">SOPHIA</h1>
+<div id="SOPHIA" class="elenco">
+<p><a href="SOPHIA/0-Citazioni.html">0-Citazioni</a></p>
+<p><a href="SOPHIA/Aforismario.html">Aforismario</a></p>
+<p><a href="SOPHIA/AivanhovPills.html">AivanhovPills</a></p>
+<p><a href="SOPHIA/Eckhart.html">Eckhart</a></p>
+<p><a href="SOPHIA/EileenCaddy.html">EileenCaddy</a></p>
+<p><a href="SOPHIA/EmilyDickinson.html">EmilyDickinson</a></p>
+<p><a href="SOPHIA/Haiku.html">Haiku</a></p>
+<p><a href="SOPHIA/Poetry.html">Poetry</a></p>
+<p><a href="SOPHIA/Rilke.html">Rilke</a></p>
+<p><a href="SOPHIA/Spaziani.html">Spaziani</a></p>
+<p><a href="SOPHIA/SUFI.html">SUFI</a></p>
+<p><a href="SOPHIA/Tagore.html">Tagore</a></p>
+<p><a href="SOPHIA/Tao.html">Tao</a></p>
+<p><a href="SOPHIA/Turoldo.html">Turoldo</a></p>
+<p><a href="SOPHIA/Vocemia.html">Vocemia</a></p>
+</div>
+<h1 onclick="fisa(this)" class="voce">WIP</h1>
+<div id="WIP" class="elenco">
+<p><a href="WIP/GuidaMartini.html">GuidaMartini</a></p>
+<p><a href="WIP/Pills.html">Pills</a></p>
+<p><a href="WIP/PsicoAdvisor.html">PsicoAdvisor</a></p>
+<p><a href="WIP/ZLINKS.html">ZLINKS</a></p>
+</div>
+
+<!-- fine contenuto calcolato -->
+<div style="height:1024px"></div>
+</div> <!-- centro -->
+</div> <!-- content -->
+<div id="footer" ondblclick="javascript:acaso()"></div>
+</div> <!-- wrapper -->
+
+<div id="aforismi" style="display:none">
+
+
+<p>Accetta senza lamenti l’inevitabile. (Lucio Anneo Seneca)</p>
+<p>Ama i peccatori e disprezza le loro opere. (Isacco Di Ninive)</p>
+<p>Amor ogni cosa vince. (Leonardo Da Vinci)</p>
+<p>Amore e cor gentil sono una cosa. (Dante Alighieri)</p>
+<p>Amore senza dolore non ha vita. (Dietmar Von Aist)</p>
+<p>Amore senza dolore non è più amore (Ugo Bernasconi)</p>
+<p>Amore è desiderio di conoscenza. (Cesare Pavese)</p>
+<p>Amore, / amor, di nostra vita ultimo inganno. (Giacomo Leopardi)</p>
+<p>Anche l'incontro di un attimo può essere amore. (Vannuccio Barbaro)</p>
+<p>Anche la mente più erudita ha qualcosa da imparare. (George Santayana)</p>
+<p>Anche la santità è una tentazione. (Jean Anouilh)</p>
+<p>Anche l’amore più grande non è mai incondizionato. (Michela Marzano)</p>
+<p>Anche un viaggio di mille miglia inizia con un passo. (Lao Tzu)</p>
+<p>Approvo per stanchezza, contraddico per impazienza. (Jean Rostand)</p>
+<p>Arte senza cuore. Primavera senza sole. (Libero Bovio)</p>
+<p>Arte significa: dentro a ogni cosa mostrare Dio. (Hermann Hesse)</p>
+<p>Arte. Parola che non ha nessuna definizione. (Ambrose Bierce)</p>
+<p>Assai acquista chi perdendo impara. (Michelangelo Buonarroti)</p>
+<p>Assai sa chi non sa se sa obbedire. (Tommaso Campanella)</p>
+<p>Attraversare il mondo in consapevole leggerezza. (Giovanni Soriano)</p>
+<p>Avrai sempre quelle sole ricchezze che avrai donate. (Marziale)</p>
+<p>Bisogna amare la natura e gli uomini nonostante il fango. (Jules Renard)</p>
+<p>Bisogna esere molto forti per amare la solitudine. (Pier Paolo Pasolini)</p>
+<p>Bisogna vivere con semplicità e pensare con grandezza (Wolfram Weidner)</p>
+<p>C'è più severità che giustizia. (Luc De Clapiers De Vauvenargues)</p>
+<p>Cambiare idea non solo è lecito, ma necessario. (Eraclito)</p>
+<p>Castità: forma religiosa d'impotenza. (Charles Régismanset)</p>
+<p>Certo, certissimo, anzi probabile. (Ennio Flaiano)</p>
+<p>Cesare, il popolo chiede sesterzi. No, vado dritto! (?)</p>
+<p>Che cos'è un equinozio? Un cavallo che non lavora. (?)</p>
+<p>Che cos'è un'appendicite? Il ramo a cui Tarzan stendeva le scimmie! (?)</p>
+<p>Che cosa è l'arte? Ciò per cui le forme diventano stile. (André Malraux)</p>
+<p>Che la tua lingua non preceda la tua mente. (Chilone di Sparta)</p>
+<p>Chi ama a prima vista tradisce a ogni sguardo. (Mike Nichols)</p>
+<p>Chi aumenta conoscenza, aumenta dolore. (Giordano Bruno)</p>
+<p>Chi dubita sta al bivio. (?)</p>
+<p>Chi fabbrica su l'amore, fabbrica sul fango. (Lorenzo Magalotti)</p>
+<p>Chi legge sa molto; chi osserva sa molto di più. (Aristotele)</p>
+<p>Chi prega è santo, ma chi fa, più santo. (Giovanni Pascoli)</p>
+<p>Chi si comporta prudentemente, parla prudentemente. (Zisi)</p>
+<p>Chi vola alto è sempre solo. (Rudolf Nureyev)</p>
+<p>Chi è felice non si muove. (Thomas Mann)</p>
+<p>Chiunque abbia mai amato porta una cicatrice. (Alfred De Musset)</p>
+<p>Ci hanno seppelliti. Ma non sapevano che eravamo semi. (?)</p>
+<p>Ci si finge modesti per farsi ancor più adulare. (Roberto Gervaso)</p>
+<p>Ci si stanca di tutto, anche di essere amati. (André Maurois)</p>
+<p>Ciascun pensiero produce un colore particolare. (Peter Deunov)</p>
+<p>Ciascuno di noi porta in sé il centro dell'universo. (Nancy Huston)</p>
+<p>Ciò che ferma la morte è la consapevolezza. (Don Juan Matus)</p>
+<p>Ciò che non ci viene pagato è il vero bene. (Peter Deunov)</p>
+<p>Colmo del cantante: non avere motivi validi. (?)</p>
+<p>Colmo del chirurgo: difendere il proprio operato. (?)</p>
+<p>Colmo del dispettoso: non te lo dico! (?)</p>
+<p>Colmo del falegname: avere un figlio che non capisce una sega. (?)</p>
+<p>Colmo del fante: avere il padre fantino. (?)</p>
+<p>Colmo del fumatore: girare tutta Firenze per trovare un toscano. (?)</p>
+<p>Colmo del grassone: nascere sotto il segno della bilancia. (?)</p>
+<p>Colmo del macellaio: rinunciare ai piaceri della carne. (?)</p>
+<p>Colmo del miliardario: esprimersi in parole povere. (?)</p>
+<p>Colmo del paracadutista: cadere dalle nuvole. (?)</p>
+<p>Colmo del paracadutista: giurare di non cascarci più. (?)</p>
+<p>Colmo del pescatore: avere una moglie sarda che si chiama Alice. (?)</p>
+<p>Colmo del sindaco: avere un'intelligenza fuori del comune. (?)</p>
+<p>Colmo del tipografo: essere un uomo di vecchio stampo. (?)</p>
+<p>Colmo dell'anitra: avere la pelle d'oca. (?)</p>
+<p>Colmo dell'astronauta: avere gli occhi fuori delle orbite. (?)</p>
+<p>Colmo dell'astronauta: essere un uomo terra-terra. (?)</p>
+<p>Colmo dell'autista: spegnere il motore soffiando sulle candele. (?)</p>
+<p>Colmo dell'idraulico: avere il naso che gocciola. (?)</p>
+<p>Colmo dell'idraulico: non capirci un tubo. (?)</p>
+<p>Colmo della sarta: perdere il filo del discorso. (?)</p>
+<p>Colmo di un altoparlante: sentirsi male. (?)</p>
+<p>Colmo di un matematico: vivere in una frazione. (?)</p>
+<p>Colmo di un pesce: perdersi in un bicchiere d'acqua. (?)</p>
+<p>Colmo di una giostra: essere presa in giro. (?)</p>
+<p>Colmo di una maestra: non aver classe. (?)</p>
+<p>Colmo per un altoparlante: sentirsi male. (?)</p>
+<p>Colmo per un arrotino: aguzzare l'ingegno. (?)</p>
+<p>Colmo per un asino: avere una febbre da cavallo! (?)</p>
+<p>Colmo per un astronauta: avere gli occhi fuori delle orbite. (?)</p>
+<p>Colmo per un astronauta: avere problemi di spazio! (?)</p>
+<p>Colmo per un autista: spegnere il motore soffiando sulle candele. (?)</p>
+<p>Colmo per un contadino: non capire un cavolo. (?)</p>
+<p>Colmo per un elettricista: essere isolato. (?)</p>
+<p>Colmo per un elettricista: mettere alla luce un figlio. (?)</p>
+<p>Colmo per un generale: sentire freddo malgrado i gradi. (?)</p>
+<p>Colmo per un sordo: non sentire ragioni. (?)</p>
+<p>Colmo per una disoccupata: chiamarsi Assunta. (?)</p>
+<p>Come l'amore, l'arte non è piacere, ma passione. (André Malraux)</p>
+<p>Conosce l'amore solo chi ama senza speranza. (Friedrich Schiller)</p>
+<p>Cosa dicono due casseforti che si incontrano? Toh, che combinazione! (?)</p>
+<p>Cosa fa un Ape in tribunale? L'APENTITA! (?)</p>
+<p>Cosa fanno dei galli in mare? Galleggiano! (?)</p>
+<p>Cosa fanno due api sulla luna? La luna di miele! (?)</p>
+<p>Cosa fanno due mucche in un prato? Un BiVacco! (?)</p>
+<p>Cosa fanno due tartarughe che si scontrano? Due lenti a contatto. (?)</p>
+<p>Costruire una biblioteca è creare una vita. (Carlos María Domínguez)</p>
+<p>C’è una crepa in ogni cosa ed è lì che entra la luce (Leonard Cohen)</p>
+<p>Datemi un libro e sopporterò il mondo. (Giovanni Soriano)</p>
+<p>Del vero amore non sono interpreti se non le lacrime. (Carlo Dossi)</p>
+<p>Democratico vuol dire poter essere schiavo di tutti. (Karl Kraus)</p>
+<p>Di tutte le cose sicure la più certa è il dubbio (Bertolt Brecht)</p>
+<p>Dio ha un solo debole, una sola passione: amare i suoi figli (Origene)</p>
+<p>Dio è il dolore che nasce dalla paura della morte. (Fedor Dostoevskij)</p>
+<p>Dove c’è conformismo, non può fiorire la bontà. (Jiddu Krishnamurti)</p>
+<p>Dove si fa appello al talento, manca l’immaginazione. (georges braque)</p>
+<p>Dove è Dio, la vita e la morte sono uno. (Peter Deunov)</p>
+<p>Dovrebbe morire soltanto chi è stanco di vivere. (Roberto Gervaso)</p>
+<p>Due forze regnano sull'universo: luce e pesantezza. (Simone Weil)</p>
+<p>Due patrie: quella dei libri e quella del sangue. (Gesualdo Bufalino)</p>
+<p>E' molto facile essere buoni, difficile è essere giusti. (Victor Hugo)</p>
+<p>E' più facile essere saggi per gli altri che per se stessi. (?)</p>
+<p>E' più facile spezzare un atomo che un pregiudizio. (Albert Einstein)</p>
+<p>E' religione anche non credere in niente. (Cesare Pavese)</p>
+<p>E' un cretino illuminato da lampi di imbecillità. (Ennio Flaiano)</p>
+<p>Errare è umano, perdonare è divino. (Alexander Pope)</p>
+<p>Esitare, è già prendere una decisione. (Stanisław Jerzy Lec)</p>
+<p>Finché ci saranno uomini, ci saranno guerre. (Albert Einstein)</p>
+<p>Finché si odia si ama ancora. (Alphonse Karr)</p>
+<p>Finché si è scontenti di sé non tutto è perduto. (Emil Cioran)</p>
+<p>Giustizia non esiste là ove non vi è libertà. (Luigi Einaudi)</p>
+<p>Gli adulti sono solo bambini con un impiego (?)</p>
+<p>Gli animali percepiscono la luce che esce da noi. (Peter Deunov)</p>
+<p>Gli artisti sono le antenne della razza. (Ezra Pound)</p>
+<p>Ho poche certezze. E nessuna incrollabile. (Roberto Gervaso)</p>
+<p>Ho visto lenti da sole in cerca di compagnia. (?)</p>
+<p>I gatti sono ornamenti viventi. (Edwin Lent)</p>
+<p>I libri pensano per me. (Charles Lamb)</p>
+<p>I misteri non sono ancora miracoli. (Johann Wolfgang Goethe)</p>
+<p>I ricordi piacevoli vanno preparati in tempo. (Paul Horbiger)</p>
+<p>I soldi aiutano a sopportare la povertà. (Alphonse Allais)</p>
+<p>Il caso ci protegge più di qualunque Legge. (Trilussa)</p>
+<p>Il conformista è uno schiavo volontario. (Roberto Gervaso)</p>
+<p>Il corso della Natura è l'arte di Dio. (Edward Young)</p>
+<p>Il credito è il tempo futuro del denaro. (Ezra Pound)</p>
+<p>Il dubbio è uno dei nomi dell'intelligenza (Jorge Luis Borges)</p>
+<p>Il gatto che nutrite è il vostro gatto. (Louis Scutenaire)</p>
+<p>Il gatto è il più gentile degli scettici. (Jules Lemaitre)</p>
+<p>Il mare intero cambia per una pietra. (Blaise Pascal)</p>
+<p>Il mio consiglio ai giovani: abbiate curiosità. (Ezra Pound)</p>
+<p>Il mistero di Dio è l'angoscia dell'uomo. (Roberto Gervaso)</p>
+<p>Il mondo ha origine quando l’uomo lo scopre. (Carl Gustav Jung)</p>
+<p>Il mondo è rotondo. Chi parte, perde tempo. (Ignazio Silone)</p>
+<p>Il nulla è l'universo senza di me. (André Suarès)</p>
+<p>Il popolo ha potere là dove le leggi valgono. (Publilio Siro)</p>
+<p>Il potere logora chi non ce l'ha. (Giulio Andreotti)</p>
+<p>Il riflesso della prima faccia di Dio è la vita. (Peter Deunov)</p>
+<p>Il vero amore non si vende né si compra. (?)</p>
+<p>Il vero successo è non averne bisogno. (Roberto Gervaso)</p>
+<p>Il viaggio più lungo è il viaggio interiore. (Dag Hammarskjöld)</p>
+<p>Il viaggio è nella testa. (Jean Baudrillard)</p>
+<p>Il vocabolario è un ricco pascolo di parole. (Omero)</p>
+<p>Impara ad essere calmo e sarai sempre felice. (?)</p>
+<p>In amore gli scritti volano e le parole restano. (Ennio Flaiano)</p>
+<p>In bicicletta si torna giovani e si diventa poeti. (Renato Serra)</p>
+<p>Innamorarsi è una droga, amare è una medicina. (Fabio Volo)</p>
+<p>Io sono un clown, e faccio collezione di attimi. (Heinrich Böll)</p>
+<p>L'amore che non crea non è amore. (Ugo Bernasconi)</p>
+<p>L'amore disinteressato non è amore. (Roberto Gervaso)</p>
+<p>L'amore non si discute: si dimostra. (Roberto Gervaso)</p>
+<p>L'amore non si spiega: si vive. (Roberto Gervaso)</p>
+<p>L'amore non è forse la luce del cuore? (Honoré De Balzac)</p>
+<p>L'amore platonico è un vulcano inattivo. (André Prévot)</p>
+<p>L'amore significa rinunciare alla forza. (Milan Kundera)</p>
+<p>L'amore è cieco, ma la sfiga ci vede benissimo. (Arthur Bloch)</p>
+<p>L'amore è fecondo di molto miele e di molto fiele. (Plauto)</p>
+<p>L'amore è l'esaltazione del tempo presente. (Milan Kundera)</p>
+<p>L'amore è l'unica estasi. (Victor Hugo)</p>
+<p>L'amore è non sapere di cosa si sta parlando. (Lucy Van Pelt)</p>
+<p>L'amore è un duello. (Jack Kerouac)</p>
+<p>L'amore è una riabilitazione della schiavitù. (Jean Dolent)</p>
+<p>L'amore è uno scampolo mortale di immortalità. (Fernando Pessoa)</p>
+<p>L'apatia è una sorta di oblio vivente. (Horace Greeley)</p>
+<p>L'arte comincia là dove l'Imitazione finisce. (Oscar Wilde)</p>
+<p>L'arte non imita, interpreta. (Carlo Dossi)</p>
+<p>L'arte rende l'ignoto evidente. (Jean Josipovici)</p>
+<p>L'arte rispecchia lo spettatore, non la vita. (Oscar Wilde)</p>
+<p>L'arte è fatica ispirata. (Roberto Gervaso)</p>
+<p>L'arte è il luogo della perfetta libertà. (André Suarès)</p>
+<p>L'arte è la forma più alta della speranza. (Gerhard Richter)</p>
+<p>L'arte è un antidestino. (André Malraux)</p>
+<p>L'arte è un farmaco per gli imbecilli. (Francis Picabia)</p>
+<p>L'avarizia è la forma più sensuale di castità. (Ennio Flaiano)</p>
+<p>L'azione affatica; l'inerzia fiacca. (Roberto Gervaso)</p>
+<p>L'esperienza è l'inizio della conoscenza (Alcmane)</p>
+<p>L'ideale della calma è in un gatto seduto. (Jules Renard)</p>
+<p>L'indifferenza è il peso morto della storia. (Antonio Gramsci)</p>
+<p>L'indignazione morale è l'invidia con l'aureola. (H.G.Wells)</p>
+<p>L'odio aiuta a vivere non meno dell'amore. (Roberto Gervaso)</p>
+<p>L'odio è istinto; il disprezzo, ragionamento. (Roberto Gervaso)</p>
+<p>L'odio è sete d'amore. (Cesare Pavese)</p>
+<p>L'opera d'arte è l'esagerazione di un'idea. (André Gide)</p>
+<p>L'opera d'arte è sempre una confessione. (Umberto Saba)</p>
+<p>L'orgoglio ci divide anche più dell'interesse. (Auguste Comte)</p>
+<p>L'umiltà è l'anticamera di tutte le perfezioni. (Marcel Aymé)</p>
+<p>L'umiltà è l'astuzia della ragione. (Pino Caruso)</p>
+<p>L'umiltà è l'ipocrisia dei modesti. (Alessandro Morandotti)</p>
+<p>L'umiltà è un modo pusillanime di brillare un poco. (Multatuli)</p>
+<p>L'universo è una macchina per fare coscienza. (Hubert Reeves)</p>
+<p>L'uomo è impaziente anche perché è mortale. (Roberto Gervaso)</p>
+<p>L'uomo è nato per soffrire, e ci riesce benissimo. (R.Gervaso)</p>
+<p>L'uomo: un atomo pieno di cosmo. (Roberto Gervaso)</p>
+<p>La bellezza è soltanto la promessa della felicità. (Stendhal)</p>
+<p>La biblioteca è un organismo che cresce. (Ranganathan)</p>
+<p>La bruttezza del presente ha valore retroattivo. (Karl Kraus)</p>
+<p>La civiltà è individuale. (Ezra Pound)</p>
+<p>La cortesia è indifferenza organizzata. (Paul Valéry)</p>
+<p>La fama non è pianta che cresca su suolo mortale. (John Milton)</p>
+<p>La fama è la popolarità tramandata ai posteri. (Roberto Gervaso)</p>
+<p>La fantasia è più importante della conoscenza. (Albert Einstein)</p>
+<p>La fede è una forza che si prende per una verità. (Paul Valery)</p>
+<p>La felicità è desiderare quello che si ha. (Vittorio Marchi)</p>
+<p>La felicità è un’idea immessa nell’anima umana. (Peter Deunov)</p>
+<p>La finta modestia è imprudenza addobbata. (Kahlil Gibran)</p>
+<p>La fonte del valore è l'EREDITA' CULTURALE. (Ezra Pound)</p>
+<p>La fortuna è cieca, ma la sfiga ci vede benissimo. (?)</p>
+<p>La malinconia è la felicità di essere triste. (Victor Hugo)</p>
+<p>La malinconia: il desiderio di avere desideri. (Leone Tolstoj)</p>
+<p>La massa non vuol essere amata, ma sedotta. (Roberto Gervaso)</p>
+<p>La medesima acqua può sostenere o affondare una nave. (?)</p>
+<p>La meditazione è l’ascolto del divino. (Edgar Cayce)</p>
+<p>La melanconia è la tristezza diventata leggera, (Italo Calvino)</p>
+<p>La meraviglia è in noi, non nelle cose. (Alessandro Morandotti)</p>
+<p>La mia mente è la mia chiesa. (Thomas Paine)</p>
+<p>La morte è dove nessuno ritorna. (Gabriele La Porta)</p>
+<p>La natura non fa nulla di inutile. (Aristotele)</p>
+<p>La natura è la differenza tra l’anima e Dio. (Fernando Pessoa)</p>
+<p>La nonviolenza è impossibile senza umiltà. (Mohandas Gandhi)</p>
+<p>La nudità mi rinfresca l'anima. (Alda Merini)</p>
+<p>La più grande dispensatrice di elemosine è la viltà. (Ibidem)</p>
+<p>La popolarità la dobbiamo anche ai nemici. (Roberto Gervaso)</p>
+<p>La prima necessità dell'uomo è il superfluo. (Albert Einstein)</p>
+<p>La prudenza aiuta i saggi e i mediocri. (Roberto Gervaso)</p>
+<p>La prudenza è il più lecito dei calcoli. (Roberto Gervaso)</p>
+<p>La prudenza è l'occhio di tutte le virtù. (Pitagora)</p>
+<p>La prudenza è la più calcolatrice delle virtù. (Roberto Gervaso)</p>
+<p>La saggezza si conquista attraverso la sofferenza. (Eschilo)</p>
+<p>La semplicità è la raffinatezza della profondità. (Alda Merini)</p>
+<p>La sofferenza in amore è un vuoto a perdere. (Massimo Troisi)</p>
+<p>La sola vittoria contro l'amore è la fuga. (Napoleone Bonaparte)</p>
+<p>La solitudine è la miglior cura per la vanità. (Thomas Wolfe)</p>
+<p>La stanchezza è il miglior cuscino. (?)</p>
+<p>La vendetta e la giustizia a volte coincidono. (Giorgio Faletti)</p>
+<p>La vera umiltà non menziona mai se stessa. (Mario Vassalle)</p>
+<p>La verginità è una virtù solo per le belle. (Roberto Gervaso)</p>
+<p>La verita' e' che la verita' cambia. (Friedrich Nietzsche)</p>
+<p>La vita non si spiega; si vive. (Luigi Pirandello)</p>
+<p>La vita è una lunga lezione d'umiltà. (James Matthew Barrie)</p>
+<p>La volontà non si impara. (Seneca)</p>
+<p>Le Stelle indicano, ma non determinano. (Mauro Perfetti)</p>
+<p>Le guerre sono concepite per creare debito. (Ezra Pound)</p>
+<p>Le idee sono vere quando si trasformano in azioni. (Ezra Pound)</p>
+<p>Le lacrime delle donne sono solo sudore degli occhi. (Giovenale)</p>
+<p>Le regole della natura non hanno eccezioni. (Herbert Spencer)</p>
+<p>L’amore che economizza non è mai vero amore. (Honoré De Balzac)</p>
+<p>L’amore fa di ogni giorno un giorno vissuto. (Giovanni Soriano)</p>
+<p>L’amore è cieco, e il buio gli si addice. (William Shakespeare)</p>
+<p>L’amore è la più carnale delle illusioni. (Fernando Pessoa)</p>
+<p>L’amore è la ragione dell'esistenza umana. (Sandra Chistolini)</p>
+<p>L’importante è non smettere di fare domande. (Albert Einstein)</p>
+<p>L’impotenza di dio è infinita. (Anatole France)</p>
+<p>L’ottavo vizio capitale: l’indifferenza. (Andrea Gallo)</p>
+<p>Meglio accendere una candela che maledire l'oscurità. (?)</p>
+<p>Molte parole non sono mai indizio di molta sapienza. (Talete)</p>
+<p>Muoiono gli amori, non l'amore. (Roberto Gervaso)</p>
+<p>Nascere è ricevere un intero universo in dono. (Jostein Gaarder)</p>
+<p>Nemmeno Dio puo' cambiare il passato. (Agatone)</p>
+<p>Nessun viaggio è definitivo. (Josè Saramago)</p>
+<p>Nessuno ne sa abbastanza, abbastanza presto. (Ezra Pound)</p>
+<p>Niente si sa, tutto si immagina. (Fernando Pessoa)</p>
+<p>Non avendo certezze, si fabbricano dogmi. (Giovanni Soriano)</p>
+<p>Non conosciamo il vero se non conosciamo la causa (Aristotele)</p>
+<p>Non c’è educazione nel secondo calcio di un mulo. (Sam Rayburn)</p>
+<p>Non c’è viaggio che non abbia un termine. (Lucio Anneo Seneca)</p>
+<p>Non datemi consigli: so sbagliare da me. (Dino Segre)</p>
+<p>Non dobbiamo amare che Dio e odiare noi stessi. (Blaise Pascal)</p>
+<p>Non essere mai soddisfatti: l'arte è tutta qui. (Jules Renard)</p>
+<p>Non ho amici - a vostro vantaggio. (Blaise Pascal)</p>
+<p>Non pecca chi pecca per amore. (Oscar Wilde)</p>
+<p>Non penso mai al futuro. Arriva così presto. (Albert Einstein)</p>
+<p>Non può esserci vera grandezza senza umiltà (Auro D'Alba)</p>
+<p>Non può essere morale chi è indifferente. (Piero Gobetti)</p>
+<p>Nulla è piccolo per una grande mente. (Arthur Conan Doyle)</p>
+<p>Nulla è più pratico di una buona teoria. (Albert Einstein)</p>
+<p>Odiare è come bere veleno sperando che un altro muoia. (?)</p>
+<p>Ogni autentica felicità è fatta d’amore. (Victor Hugo)</p>
+<p>Ogni bambino somiglia al parente che ha più soldi. (Luke McLuke)</p>
+<p>Ogni incontro è portatore di mistero. (Silvano Agosti)</p>
+<p>Ogni opposizione ha la maggioranza che si merita. (Karl Popper)</p>
+<p>Ogni poeta vende i suoi guai migliori. (Alda Merini)</p>
+<p>PESSIMISTA: ottimista con esperienza. (?)</p>
+<p>Partire è vincere una lite contro l'abitudine. (Paul Morand)</p>
+<p>Peccato che il peccato sia obbligatorio. (Maria Luisa Spaziani)</p>
+<p>Pensiamo perché non sappiamo. (Ezra Pound)</p>
+<p>Per trionfare, la giustizia deve farsi temere. (Roberto Gervaso)</p>
+<p>Per un cuore fiero non può esservi via di mezzo. (Albert Camus)</p>
+<p>Possiamo essere liberi solo se tutti lo sanno (Hegel)</p>
+<p>Qual è il contrario di "melodia"? SELOTENGA. (?)</p>
+<p>Quando fai una scelta, cambi il futuro. (Deepak Chopra)</p>
+<p>Quando uno è solo cammina più rapidamente. (Napoleone Bonaparte)</p>
+<p>Quanta superbia, a volte, in un gesto di umiltà! (Pino Caruso)</p>
+<p>Quel che non mi uccide mi fa piu` forte. (Friedrich Nietzsche)</p>
+<p>Quell'idea fissa che è un amore. (Marcel Proust)</p>
+<p>Sapete perchè le scorreggie puzzano? Per i sordi. (?)</p>
+<p>Se i gatti potessero parlare, non lo farebbero. (Nan Porter)</p>
+<p>Se il mondo fosse chiaro, l'arte non esisterebbe. (Albert Camus)</p>
+<p>Se sei il capo, pondera; se sei nei guai, delega. (James Boren)</p>
+<p>Se si vende, è arte. (Frank Lloyd Wright)</p>
+<p>Se vuoi essere amato, sii amabile. (Ovidio)</p>
+<p>Segui il tuo bel sole, ombra infelice. (Thomas Campion)</p>
+<p>Senza amore la vita non avrebbe alcun senso. (Michela Marzano)</p>
+<p>Senza amore non potete avere compassione. (Jiddu Krishnamurti)</p>
+<p>Senza giustizia, il coraggio è debole. (Benjamin Franklin)</p>
+<p>Sfortunatamente gli idioti vogliono sempre parlare. (?)</p>
+<p>Sfuggo ciò che m'insegue. Ciò che mi sfugge inseguo. (Orazio)</p>
+<p>Si è più facilmente invidiati che imitati. (Plinio Il Vecchio)</p>
+<p>Siamo ciò che abbiamo imparato ad essere. (Gabriele Mandel Khàn)</p>
+<p>Siate lenti a decidere ma pronti a fare. (Isocrate)</p>
+<p>Siate sempre la scelta e mai l'alternativa. (Antonio Cuomo)</p>
+<p>Solleva la natura, Dio è sotto. (Victor Hugo)</p>
+<p>Solo Dio può scegliere a caso. (Arthur Bloch)</p>
+<p>Solo chi ama senza speranza conosce il vero amore. (?)</p>
+<p>Solo gli amori irrealizzati sono eterni. (Roberto Gervaso)</p>
+<p>Solo una mamma conosce l’amore incondizionato. (Michela Marzano)</p>
+<p>Sono platonici solo gli amori impossibili. (Mario Vassalle)</p>
+<p>Spesso la rassegnazione non è che impotenza. (Roberto Gervaso)</p>
+<p>Tra gli oggetti esistenti solo il corpo umano ha il potere di colpire un’anima. (SIMONE WEIL)</p>
+<p>Tu sbagli il 100 percento dei tiri che non fai (Wayne Gretzky)</p>
+<p>Tutto è bello se lo si guarda al momento giusto. (Herman Hesse)</p>
+<p>Tutto è bello se lo si guarda al momento giusto. (Hermann Hesse)</p>
+<p>Uccide l'amore più la noia che il tormento. (Roberto Gervaso)</p>
+<p>Un amore definito è un amore finito. (André Berthet)</p>
+<p>Un buon viaggiatore non segue la carreggiata. (Lao Tzu)</p>
+<p>Un gatto non chiede, prende. (Garfield)</p>
+<p>Un miao massaggia il cuore. (Stuart Mcmillan)</p>
+<p>Un uomo non può prendere due sentieri alla volta. (?)</p>
+<p>Un uomo solo e' sempre in cattiva compagnia. (Paul Valery)</p>
+<p>Un viaggio è un frammento di Inferno (Maometto)</p>
+<p>Un vincitore è un sognatore che non si è arreso. (?)</p>
+<p>Una falsa umiltà è puro orgoglio. (Blaise Pascal)</p>
+<p>Una lacrima ha radici più profonde di un sorriso. (Emil Cioran)</p>
+<p>Una promessa è una nuvola; l’adempimento è la pioggia. (Proverbio arabo)</p>
+<p>Una volontà forte vince sempre. (Louisa May Alcott)</p>
+<p>Va' a cercare il vento in mezzo al campo! (Boris Pasternak)</p>
+<p>Vassene il tempo e l'uom non se n'avvede. (Dante Alighieri)</p>
+<p>Viaggiare è il paradiso degli sciocchi. (Ralph Waldo Emerson)</p>
+<p>Viaggiare? Per viaggiare basta esistere. (Fernando Pessoa)</p>
+<p>Volare è utile, atterrare è necessario. (E.Drusiani)</p>
+<p>È il cammino che fa la strada. (Giovanni Soriano)</p>
+<p>È il potere, non la verità che crea le leggi. (Thomas Hobbes)</p>
+<p>È pigro l'uomo che può far di meglio. (Ralph Waldo Emerson)</p>
+<p>È più facile pensar giusto che agir giusto. (Giovanni Gaggino)</p>
+<p>È sempre più lungo arrivare che tornare indietro. (Arthur Bloch)</p>
+<p>“Natura” è solo un nome per “eccesso”. (William James)</p>
+<p>Esitare va benissimo, se poi fai quello che devi fare. (Bertolt Brecht)</p>
+<p>Esperienza è il nome che ciascuno dà ai propri errori. (Oscar Wilde)</p>
+<p>Fatiche e umiltà rendono l'uomo un dio sulla terra. (Isacco Di Ninive)</p>
+<p>Gli uomini che ragionano sempre non fanno la storia. (Giovanni Gentile)</p>
+<p>Ho vissuto con diversi maestri Zen − tutti gatti. (Eckhart Tolle)</p>
+<p>Ho visto astronauti al ristorante chiedere il conto alla rovescia. (?)</p>
+<p>I capolavori non sono altro che dei tentativi riusciti. (George Sand)</p>
+<p>I giovani non sono vasi da riempire ma fiaccole da accendere. (Plutarco)</p>
+<p>I libri seri non istruiscono, interrogano. (Nicolás Gómez Dávila)</p>
+<p>I vantaggi della fama: tutti sapranno che sei morto. (Roberto Gervaso)</p>
+<p>Il fato che ci opprime è l'ignavia del nostro spirito. (Novalis)</p>
+<p>Il gatto ha troppo spirito per non avere un po' cuore. (Ernest Menault)</p>
+<p>Il gatto non ci accarezza, si accarezza su di noi. (Antoine Rivarol)</p>
+<p>Il gatto non fa nulla, semplicemente è, come un re. (Claudio Magris)</p>
+<p>Il genio è per l'1% ispirazione e per il 99% sudore. (Thomas Edison)</p>
+<p>Il giusto non è altro che l'utile di chi è superiore. (Trasimaco)</p>
+<p>Il grande uomo è colui che non perde il suo cuore di bambino. (Mencio)</p>
+<p>Il poeta comprende la natura meglio che lo scienziato. (Novalis)</p>
+<p>Il silenzio è la gentilezza dell'universo. (Abdelmajid Benjelloun)</p>
+<p>Il successo fa scandalo. Lo scandalo fa successo. (Marcello Marchesi)</p>
+<p>Il tempo con il suo trascorrere insegna tutte le cose. (Eschilo)</p>
+<p>Il tempo manca solo a chi non ne sa approfittare. (G.M. De Jovellanos)</p>
+<p>Il vero Bene è ciò che nessuno ha visto tranne Dio. (Peter Deunov)</p>
+<p>Il vero ideale dell'uomo è la coltura del proprio spirito. (Oscar Wilde)</p>
+<p>Il vero mistero del mondo è il visibile, non l'invisibile. (Oscar Wilde)</p>
+<p>In arte soltanto l'ottimo è buono abbastanza. (Johann Wolfgang Goethe)</p>
+<p>Io stesso muto nell'istante in cui dico che le cose mutano. (Eraclito)</p>
+<p>L'amante platonico è un impotente in alta uniforme. (Roberto Gervaso)</p>
+<p>L'amore a prima vista spesso non è che una svista. (Roberto Gervaso)</p>
+<p>L'amore fa male, ma la mancanza d'amore ancora di più. (David Lynch)</p>
+<p>L'amore è per i coraggiosi, tutto il resto è coppia. (Barbara Alberti)</p>
+<p>L'anarchia è lo stato di salute delle moltitudini. (Joseph Déjacque)</p>
+<p>L'arte non insegna niente, tranne il senso della vita. (Henry Miller)</p>
+<p>L'arte non è interpretazione, ma trasformazione. (Arturo Martini)</p>
+<p>L'arte non è una forza, è soltanto una consolazione. (Thomas Mann)</p>
+<p>L'arte è la contemplazione del mondo in stato di Grazia. (Hermann Hesse)</p>
+<p>L'arte, come la teologia, è una frode ben confezionata. (Philip K. Dick)</p>
+<p>L'astrologia è solo il dito che indica la realtà. (Steve Forrest)</p>
+<p>L'attesa del piacere è essa stessa il piacere. (Gotthold Ephraim Lessing)</p>
+<p>L'avarizia è prudenza, e la prudenza avarizia. (Louis Scutenaire)</p>
+<p>L'avvenire è l'unica trascendenza degli uomini senza Dio. (Albert Camus)</p>
+<p>L'esperienza è il risultato di un istinto per la vita. (Oscar Wilde)</p>
+<p>L'incompetenza si manifesta nell'uso di troppo parole. (Ezra Pound)</p>
+<p>L'inferno è la sofferenza di non poter più amare. (Fedor Dostoevskij)</p>
+<p>L'intelligenza è la mente che spalanca le finestre. (Roberto Gervaso)</p>
+<p>L'odio sembra capace più dell'amore di serbare memoria. (Sergio Quinzio)</p>
+<p>L'ozio è come la ruggine; consuma più del lavoro. (Benjamin Franklin)</p>
+<p>L'ozio è il padre di quei vizi che ce lo fanno amare. (Roberto Gervaso)</p>
+<p>L'umiltà è la madre di tutte le virtù. (Madre Teresa Di Calcutta)</p>
+<p>L'universo è tutto centro e tutto circonferenza. (Giordano Bruno)</p>
+<p>L'universo: un acrostico dove cerco di leggere Dio. (Gesualdo Bufalino)</p>
+<p>L'uomo abita sulla riva del mare infinito del mistero. (Karl Rahner)</p>
+<p>La Natura ha strane leggi, ma lei, almeno le rispetta. (Leo Longanesi)</p>
+<p>La bellezza delle cose esiste nella mente di chi le osserva (David Hume)</p>
+<p>La biblioteca di un uomo è una specie di harem. (Ralph Waldo Emerson)</p>
+<p>La cosa migliore è essere soli ma mai veramente soli. (Charles Bukowski)</p>
+<p>La cosa più veloce è l'intelletto, perché tutto attraversa (Talete)</p>
+<p>La cultura di massa equivale a una cultura senz'anima. (Giorgio Gaber)</p>
+<p>La democrazia non è una cosa né una legge, ma una lotta. (Godelier)</p>
+<p>La democrazia è il potere di un popolo informato. (Alexis de Tocqueville)</p>
+<p>La distanza avvicina ciò che la vicinanza ignora. (Santy Giuliano)</p>
+<p>La fortuna è il nome che diamo al successo altrui. (Roberto Gervaso)</p>
+<p>La guerra non restaura diritti, ridefinisce poteri (Hannah Arendt)</p>
+<p>La libertà conduce alla noia e la noia alla dittatura. (Ennio Flaiano)</p>
+<p>La massa ama gli uomini forti. La massa è femmina. (Benito Mussolini)</p>
+<p>La morte è la maggiore prova dell'esistenza. (Giorgio Pressburger)</p>
+<p>La natura non è altro che una poesia enigmatica. (Michel de Montaigne)</p>
+<p>La necessità muove anche gli ignavi ad operare. (Quinto Curzio Rufo)</p>
+<p>La nostra intelligenza è una candela in pieno vento. (Jules Renard)</p>
+<p>La paura della morte ci impedisce di vivere, non di morire. (P.C.Roud)</p>
+<p>La pazienza dei popoli è la mangiatoia dei tiranni. (Emilio De Marchi)</p>
+<p>La pazienza è amara, ma il suo frutto è dolce. (Jean-Jacques Rousseau)</p>
+<p>La proprietà ha spesso una maledetta seccatura, e un'ancora. (Ezra Pound)</p>
+<p>La prudenza non è mai troppa. E neanche il coraggio (Beno Fignon)</p>
+<p>La prudenza è la parte più nascosta del vero coraggio. (Aldo Busi)</p>
+<p>La prudenza è la paura che cammina in punta di piedi. (Miguel Zamacoïs)</p>
+<p>La ricchezza della vita è fatta di ricordi, dimenticati. (Cesare Pavese)</p>
+<p>La saggezza è fatta di calcolate rassegnazioni. (Roberto Gervaso)</p>
+<p>La salute è il primo requisito dopo la moralità. (Thomas Jefferson)</p>
+<p>La solitudine è per lo spirito, ciò che il cibo è per il corpo (Seneca)</p>
+<p>La storia la fanno soprattutto le sue manipolazioni. (Roberto Gervaso)</p>
+<p>La storia non conosce soluzioni, ma situazioni. (Nicolás Gómez Dávila)</p>
+<p>La storia si divide in mostri e vittime. O testimoni. (Chuck Palahniuk)</p>
+<p>La strada migliore è quella che ci detta il cuore (Romano Battaglia)</p>
+<p>La verità non è sempre bella, ma la fame di verità sì. (Nadine Gordimer)</p>
+<p>La vita è a colori ma il bianco e nero è più realistico. (Samuel Fuller)</p>
+<p>La vita è un mistero da vivere, non un problema da risolvere. (anonimo)</p>
+<p>La vita è un viaggio e chi viaggia vive due volte. (Umar Khayyam)</p>
+<p>Lasciamo le belle donne agli uomini senza fantasia. (Marcel Proust)</p>
+<p>Lasciarsi sfuggire l'amore è lasciarsi sfuggire la vita. (Leo Buscaglia)</p>
+<p>Lavorare stanca, ma far niente stanca ancora di più. (Roberto Gervaso)</p>
+<p>Le famiglie non sono altro che l'idolatria del dovere. (Annie Oakley)</p>
+<p>Le mie figlie hanno sposato due salumieri. Ho due generi alimentari. (?)</p>
+<p>Le ricchezze non rendono l'uomo libero ma solo più occupato. (?)</p>
+<p>Le stelle sono buchi da cui filtra la luce dell'infinito. (Confucio)</p>
+<p>Lo storico è un profeta che guarda all'indietro. (Friedrich Schiller)</p>
+<p>L’amore è un mondo in cui vive lo Spirito Divino. (Peter Deunov)</p>
+<p>L’amore dura per sempre. Sono i protagonisti a cambiare. (Guido Rojetti)</p>
+<p>L’amore incondizionato ha un solo difetto. È perfetto. (Guido Rojetti)</p>
+<p>L’amore è la destrutturazione del proprio io. (Umberto Galimberti)</p>
+<p>L’amore, di qualunque specie, non è mai triste. (Aldo Palazzeschi)</p>
+<p>L’incertezza altrui procura illusoria fiducia in sé. (Jude Stéfan)</p>
+<p>L’incompetenza si manifesta con l’uso di troppe parole. (Ezra Pound)</p>
+<p>L’unico vero fallimento è quello da cui non impariamo nulla (Henry Ford)</p>
+<p>Meglio essere invidiato che essere oggetto di compassione. (Talete)</p>
+<p>Muore solo un amore che smette di essere sognato. (Pedro Salinas)</p>
+<p>Nel vero amore è l'anima che avvolge il corpo. (Friedrich Nietzsche)</p>
+<p>Nell'amore il piacere e il dolore sono sempre in lotta (Publilio Siro)</p>
+<p>Nella storia contano anche i fatti non avvenuti. (Stanisław Jerzy Lec)</p>
+<p>Nessun uomo ne sa mai abbastanza di una qualsiasi arte. (Ezra Pound)</p>
+<p>Nessuna notte e' tanto lunga da impedire al sole di sorgere. (?)</p>
+<p>Noi non cerchiamo mai le cose, ma la ricerca delle cose. (Blaise Pascal)</p>
+<p>Non basta essere colmi di compassione, bisogna agire. (Tenzin Gyatso)</p>
+<p>Non c'è nulla che le male lingue non possano peggiorare. (Terenzio)</p>
+<p>Non conta il colore del gatto, conta che acchiappi il topo. (Confucio)</p>
+<p>Non l'amore bisogna dipingere cieco, ma l'amor proprio. (Voltaire)</p>
+<p>Non patisce mancanza chi non sente desiderio. (Marco Tullio Cicerone)</p>
+<p>Non permettere alla lingua di oltrepassare il pensiero. (Anton Cechov)</p>
+<p>Non sappiamo sopportare né i nostri vizi né i loro rimedi. (Tito Livio)</p>
+<p>Non si è mai troppo poveri per donare una carezza. (Romano Battaglia)</p>
+<p>Nulla sa il pesce della foresta, eppure nuota felice. (Marco Sartorelli)</p>
+<p>Occuparsi degli altri, preoccuparsi per sé. (Alessandro Morandotti)</p>
+<p>Ogni parola ha conseguenze. Ogni silenzio anche. (Jean Paul Sartre)</p>
+<p>Per quanto bene dicano di noi, non ci insegnano nulla di nuovo. (?)</p>
+<p>Perdona molto agli altri, nulla a te stesso. (Decimo Magno Ausonio)</p>
+<p>Piacere a sé stessi è orgoglio; agli altri, vanità. (Paul Valéry)</p>
+<p>Posso resistere a tutto, tranne che alle tentazioni. (Oscar Wilde)</p>
+<p>Predicare la morale è facile, il difficile è fondarla. (Shopenhauer)</p>
+<p>Quando la soluzione è semplice, Dio sta rispondendo. (Albert Einstein)</p>
+<p>Quando prendi calci in culo, vuol dire che stai davanti a tutti. (?)</p>
+<p>Quel che si trova nell'effetto era già nella causa. (Henri Bergson)</p>
+<p>Ricorda, oggi è il domani di cui ti preoccupavi ieri. (Dale Carnegie)</p>
+<p>Sapete che cosa è il metronotte? uno strumento per misurare il buio! (?)</p>
+<p>Schiavo è chi aspetta qualcuno che venga a liberarlo. (Ezra Pound)</p>
+<p>Scrivere è un modo di parlare senza essere interrotto. (Jules Renard)</p>
+<p>Scrivere è viaggiare senza la seccatura dei bagagli. (Emilio Salgari)</p>
+<p>Se Dio esiste, chi è? Se non esiste, chi siamo? (Peter William Atkins)</p>
+<p>Se i fatti e la teoria non concordano, cambia i fatti. (Albert Einstein)</p>
+<p>Se non ci fossero falsi miracoli, ci sarebbe certezza. (Blaise Pascal)</p>
+<p>Sei stanco? Datti da fare e ti passerà la stanchezza. (Arturo Graf)</p>
+<p>Si ama eternamente tutto ciò che non si può avere. (Jules Renard)</p>
+<p>Si viaggia per cambiare, non di luogo, ma di idee. (Hippolyte Taine)</p>
+<p>Sia dolce il dubbio a chi nuocer può il vero. (Michelangelo Buonarroti)</p>
+<p>Siamo un popolo di servi, che obbedisce mugugnando. (Roberto Gervaso)</p>
+<p>Sii il cambiamento che vuoi vedere nel mondo. (Gandhi)</p>
+<p>Silenzio, spendore dei forti, rifugio dei deboli. (Charles De Gaulle)</p>
+<p>Solo chi ha fede in se stesso può essere fedele agli altri (Erich Fromm)</p>
+<p>Spie e truffatori hanno sempre il passaporto in regola. (Paul Morand)</p>
+<p>Talvolta ho voglia di piangere, ma mi consola il mare. (José Gorostiza)</p>
+<p>Tu non puoi fare una buona economia con una cattiva etica. (Ezra Pound)</p>
+<p>Umiltà: mite e ipocrita maschera dell'orgoglio. (Roberto Gervaso)</p>
+<p>Un gatto è solo tecnicamente un animale, essendo divino. (Robert Lynd)</p>
+<p>Un governo d'onesti è come un bordello di vergini. (Roberto Gervaso)</p>
+<p>Un grande amore si misura dalla sofferenza che produce. (Guido Rojetti)</p>
+<p>Un leader di valore ha il desiderio di servire, non di dominare. (?)</p>
+<p>Un uomo saggio crea più occasioni di quante ne trova. (Francesco Bacone)</p>
+<p>Una casa senza libri è come un giardino senza fiori. (E. De Amicis)</p>
+<p>Una grande speranza è prova di un grande amore. (Honoré De Balzac)</p>
+<p>Una idea che non è pericolosa è indegna di chiamarsi idea. (Oscar Wilde)</p>
+<p>Una vita senza ricerca non vale la pena di essere vissuta (Socrate)</p>
+<p>Gli occhi di un gatto sono finestre che ci permettono di vedere dentro un altro mondo. (Leggenda Irlandese)</p>
+
+</div>
+</body>
+</html> 
+
