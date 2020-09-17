@@ -1,0 +1,30 @@
+﻿html, body {
+  height:100%;
+  min-height:100%;
+  overflow: hidden;
+  margin:0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font:italic 16pt georgia;
+  background-color: black;
+  color:whitesmoke;
+}
+td {font:18pt monospace}
+input {font:18pt monospace; text-align:center}
+hr {border:1px solid #0E457D}
+.testa, .piede {
+  flex: 0 0 auto;
+  color: whitesmoke;
+  background-color: brown;
+  cursor: pointer;
+  text-align:center;
+}
+.centro {
+	flex: 1 1 auto;
+	overflow-y: auto;
+	padding-right:4px;
+}
+.abcd {color:gold}
+#verbum {display:none}

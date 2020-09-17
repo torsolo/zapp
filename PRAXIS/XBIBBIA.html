@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="../zapp.css" />
+<script type="text/javascript" src="../zapp.js"></script>
+<title>READ</title>
+</head>
+<body id="spr">
+<div id="content">
+<div id="barratesta"></div>
+<div id="tools">
+<table id="toolgrid" border="0" width="100%" cellpadding="4">
+    <tr>
+        <td align="center">
+            <input id="cuno" type="color" name="head" value="#202020" style="height:40px">
+        </td>
+        <td align="center">
+            <input id="cdue" type="color" name="head" value="#F5F5F5" style="height:40px">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="goto" type="button" class="bottone" value="TOP" onclick="gotop()">
+         </td>
+        <td align="center">
+            <input id="ics" type="button" class="bottone" value="HIDE" onclick="chiudimi()">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="book" type="button" class="bottone" value="SALVA" onclick="salva()">
+        </td>
+        <td align="center">
+			<input id="vuoto" type="button" class="bottone" value="VUOTO" onclick="tree()">
+		</td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="book" type="button" class="bottone" value="LEGGI" onclick="leggi()">
+        </td>
+        <td align="center">
+            <input id="zoom" type="button" class="bottone" value="ZOOM" onclick="spr_zoom()">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="provauno" type="button" class="bottone" value="TREE" onclick="htotree()">
+        </td>
+        <td align="center">
+            <input id="provadue" type="button" class="bottone" value="TOPX" onclick="provadue()">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="coloreuno" type="button" class="bottone" value="BACK" onclick="coloresfondo()">
+        </td>
+        <td align="center">
+            <input id="coloredue" type="button" class="bottone" value="TEXT" onclick="coloretesto()">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="next1" type="button" class="bottone" value="RLS" onclick="rls()">
+        </td>
+        <td align="center">
+            <input id="next2" type="button" class="bottone" value="FONT" onclick="cara()">
+        </td>
+    </tr>
+</table>
+</div>
+<div id="albero">T.o.c.</div>
+<div id="corpo">        <!--<h1>Soliloqui</h1>-->
+<div align="center" style="margin-top:36px">
+<table cellpadding="4" border="0" width="100%" style="font:18pt monospace"><tr>
+<td valign="top" align="center">
+<p><a href="Scriptum/XBIBBIA_LIBRO_1Cor.html">1Cor</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_1Cr.html">1Cr</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_1Gv.html">1Gv</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_1Mac.html">1Mac</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_1Pt.html">1Pt</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_1Re.html">1Re</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_1Sam.html">1Sam</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_1Tm.html">1Tm</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_1Ts.html">1Ts</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_2Cor.html">2Cor</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_2Cr.html">2Cr</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_2Gv.html">2Gv</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_2Mac.html">2Mac</a></p>
+</td><td valign="top" align="center">
+<p><a href="Scriptum/XBIBBIA_LIBRO_2Pt.html">2Pt</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_2Re.html">2Re</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_2Sam.html">2Sam</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_2Tm.html">2Tm</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_2Ts.html">2Ts</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_3Gv.html">3Gv</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Ab.html">Ab</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Abd.html">Abd</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Ag.html">Ag</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Am.html">Am</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Ap.html">Ap</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_At.html">At</a></p>
+</td><td valign="top" align="center">
+<p><a href="Scriptum/XBIBBIA_LIBRO_Bar.html">Bar</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Col.html">Col</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Ct.html">Ct</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Dn.html">Dn</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Dt.html">Dt</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Eb.html">Eb</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Ef.html">Ef</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Es.html">Es</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Esd.html">Esd</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Est.html">Est</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Ez.html">Ez</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Fil.html">Fil</a></p>
+</td><td valign="top" align="center">
+<p><a href="Scriptum/XBIBBIA_LIBRO_Fm.html">Fm</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Gal.html">Gal</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Gb.html">Gb</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Gc.html">Gc</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Gd.html">Gd</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Gdc.html">Gdc</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Gdt.html">Gdt</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Ger.html">Ger</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Gl.html">Gl</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Gn.html">Gn</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Gna.html">Gna</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Gs.html">Gs</a></p>
+</td><td valign="top" align="center">
+<p><a href="Scriptum/XBIBBIA_LIBRO_Gv.html">Gv</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Is.html">Is</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Lam.html">Lam</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Lc.html">Lc</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Lv.html">Lv</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Mc.html">Mc</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Mi.html">Mi</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Ml.html">Ml</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Mt.html">Mt</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Na.html">Na</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Nee.html">Nee</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Nm.html">Nm</a></p>
+</td><td valign="top" align="center">
+<p><a href="Scriptum/XBIBBIA_LIBRO_Os.html">Os</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Pr.html">Pr</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Qo.html">Qo</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Rm.html">Rm</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Rt.html">Rt</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Sal.html">Sal</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Sap.html">Sap</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Sir.html">Sir</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Sof.html">Sof</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Tb.html">Tb</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Tt.html">Tt</a></p>
+<p><a href="Scriptum/XBIBBIA_LIBRO_Zc.html">Zc</a></p>
+</td></tr>
+</table>
+</div>
+<hr>
+<h5>Decalogo</h5><p>
+per leggere con profitto la Bibbia
+</p><p>
+Di monsignor Mario de Gasperín Gasperín, Vescovo di Querétaro
+</p><p>
+QUERÉTARO, lunedì, 21 settembre 2009 (ZENIT.org).- In occasione del mese della Bibbia, il Vescovo di Querétaro (Messico), monsignor Mario de Gasperín Gasperín, noto biblista, ha scritto un “Decalogo per leggere con profitto la Bibbia”, che riportiamo di seguito.
+</p><p>
+<ol type="1" start="1">
+<li>Non credere mai che siamo i primi a leggere la Sacra Scrittura. Molti, moltissimi nel corso dei secoli l'hanno letta, meditata, vissuta, trasmessa. I migliori interpreti della Bibbia sono i santi.</li>
+</ol>
+</p><p>
+<ol type="1" start="2">
+<li>La Scrittura è il libro della comunità ecclesiale. La nostra lettura, anche se effettuata da soli, non potrà mai essere solitaria. Per leggerla con profitto, bisogna inserirsi nella grande corrente ecclesiale condotta e guidata dallo Spirito Santo.</li>
+</ol>
+</p><p>
+<ol type="1" start="3">
+<li>La Bibbia è “Qualcuno”. Per questo si legge e si celebra allo stesso tempo. La migliore lettura della Bibbia è quella che si fa nella Liturgia.</li>
+</ol>
+</p><p>
+<ol type="1" start="4">
+<li>Il centro della Sacra Scrittura è Cristo; per questo, tutto deve essere letto sotto lo sguardo di Cristo e compiuto in Cristo. Cristo è la chiave interpretativa della Sacra Scrittura.</li>
+</ol>
+</p><p>
+<ol type="1" start="5">
+<li>Non dimenticare mai che nella Bibbia troviamo fatti e detti, opere e parole intimamente uniti gli uni con gli altri; le parole annunciano e illuminano i fatti, e i fatti realizzano e confermano le parole.</li>
+</ol>
+</p>
+<p>
+<ol type="1" start="6">
+<li>Un modo pratico e proficuo per leggere la Scrittura è iniziare con i santi Vangeli, proseguire con gli Atti e le Lettere e intervallare con qualche libro dell'Antico Testamento: Genesi, Esodo, Giudici, Samuele, ecc. Non voler leggere il libro del Levitico di corsa, ad esempio. I Salmi devono essere il libro di preghiera dei gruppi biblici. I profeti sono l'anima dell'Antico Testamento: bisogna dedicare loro uno studio speciale.</li>
+</ol>
+</p>
+<p>
+<ol type="1" start="7">
+<li>La Bibbia si conquista come la città di Gerico: circondandola. Per questo, è bene leggere i brani paralleli. E' un metodo che richiede tempo, ma dà un grande profitto. Un testo chiarisce l'altro, come diceva Sant'Agostino: “L'Antico Testamento si fa evidente nel Nuovo, e il Nuovo è latente nell'Antico”.</li>
+</ol>
+</p>
+<p>
+<ol type="1" start="8">
+<li>La Bibbia deve essere letta e meditata con lo stesso Spirito con cui è stata scritta. Lo Spirito Santo è il suo autore principale ed è il suo principale interprete. Bisogna sempre invocarlo prima di iniziare a leggerla, e alla fine rendere grazie.</li>
+</ol>
+</p>
+<p>
+<ol type="1" start="9">
+<li>La Sacra Bibbia non deve mai essere utilizzata per criticare e condannare gli altri.</li>
+</ol>
+</p>
+<p>
+<ol type="1" start="10">
+<li>Ogni testo biblico ha un contesto storico in cui si è originato e un contesto letterario in cui è stato scritto. Un testo biblico, fuori dal suo contesto storico e letterario, è un pretesto per manipolare la Parola di Dio. Questo è pronunciare il nome di Dio invano.</li>
+</ol>
+</p>
+
+<h5>Benedetto XVI</h5>
+<p>
+A questo Decalogo vanno aggiunti i tre criteri spiegati da Benedetto XVI, che aiutano alla comprensione delle Sacre Scritture:
+</p>
+<p>
+<ol type="1" start="1">
+<li>occorre prestare grande attenzione al contenuto e all'unità di tutta la Scrittura: solo nella sua unità è Scrittura. Infatti, per quanto siano differenti i libri che la compongono, la Sacra Scrittura è una in forza dell'unità del disegno di Dio, del quale Cristo Gesù è il centro e il cuore (cfr. Lc 24, 25-27; Lc 24, 44-46)</li>
+</ol>
+</p>
+<p>
+<ol type="1" start="2">
+<li>occorre leggere la Scrittura nel contesto della tradizione vivente di tutta la Chiesa. Secondo un detto di Origene, "Sacra Scriptura principalius est in corde Ecclesiae quam in materialibus instrumentis scripta" ossia "la Sacra Scrittura è scritta nel cuore della Chiesa prima che su strumenti materiali". Infatti la Chiesa porta nella sua Tradizione la memoria viva della Parola di Dio ed è lo Spirito Santo che le dona l'interpretazione di essa secondo il senso spirituale (cfr. Origene, Homiliae in Leviticum, 5, 5)</li>
+</ol>
+</p>
+<p>
+<ol type="1" start="3">
+<li>è necessario prestare attenzione all'analogia della fede, ossia alla coesione delle singole verità di fede tra di loro e con il piano complessivo della Rivelazione e la pienezza della divina economia in esso racchiusa.</li>
+</ol>
+</p>
+<p>
+Il compito dei ricercatori che studiano con diversi metodi la Sacra Scrittura è quello di contribuire secondo i suddetti principi alla più profonda intelligenza ed esposizione del senso della Sacra Scrittura. Lo studio scientifico dei testi sacri è importante, ma non è da solo sufficiente perché rispetterebbe solo la dimensione umana. Per rispettare la coerenza della fede della Chiesa l'esegeta cattolico deve essere attento a percepire la Parola di Dio in questi testi, all'interno della stessa fede della Chiesa. In mancanza di questo imprescindibile punto di riferimento la ricerca esegetica resterebbe incompleta, perdendo di vista la sua finalità principale, con il pericolo di essere ridotta ad una lettura puramente letteraria, nella quale il vero Autore - Dio - non appare più.
+</p>
+<p>
+(Benedetto XVI ai partecipanti alla plenaria della Pontificia Commissione Biblica) 
+</p>
+<hr>
+<h5>Buttiamo via...</h5>
+<p>
+Buttiamo via i mormorii / Cosa c'è di peggio in una Chiesa che dei credenti che mormorano? Si lamentano di tutto e di tutti, non gli va bene assolutamente niente. Loro stessi non fanno nulla ma giudicano severamente l'operato di chi s'impegna per l'opera di Dio. La Scrittura ci fa un identikit dei mormoratori: "Sono dei mormoratori, degli scontenti; camminano secondo le loro passioni; la loro bocca proferisce cose incredibilmente gonfie, e circondano d'ammirazione le persone per interesse" (Giuda 1:16). Dio c'invita a buttare via dal nostro cuore i mormorii: "Non mormorate, come alcuni di loro mormorarono, e perirono colpiti dal distruttore" (1 Corinzi 10:10). Ogni credente desideroso di fare la volontà di Dio, deve fare ogni cosa senza mormorii: "Fate ogni cosa senza mormorii e senza dispute" (Filippesi 2:14).
+</p>
+<p>
+Buttiamo via le nostre giustificazioni Se abbiamo la tendenza a giustificare le nostre debolezze e l'amore per le cose del mondo, smettiamola! Il Seme, cioè la Parola di Dio che è caduto fra le spine, rappresenta coloro che hanno udito, ma se ne vanno e restano soffocati dalle cure e dalle ricchezze e dai piaceri della vita e non arrivano a maturità: "Quello che è caduto tra le spine sono coloro che ascoltano, ma se ne vanno e restano soffocati dalle preoccupazioni, dalle ricchezze e dai piaceri della vita, e non arrivano a maturità" (Luca 8:14). Quante scuse a volte troviamo, per giustificare le nostre debolezze: "Tutti insieme cominciarono a scusarsi. Il primo gli disse: "Ho comprato un campo e ho necessità di andarlo a vedere; ti prego di scusarmi".Un altro disse: "Ho comprato cinque paia di buoi e vado a provarli; ti prego di scusarmi". Un altro disse: "Ho preso moglie, e perciò non posso venire" (Luca 14:18-20).
+</p>
+<p>
+Buttiamo via le nostre giustificazioni e l'amore per le cose del mondo: "Non amate il mondo né le cose che sono nel mondo. Se uno ama il mondo, l'amore del Padre non è in lui. Perché tutto ciò che è nel mondo, la concupiscenza della carne, la concupiscenza degli occhi e la superbia della vita, non viene dal Padre, ma dal mondo. E il mondo passa con la sua concupiscenza; ma chi fa la volontà di Dio rimane in eterno" (1 Giovanni 2:15-17).
+</p>
+<p>
+Buttiamo via tutte quelle abitudini che non ci permettono di leggere e meditare la Parola di Dio. Talvolta ci sono abitudini che ci tolgono il tempo per la lettura e la meditazione della Parola di Dio. Ricordiamoci che senza cibo e senza acqua, l'uomo muore. Allo stesso modo, senza la Parola di Dio, l'uomo è destinato alla morte spirituale. Colui che trascura la Parola di Dio, vede il suo cuore indurirsi giorno dopo giorno: "Perché il cuore di questo popolo si è fatto insensibile, sono divenuti duri d'orecchi, e hanno chiuso gli occhi, affinché non vedano con gli occhi e non odano con gli orecchi, non comprendano con il cuore, non si convertano, e io non li guarisca" (Atti 28:27). Non è forse vero che mentre l'uomo parla a Dio attraverso la preghiera, Dio parla all'uomo attraverso la Sua Parola? Dio vuole comunicare la Sua volontà: "Questo libro della legge non si allontani mai dalla tua bocca, ma meditalo, giorno e notte; abbi cura di mettere in pratica tutto ciò che vi è scritto; poiché allora riuscirai in tutte le tue imprese, allora prospererai" (Giosuè 1:8). È Dio che dette questo consiglio a Giosuè che resta valido per ogni generazione. Deve essere presente in ogni sincero credente questo desiderio: "Mi alzo prima dell'alba e grido; io spero nella tua parola. Gli occhi miei prevengono le veglie della notte, per meditare la tua parola" (Salmo 119:147,148). Quanto tempo dedichiamo alla TV? Quanto tempo perdiamo in cose futili ed inutili? Torniamo alla Parola di Dio se vogliamo vedere l'aurora: "Alla legge! Alla testimonianza!" Se il popolo non parla così, non vi sarà per lui nessuna aurora!" (Isaia 8:20).
+</p>
+<p>
+Buttiamo via gli aspetti negativi del nostro carattere Un'espressione che l'apostolo Paolo usa al riguardo è: "Gettare via": "Via da voi ogni amarezza, ogni cruccio e ira e clamore e parola offensiva con ogni sorta di cattiveria!" (Efesini 4:31). Il nostro temperamento deve essere controllato dallo Spirito Santo. Nel momento in cui ciò non avviene, ecco manifestarsi i frutti della carne: "Ora le opere della carne sono manifeste, e sono: fornicazione, impurità, dissolutez-za, dolatria, stregoneria, inimicizie, discordia, gelosia, ire, contese, divisioni, sètte, invidie, ubriachezze, orge e altre simili cose; circa le quali, come vi ho già detto, vi preavviso: chi fa tali cose non erediterà il regno di Dio" (Galati 5:19-21). Un temperamento controllato dallo Spirito Santo, produrrà invece il frutto dello Spirito: "Il frutto dello Spirito invece è amore, gioia, pace, pazienza, benevolenza, bontà, fedeltà, mansuetudine, autocontrollo; contro queste cose non c'è legge. Quelli che sono di Cristo hanno crocifisso la carne con le sue passioni e i suoi desideri. Se viviamo dello Spirito, camminiamo anche guidati dallo Spirito"  (Galati 5:22-25). Non giustifichiamoci dietro la famosa frase: "Questo è il mio carattere", perché dicendo questo, affermiamo che Dio non può fare più nulla per noi. Dio ci ama così come siamo ma ci ama così tanto da non lasciarci come siamo: "Io quindi corro così; non in modo incerto; lotto al pugilato, ma non come chi batte l'aria; anzi, tratto duramente il mio corpo e lo riduco in schiavitù, perché non avvenga che, dopo aver predicato agli altri, io stesso sia squalificato" (1 Corinzi 9:26,27).
+</p>
+<p>
+Buttiamo via la nostra ansia Quanta apprensione si nasconde talvolta nella nostra vita, che facilmente si trasforma in ansia. Domandiamoci: "Siamo o no figli di Dio? Dio è nostro Padre?" Se soltanto rispondiamo di si a queste domande, non dobbiamo temere di nulla: "Perciò vi dico: non siate in ansia per la vostra vita, di che cosa mangerete o di che cosa berrete; né per il vostro corpo, di che vi vestirete. Non è la vita più del nutrimento, e il corpo più del vestito? Guardate gli uccelli del cielo: non seminano, non mietono, non raccolgono in granai, e il Padre vostro celeste li nutre. Non valete voi molto più di loro? E chi di voi può con la sua preoccupazione aggiungere un'ora sola alla durata della sua vita? E perché siete così ansiosi per il vestire? Osservate come crescono i gigli della campagna: essi non faticano e non filano; eppure io vi dico che neanche Salomone, con tutta la sua gloria, fu vestito come uno di loro. Ora se Dio veste in questa maniera l'erba dei campi che oggi è, e domani è gettata nel forno, non farà molto di più per voi, o gente di poca fede? Non siate dunque in ansia, dicendo: "Che mangeremo? Che berremo? Di che ci vestiremo?" Perché sono i pagani che ricercano tutte queste cose; ma il Padre vostro celeste sa che avete bisogno di tutte queste cose. Cercate prima il regno e la giustizia di Dio, e tutte queste cose vi saranno date in più. Non siate dunque in ansia per il domani, perché il domani si preoccuperà di sé stesso. Basta a ciascun giorno il suo affanno" (Matteo 6:25-34). Notiamo in questi versetti l'invito del Signore: "Non siate in ansia". Gettiamo via da noi ogni sollecitudine ansiosa, perché Dio si prende cura di noi: "Io, il Signore, il tuo Dio, fortifico la tua mano destra e ti dico: Non temere, io ti aiuto! Non temere, Giacobbe, vermiciattolo, e Israele, povera larva. Io ti aiuto", dice il Signore. "Il tuo salvatore è il Santo d'Israele" (Isaia 41:13,14).
+</p>
+<p>
+Buttiamo via la nostra pigrizia / A volte capita d'incontrare cristiani particolarmente pigri: hanno voglia di non fare nulla. La pigrizia è un pericolo da non trascurare. Il grande re Davide cadde in un vortice di peccati a causa della pigrizia: "L'anno seguente, nella stagione in cui i re cominciano le guerre, Davide mandò Ioab con la sua gente e con tutto Israele a devastare il paese dei figli di Ammon e ad assediare Rabba; ma Davide rimase a Gerusalemme. Una sera Davide, alzatosi dal suo letto, si mise a passeggiare sulla terrazza del palazzo reale; dalla terrazza vide una donna che faceva il bagno. La donna era bellissima" (2 Samuele 11:1,2).  Se la pigrizia trovò posto nel cuore di Davide, può trovarla anche nel nostro e in quel caso grande sarà la nostra rovina: "Fino a quando, o pigro, te ne starai coricato? Quando ti sveglierai dal tuo sonno? Dormire un po', sonnecchiare un po', incrociare un po' le mani per riposare. La tua povertà verrà come un ladro, la tua miseria, come un uomo armato" (Proverbi 6:9-11). La via del pigro conduce velocemente alla povertà come dimostrano i seguenti versetti: - Proverbi 13:4 "Il pigro desidera, e non ha nulla, ma l'operoso sarà pienamente soddisfatto. - Proverbi 15:19 "La via del pigro è come una siepe di spine, ma il sentiero degli uomini retti è piano". - Proverbi 19:15,24 "La pigrizia fa cadere nel torpore, e la persona indolente patirà la fame". Il pigro tuffa la mano nel piatto e non fa neppure tanto da portarla alla bocca". - Proverbi 20:4 "Il pigro non ara a causa del freddo; alla raccolta verrà a cercare, ma non ci sarà nulla". - Proverbi 21:25 "I desideri del pigro lo uccidono, perché le sue mani rifiutano di lavorare". - Proverbi 26:15 "Il pigro tuffa la mano nel piatto; e gli sembra fatica riportarla alla bocca". - Ecclesiaste 10:18 "Per la pigrizia sprofonda il soffitto; per la rilassatezza delle mani piove in casa". Buttiamo via da noi la pigrizia: "Quanto allo zelo, non siate pigri; siate ferventi nello spirito, servite il Signore" (Romani 12:11). Rimbocchiamoci le maniche perché le campagne sono bianche da mietere e gli operai sono pochi: "E diceva loro: "La mèsse è grande, ma gli operai sono pochi; pregate dunque il Signore della mèsse perché spinga degli operai nella sua mèsse" (Luca 10:2).
+</p>
+<p>
+Buttiamo via i giudizi / Gesù dice - e la nostra esperienza lo ha più volte dimostrato - che è più facile vedere la pagliuzza che è nell'occhio del fratello, che la trave che è nel nostro occhio, è più facile che ingoiamo il cammello, mentre filtriamo il moscerino. I difetti degli altri sono come gli anabbaglianti della macchina: sono sempre quelli degli altri che ci danno fastidio: "Non giudicate, affinché non siate giudicati; perché con il giudizio con il quale giudicate, sarete giudicati; e con la misura con la quale misurate, sarà misurato a voi. Perché guardi la pagliuzza che è nell'occhio di tuo fratello, mentre non scorgi la trave che è nell'occhio tuo? O, come potrai tu dire a tuo fratello: "Lascia che io ti tolga dall'occhio la pagliuzza", mentre la trave è nell'occhio tuo? Ipocrita, togli prima dal tuo occhio la trave, e allora ci vedrai bene per trarre la pagliuzza dall'occhio di tuo fratello" (Matteo 7:1-5). È facile giudicare gli altri, più difficile giudicare noi stessi: "Guai a voi, scribi e farisei ipocriti, perché siete simili a sepolcri imbiancati, che appaiono belli di fuori, ma dentro sono pieni d'ossa di morti e d'ogni immondizia. Così anche voi, di fuori sembrate giusti alla gente; ma dentro siete pieni d'ipocrisia e d'iniquità" (Matteo 23:27,28). L'ipocrita era una maschera teatrale, dietro la quale si nascondeva l'attore. Buttiamo via da noi questa maschera, mostriamo il nostro vero volto, perché solo così saremo meno severi con gli altri. Talvolta capita che proprio quando viviamo una vita non conforme alla volontà di Dio, che diventiamo troppo severi con gli altri, come accadde a Davide: "Davide si adirò moltissimo contro quell'uomo e disse a Natan: "Com'è vero che il Signore vive, colui che ha fatto questo merita la morte e pagherà quattro volte il valore dell'agnellina, per aver fatto una cosa simile e non aver avuto pietà". Allora Natan disse a Davide: "Tu sei quell'uomo!" (2 Samuele 12:5-7). Impara ad essere tollerante verso gli sbagli degli altri come lo sei con te stesso e soprattutto guarda gli altri non dimenticando che Gesù è morto anche per loro.
+</p>
+<p>
+Buttiamo via la gelosia e l'invidia / Secondo un'enciclopedia, la gelosia è: "Invidia, rivalità", mentre l'invidia è: "Sentimento di rancore e d'astio per la felicità o le qualità degli altri". La gelosia che porta alla contesa è prova di carnalità nella chiesa: "Fratelli, io non ho potuto parlarvi come a spirituali, ma ho dovuto parlarvi come a carnali, come a bambini in Cristo. Vi ho nutriti di latte, non di cibo solido, perché non eravate capaci di sopportarlo; anzi, non lo siete neppure adesso, perché siete ancora carnali. Infatti, dato che ci sono tra di voi gelosie e contese, non siete forse carnali e non vi comportate come qualsiasi uomo"? (1 Corinzi 3:1-3). Invidia e gelosia verso dei fratelli sono dunque sentimenti negativi presenti in coloro che non gioiscono del bene e delle qualità altrui, ma se ne irritano perché le vorrebbero per sé. È mancanza di amore e di sottomissione a Dio nello accettare la "misura della fede" che Lui ci ha assegnata. Gelosia per un dono di predicazione che può farci ombra, per una famiglia ordinata e sottomessa a Dio, per un'intesa profonda fra coniugi, per l'apprezzamento che altri fratelli ottengono. Invidia e gelosia, finché non generano contese e altri guai, possono non trasparire all'esterno, ma rodono il nostro rapporto col fratello e rovinano la nostra vita spirituale. Un esame interessante sarebbe accertare quando proviamo nel nostro cuore (spesso senza rendercene chiaramente conto) il compiacimento per le disgrazie degli altri. Se riusciamo ad essere sinceri fino in fondo, credo che dovremmo vergognarci e gridare al Signore. Tendenziosità, sospetto, cattiva intenzione presunta negli altri, modo negativo di considerare il fratello, compiacimento per gli errori altrui: tutti sentimenti purtroppo diffusi che restano dentro, ma che avvelenano sovente i rapporti e preparano a guasti più clamorosi.
+</p>
+<p>
+Buttiamo via l'ira e la collera / Quest'impeto dell'animo improvviso e violento che si rivolge contro qualcuno o qualcosa, quest'infiammarsi, accendersi, avvampare, ardere d'ira, non deve essere presente nella vita del credente: "Sia ogni uomo lento all'ira, perché l'ira dell'uomo non mette in opera la giustizia di Dio" (Giacomo 1:19). L'ira dell'uomo è sempre vista negativamente. Nella parabola del figlio prodigo, il fratello maggiore si adira e non vuole entrare nel banchetto d'amore: "Egli si adirò e non volle entrare; allora suo padre uscì e lo pregava di entrare. Ma egli rispose al padre: "Ecco, da tanti anni ti servo e non ho mai trasgredito un tuo comando; a me però non hai mai dato neppure un capretto per far festa con i miei amici; ma quando è venuto questo tuo figlio che ha sperperato i tuoi beni con le prostitute, tu hai ammazzato per lui il vitello ingrassato" (Luca 15:28-30). L'ira è sempre condannata da Gesù: "Chiunque s'adira contro suo fratello sarà sottoposto al tribunale" (Matteo 5:22). Ira e collera sono fra le cose da deporre: "Ora invece deponete anche voi tutte queste cose: ira, collera, malignità, calunnia; e non vi escano di bocca parole oscene" (Colossesi 3:8). Le parole di Efesini 4:26: "Adiratevi e non peccate, il sole non tramonti sopra la vostra collera", non esortano all'ira, significano piuttosto: "Mostrate sdegno però, attenti a non peccare" (cosi la TILC) e non rimanete in quest'atteggiamento. "Sia tolta via ogni ira" (cfr. v. 31). Fruga negli angoli più remoti della tua vita, forse si è ammucchiata tanta spazzatura: non avere pietà, buttala via.
+</p>
+
+</div>
+</div>
+</body>
+</html>

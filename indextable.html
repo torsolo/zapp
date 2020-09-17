@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
+<link rel="icon" type="image/x-icon" href="zapp.ico"/>
+<title>ZAPP</title>
+<base target="_self">
+<style>
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+.header, .content, .footer {
+  display: table-row;
+}
+.header, .footer {
+  background: silver;
+}
+.inner {
+  display: table-cell;
+}
+.content .inner {
+  height: 100%;
+  position: relative;
+  background: pink;
+}
+.scrollable {
+position: absolute;
+left: 0; right: 0;
+top: 0; bottom: 0;
+overflow: auto;
+font-family: Georgia, Times, serif;
+font-size:16pt;
+background-image:url('sfondouno.png');
+background-repeat: no-repeat;
+background-position: center; 
+background-size: cover;
+text-align:center;
+}
+
+a {text-decoration:none; color:cyan;}
+
+.voce {
+font-family: Tahoma, Geneva, sans-serif;
+color:lime;
+}
+
+.elenco {
+display:none; 
+font-size:22pt; 
+text-align:center; 
+padding:20px;
+border:2px solid red;
+}
+
+
+</style>
+
+<script type="text/javascript">
+fisa = function (o) {
+	var d = o.innerHTML;
+	var p = document.getElementById(prima);
+	if (p && d != prima) {
+		p.style.display = "none";
+	}
+	var z = document.getElementById(d);
+	prima = d;
+	var v = z.style.display;
+	v = (v == "" || v == "none") ? "block" : "none";
+	z.style.display = v;
+	window.scrollBy(0, 100);
+}
+prima="";
+</script>
+
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="header">
+    <div class="inner">Header</div>
+  </div>
+  <div class="content">
+    <div class="inner">
+      <div class="scrollable">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1 onclick="fisa(this)" class="voce">ARTEMI</h1>
+<div id="ARTEMI" class="elenco">
+<p><a href="ARTEMI/ARTEMI1.html">ARTEMI1</a></p>
+<p><a href="ARTEMI/Cripta.html">Cripta</a></p>
+<p><a href="ARTEMI/FAMIGLIA.html">FAMIGLIA</a></p>
+<p><a href="ARTEMI/Mujica.html">Mujica</a></p>
+<p><a href="ARTEMI/PLAYWEB.html">PLAYWEB</a></p>
+<p><a href="ARTEMI/Start.html">Start</a></p>
+</div>
+<h1 onclick="fisa(this)" class="voce">LECTIO</h1>
+<div id="LECTIO" class="elenco">
+<p><a href="LECTIO/Angelus_Silesius.html">Angelus_Silesius</a></p>
+<p><a href="LECTIO/CatechismoCompendio.html">CatechismoCompendio</a></p>
+<p><a href="LECTIO/Confessioni.html">Confessioni</a></p>
+<p><a href="LECTIO/DiarioFaustina.html">DiarioFaustina</a></p>
+<p><a href="LECTIO/NuovaFilocalia.html">NuovaFilocalia</a></p>
+</div>
+<h1 onclick="fisa(this)" class="voce">PRAXIS</h1>
+<div id="PRAXIS" class="elenco">
+<p><a href="PRAXIS/Compieta.html">Compieta</a></p>
+<p><a href="PRAXIS/CorMeum.html">CorMeum</a></p>
+<p><a href="PRAXIS/Detti.html">Detti</a></p>
+<p><a href="PRAXIS/Filocalia.html">Filocalia</a></p>
+<p><a href="PRAXIS/Imitazione.html">Imitazione</a></p>
+<p><a href="PRAXIS/Motus.html">Motus</a></p>
+<p><a href="PRAXIS/Oremus.html">Oremus</a></p>
+<p><a href="PRAXIS/Rosarium.html">Rosarium</a></p>
+<p><a href="PRAXIS/Spiritus.html">Spiritus</a></p>
+<p><a href="PRAXIS/Tau.html">Tau</a></p>
+<p><a href="PRAXIS/XBIBBIA.html">XBIBBIA</a></p>
+</div>
+<h1 onclick="fisa(this)" class="voce">QUID</h1>
+<div id="QUID" class="elenco">
+<p><a href="QUID/Aridiamo.html">Aridiamo</a></p>
+<p><a href="QUID/AutoriVari1.html">AutoriVari1</a></p>
+<p><a href="QUID/AutoriVari2.html">AutoriVari2</a></p>
+<p><a href="QUID/Eileen_Caddy.html">Eileen_Caddy</a></p>
+<p><a href="QUID/Haiga.html">Haiga</a></p>
+<p><a href="QUID/Links.html">Links</a></p>
+<p><a href="QUID/MidiPlay.html">MidiPlay</a></p>
+<p><a href="QUID/MyCats.html">MyCats</a></p>
+<p><a href="QUID/PILLS_AFORISMI.html">PILLS_AFORISMI</a></p>
+<p><a href="QUID/PILLS_GAIAS.html">PILLS_GAIAS</a></p>
+<p><a href="QUID/Spinoza.html">Spinoza</a></p>
+<p><a href="QUID/Stampa1.html">Stampa1</a></p>
+<p><a href="QUID/TEST1.html">TEST1</a></p>
+<p><a href="QUID/TEST2.html">TEST2</a></p>
+<p><a href="QUID/TRADING.html">TRADING</a></p>
+<p><a href="QUID/Visus1.html">Visus1</a></p>
+<p><a href="QUID/Visus2.html">Visus2</a></p>
+<p><a href="QUID/Vocemia.html">Vocemia</a></p>
+</div>
+<h1 onclick="fisa(this)" class="voce">SOPHIA</h1>
+<div id="SOPHIA" class="elenco">
+<p><a href="SOPHIA/101_Storie_Zen.html">101_Storie_Zen</a></p>
+<p><a href="SOPHIA/AivanhovPills.html">AivanhovPills</a></p>
+<p><a href="SOPHIA/AnimaCal.html">AnimaCal</a></p>
+<p><a href="SOPHIA/AnimaCalQ1.html">AnimaCalQ1</a></p>
+<p><a href="SOPHIA/AnimaCalQ2.html">AnimaCalQ2</a></p>
+<p><a href="SOPHIA/AnimaCalQ3.html">AnimaCalQ3</a></p>
+<p><a href="SOPHIA/AnimaCalQ4.html">AnimaCalQ4</a></p>
+<p><a href="SOPHIA/BhagavadGita.html">BhagavadGita</a></p>
+<p><a href="SOPHIA/BibbiaEdu.html">BibbiaEdu</a></p>
+<p><a href="SOPHIA/Clement_PadreNostro.html">Clement_PadreNostro</a></p>
+<p><a href="SOPHIA/Dhammapada.html">Dhammapada</a></p>
+<p><a href="SOPHIA/Eileen_Caddy.html">Eileen_Caddy</a></p>
+<p><a href="SOPHIA/Emily_Dickinson.html">Emily_Dickinson</a></p>
+<p><a href="SOPHIA/Gitanjaliz.html">Gitanjaliz</a></p>
+<p><a href="SOPHIA/Guida_indiana.html">Guida_indiana</a></p>
+<p><a href="SOPHIA/Homo_Universalis.html">Homo_Universalis</a></p>
+<p><a href="SOPHIA/Incontro_con_Gesu.html">Incontro_con_Gesu</a></p>
+<p><a href="SOPHIA/Kahlil_Gibran.html">Kahlil_Gibran</a></p>
+<p><a href="SOPHIA/KOAN.html">KOAN</a></p>
+<p><a href="SOPHIA/Mantra.html">Mantra</a></p>
+<p><a href="SOPHIA/Mathnawi1.html">Mathnawi1</a></p>
+<p><a href="SOPHIA/PILLS_ANTROPOS.html">PILLS_ANTROPOS</a></p>
+<p><a href="SOPHIA/PILLS_KHAYYAM.html">PILLS_KHAYYAM</a></p>
+<p><a href="SOPHIA/PILLS_KRISHNAMURTI.html">PILLS_KRISHNAMURTI</a></p>
+<p><a href="SOPHIA/PILLS_TAO.html">PILLS_TAO</a></p>
+<p><a href="SOPHIA/POETARIO.html">POETARIO</a></p>
+<p><a href="SOPHIA/Poetica.html">Poetica</a></p>
+<p><a href="SOPHIA/TAO365.html">TAO365</a></p>
+<p><a href="SOPHIA/TaoTheChing.html">TaoTheChing</a></p>
+<p><a href="SOPHIA/Turoldo.html">Turoldo</a></p>
+<p><a href="SOPHIA/TuroldoPane.html">TuroldoPane</a></p>
+<p><a href="SOPHIA/turoldoUltime.html">turoldoUltime</a></p>
+<p><a href="SOPHIA/Upanishad.html">Upanishad</a></p>
+<p><a href="SOPHIA/VIVIZEN.html">VIVIZEN</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="inner">Footer</div>
+  </div>
+</div>
+
+
+</body>
+</html> 

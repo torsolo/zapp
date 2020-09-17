@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
+<title>CUORE</title>
+<style>
+html, body {
+  height:100%;
+  min-height:100%;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font:italic 24pt georgia;
+  background: black;
+  text-align:center;
+  background-image:url('Scriptum/Motus.jpg');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+}
+sup {
+color:salmon;
+vertical-align: 0.6em;
+font-size: 0.6em;
+}
+
+.StickyHeader, .StickyFooter {
+  flex: 0 0 auto;
+  color:whitesmoke;
+  padding:8px;
+  cursor:pointer;
+}
+.StickyContent {
+	flex: 1 1 auto;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color:gold;
+}
+.buio {display:none}
+</style>
+<script type="text/javascript">
+function cambia(n) {
+	if (n==1) bell.play();
+	var db = document.getElementById("dbase");
+	var tutti = db.getElementsByTagName("p");
+	n = Math.floor(Math.random() * tutti.length);
+	var v = tutti[n].innerHTML;
+	v = v.replace(/\//g, '<br>');
+	v = v.replace(" (", "<br><sup>(");
+	v = v + "</sup>";
+	document.getElementById("verso").innerHTML = v;
+	db = document.getElementById("dbis");
+	var tutti = db.getElementsByTagName("p");
+	n = Math.floor(Math.random() * tutti.length);
+	v = tutti[n].innerHTML;
+	v = v.replace(/\//g, '<br>');
+	document.getElementById("giacula").innerHTML = v;
+	var m = document.getElementById("madre");
+	m.innerHTML += "* ";
+	conta++;
+}
+function quanti() {
+	document.getElementById("verso").innerHTML = conta;
+}
+conta = 0;
+bell = new Audio('../audiobell.mp3');
+document.onreadystatechange = function () {
+	if (document.readyState == "complete") {
+		return;
+	}
+}
+</script>
+
+</head>
+<body>
+
+<div id="madre" class="StickyHeader" onclick="cambia(1)">Madre di Dio<br>Angeli<br>Santi<br></div>
+
+<div class="StickyContent"><div id="verso" ondblclick="quanti()">abbiate pietà<br>di me peccatore</div></div>
+
+<div id="giacula" class="StickyFooter" onclick="cambia(2)">Regina della pace<br>... prega per noi ...<br>Madre della redenzione</div>
+
+<div id="dbase" class="buio">
+

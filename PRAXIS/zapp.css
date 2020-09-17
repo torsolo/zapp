@@ -1,0 +1,240 @@
+html {
+width:100%;
+height:100%;
+margin:0;
+}
+
+
+body {
+background-color:black;
+font-family: "Droid Serif", Times, serif;
+font-size:16pt;
+margin:0;
+padding:0;
+color:whitesmoke;
+word-wrap:break-word;
+}
+
+a {text-decoration:none; color:cyan;}
+
+h1,h2,h3,h4,h5 {color:lime; margin-block-end:0;}
+
+u {background-color:yellow; color:black;}
+
+ul {padding-left:20px;}
+
+b {color:salmon}
+
+i {color:coral}
+
+sup {
+color:firebrick;
+vertical-align: 0.6em;
+font-size: 0.6em;
+font-style: normal;
+}
+
+.buio {
+    display:none;
+    border:1px solid red;
+    padding:4px;
+}
+
+
+.tuno {
+    border: 1px solid red;
+    margin:2px;
+    padding:6px;
+    font-family: "Droid Serif", Times, serif;
+    font-size:18pt;
+    font-style:italic;
+    text-align:justify;
+	color:gold;
+}
+
+.iuno {
+    height:50px;
+    font-family: monospace;
+    font-size:18pt;
+    font-weight:bold;
+    text-align:center;
+    background-color:black;
+    color: yellow;
+    border: 1px solid grey;
+    cursor:pointer;
+}
+
+.yv {
+    display:visible;
+    font-family: "Droid Serif", Times, serif;
+    font-size:24pt;
+    color: yellow;
+}
+
+.nv {
+    display:none;
+}
+
+
+.zapp-menu-top {
+font-family: Tahoma, Geneva, sans-serif;
+}
+
+.zapp-menu-box {
+display:none; 
+font-size:22pt; 
+text-align:center; 
+padding:20px;
+border:2px solid red;
+}
+
+
+.abcde {
+float:left;
+border:1px solid red;
+padding:8px;
+margin:8px;
+}
+
+.fghil {
+width:100%;
+min-height:200px;
+font: bold 24pt monospace;
+}
+
+
+#content {
+visibility:hidden;
+margin:0;
+padding:0;
+text-align:center;
+}
+
+#barratesta {
+    position:fixed;
+    width:100%;
+    display:inline-block;
+    white-space: nowrap;
+    overflow-x: auto;
+	top:0;
+	background-color:#4e0606;
+	padding:6px;
+	text-align:center; 
+    z-index:1;
+	
+}
+
+#barratesta::-webkit-scrollbar {
+  display: none;
+}
+
+#tools {
+    position:absolute;
+	top:100px;
+    left:10px;
+	width:85%;
+    padding:6px;
+	font: bold 24pt monospace;
+	background-color:rgb(1,1,80);
+    text-align: center;
+	border:2px solid cyan;
+	visibility:hidden;
+	z-index:1;
+}
+
+#note {
+	background-color: #606A80;
+	color: yellow;
+}
+
+#corpo {
+	position:relative;
+	display:inline-block;
+	background-image:url('sfondouno.png');
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: cover;
+	border:1px solid #404040;
+    padding:6px;
+    font-family: "Droid Serif", Times, sans-serif;
+    font-size:18pt;
+    text-align: justify;
+}
+
+#albero {
+    position:absolute;
+	top:90px;
+	left:4px;
+    max-height: 600px;
+    overflow:auto;
+    padding:4px;
+	background-color:black;
+	color:cyan;
+	font-family: Arial, Times, serif;
+    font-size:16pt;
+	border:4px solid yellow;
+	visibility:hidden;
+	z-index:1;
+	text-align:left;
+    cursor:pointer;
+}
+
+.bottone {
+    display:inline;
+    min-width: 75px;
+    margin-right:8px;
+    text-align:center;
+    font-family: Verdana, Times, serif;
+	font-size:18pt;
+    font-weight:bold;
+    background-color:#054805;
+    color: gold;
+    border: 1px solid gray;
+    cursor:pointer;
+}
+
+.bottonepin {
+    display:inline;
+    min-width: 100px;
+	max-width: 300px;
+	min-height: 75px;
+    margin-right:8px;
+    text-align:center;
+    font-family: Verdana, Times, serif;
+	font-size:32pt;
+    font-weight:bold;
+    background-color:#054805;
+    color: gold;
+    border: 1px solid gray;
+    cursor:pointer;
+}
+
+#PIN0 {
+    text-align:center;
+    font-family: monospace;
+	font-size:28pt;
+    font-weight:bold;
+    color: gold;
+    cursor:pointer;
+}
+
+
+
+
+
+/* SEGUE ZDWPILLS */
+
+
+#XX {cursor:pointer;}
+
+#warea {
+    margin-top:42px;
+    width:100%;
+	min-height:1024px;
+}
+
+#sopra {
+    display: table; 
+    margin: 0 auto;
+}
+

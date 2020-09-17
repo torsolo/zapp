@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
+<style>
+
+</style>
+<title>VISUS</title>
+</head>
+<body style="font-family:Verdana; margin:10px; background-color:whitesmoke;">
+
+<div align="center">
+<table border="1" cellpadding="4" width="100%">
+	<tr>
+		<td onclick="update(-4)" align="center">SUB</td>
+		<td id="big" align="center"></td>
+		<td onclick="update(4)" align="center">ADD</td>
+	</tr>
+</table>
+</div>
+
+<div align="center" onclick="abc()">
+<table border="0" cellpadding="2">
+<tr><td id="Q1" class="abc" align="center">A</td></tr>
+<tr><td id="Q2" class="abc" align="center">B</td></tr>
+<tr><td id="Q3" class="abc" align="center">C</td></tr>
+<tr><td id="Q4" class="abc" align="center">D</td></tr>
+<tr><td id="Q5" class="abc" align="center">E</td></tr>
+</table>
+</div>
+
+<script type="text/javascript">
+var big = 24;
+var vdl = "ABCDE";
+
+function abc() {
+	var l = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
+	var n = l.length;
+   vdl="";
+   for ( var i = 0; i < 5; i++ ) {
+      vdl += l.charAt(Math.floor(Math.random() * n));
+   }
+	update(0);
+}
+
+
+function update(r) {
+    var elements = document.getElementsByClassName('abc');
+    big+=r;
+	for(var i = 0; i < elements.length; i++){
+		elements[i].style.fontSize = big+"pt";
+		elements[i].innerHTML = vdl.substr(i,1);
+	}
+	document.getElementById("big").innerHTML=big;
+}
+
+update(0);
+
+</script>
+
+</p>
+
+</body>
+
+</html>

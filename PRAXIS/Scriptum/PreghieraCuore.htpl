@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
+<title>MOTUS</title>
+<style>
+
+html, body {
+	display:flex;
+	flex-direction:column;
+	height:100%;
+	align-items:center;   
+	background: black;
+	font:italic 24pt georgia;
+	background-image:url('Scriptum/PreghieraCuore.jpg');
+	background-repeat: no-repeat;
+	background-position: center; 
+	background-size: cover;
+}
+
+#container {
+	flex:1 1 auto;
+	display:flex;
+	flex-direction: column; 
+	padding:20px;
+}
+
+#testa, #piede {
+  flex: 0 0 auto;
+  color:whitesmoke;
+  cursor:pointer;
+  text-align:center;
+}
+
+#centro {
+	flex: 1 1 auto;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	color:gold;
+	text-align:center;
+}
+
+sup {
+	color:salmon;
+	vertical-align: 0.6em;
+	font-size: 0.6em;
+}
+
+.buio {display:none}
+
+</style>
+
+<script type="text/javascript">
+function cambia(n) {
+	if (n==1) bell.play();
+	var db = document.getElementById("dbase");
+	var tutti = db.getElementsByTagName("p");
+	n = Math.floor(Math.random() * tutti.length);
+	var v = tutti[n].innerHTML;
+	v = v.replace(/\//g, '<br>');
+	v = v.replace(" (", "<br><sup>(");
+	v = v + "</sup>";
+	document.getElementById("centroin").innerHTML = v;
+	db = document.getElementById("dbis");
+	var m = document.getElementById("testain");
+	m.innerHTML += "* ";
+}
+
+function azzera() {
+	document.getElementById("centroin").innerHTML = "";
+	document.getElementById("piedein").innerHTML = "";
+	var e = document.getElementById("testain");
+	var h = e.innerHTML.replace(/\*/g,"");
+	e.innerHTML = h;
+}
+
+bell = new Audio('../audiobell.mp3');
+
+document.onreadystatechange = function () {
+	if (document.readyState == "complete") {
+		return;
+	}
+}
+</script>
+
+</head>
+<body>
+
+<div id="container"> 
+<div id="testa">
+	<div id="testain" onclick="cambia(1)">Signore Gesù Cristo<br>Figlio di Dio<br>Salvatore<br></div>
+</div>
+<div id="centro">
+	<div id="centroin" ondblclick="azzera()">abbi pietà<br>di me peccatore</div>
+</div>
+<div id="piede">
+	<div id="piedein" onclick="cambia(2)">Gloria al Padre, al Figlio<br>e allo Spirito Santo<br>† Amen †</div>
+</div>
+</div> <!-- container -->
+
+<div id="dbase" class="buio">
+

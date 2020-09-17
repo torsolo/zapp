@@ -1,0 +1,20 @@
+﻿<html>
+<head>
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="XBIBBIA.css" />
+<script type="text/javascript" src="XBIBBIA.js"></script>
+<title>VERBUM</title>
+</head>
+<body>
+<div id="sopra" class="testa">
+<table><tr>
+<td><input id="libro"    type="text" size="4" value="X" readonly onclick="books()"></td>
+<td><input id="capitolo" type="text" size="2" value="1"></td>
+<td><input id="verso"    type="text" size="2" value=""></td>
+<td><input id="trova"    type="submit" value="TROVA" onclick="trova()"></td>
+<td><input id="avanti"   type="submit" value=">>>" onclick="next()"></td>
+</tr></table>
+</div>
+<div id="leggo" class="centro">LEGGO</div>
+<div id="sotto" class="piede">Verbum caro factum est</div>
+<div id="verbum">
