@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="../pills.css" />
+<script type="text/javascript" src="../pills.js"></script>
+<title>ZAPP</title>
+</head>
+
+<body>
+
+<div id="dbase" class="buio">
+
+<div id="DB0">
+<p><a href="../index.html">ZAPP</a></p>
+<p onclick="cambia(1)">ETF OGGI</p>
+<p onclick="cambia(2)">BTP OGGI</p>
+<p onclick="cambia(3)">BTP 3MM</p>
+<p onclick="cambia(4)">DJI 3MM</p>
+<p onclick="cambia(5)">FTSE-MIB</p>
+<p onclick="cambia(6)">EURONEXT</p>
+<p onclick="cambia(7)">SP500</p>
+</div>
+
+<div id="D1" onclick="cambia(0)"><p>ETF OGGI</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=BIT^BTP2S&t=23&p=0" width="400" height="240"></div>
+<div id="D2" onclick="cambia(0)"><p>BTP OGGI</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=MOT%5E789311&t=23&p=0" width="400" height="240"></div>
+<div id="D3" onclick="cambia(0)"><p>BTP 3MM</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=MOT%5E789311&t=23&p=2" width="400" height="240"></div>
+<div id="D4" onclick="cambia(0)"><p>DJI 3MM</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=DJI%5EI%5CDJI&t=23&p=1" width="400" height="240"></div>
+<div id="D5" onclick="cambia(0)"><p>FTSE-MIB</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=BITI^FTSEMIB&p=0&t=35" width="400" height="240"></div>
+<div id="D6" onclick="cambia(0)"><p>EURONEXT</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=EU^N100&p=0&t=35" width="400" height="240"></div>
+<div id="D7" onclick="cambia(0)"><p>SP500</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=SPI^SP500&p=0&t=35" width="400" height="240"></div>
+
+</div>
+
+
+<script type="text/javascript">
+
+var custom = function () {
+document.getElementById("titolo").innerHTML="Sterco";
+document.getElementById("verso").style.font="normal 20pt monospace";
+var corpo = document.getElementById("corpo");
+corpo.style.textAlign="center";
+cambia(0);
+}
+
+var subuno = function(e) {
+return;
+}
+
+var subdue = function() {
+return;
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
+<title>VISUS</title>
+</head>
+<body style="font-family: Georgia;margin:40px;">
+<table border="0" width="100%" cellpadding="10" style="">
+	<tr><td id="sopra" onclick="cambia(1)" bgcolor="#C0C0C0">&nbsp;</td></tr>
+	<tr><td id="testo" onclick="cambia(0)" style="font-family: Georgia;text-align: justify;">&nbsp;</td></tr>
+	<tr><td id="sotto" onclick="cambia(-1)" bgcolor="#C0C0C0">&nbsp;</td></tr>
+</table>
+<p></p>
+<div id="testo1" style="visibility:hidden;border:1px solid red;">
+SONETTO N. 47 / Tra il mio occhio e il mio cuore è fatto un accordo / e ognuno rende ora all&#39;altro buoni servigi: / quando il mio occhio è affamato d&#39;uno sguardo, / o il cuore innamorato soffoca nei sospiri, / allora l&#39;occhio si pasce del ritratto del mio amore / e al dipinto banchetto invita il cuore; / un&#39;altra volta, il mio occhio è ospite del cuore / e dei suoi pensieri d&#39;amore condivide una parte. / Così, o per il tuo ritratto o per il mio amore, / sebbene lontano, tu sei sempre presente a me; / perché muoverti non puoi più in là dei miei pensieri, / ed io sto sempre con essi, ed essi con te; / o se dormono, il tuo ritratto alla mia vista / sveglia il mio cuore, per la delizia del cuore e dell&#39;occhio.</div><p></p>
+<div id="testo2" style="visibility:hidden;border:1px solid red;">
+SONETTO N. 18 / Dovrò paragonarti a un giorno d&#39;estate? / Tu sei più amabile e più temperato: / rudi venti scuotono i diletti boccioli del maggio / e l&#39;affitto dell&#39;estate ha durata troppo breve; / talvolta troppo caldo l&#39;occhio del cielo splende / e spesso l&#39;oro del suo volto è offuscato; / e ogni bellezza dalla bellezza prima o poi declina, / spogliata dal caso o dal mutevole corso della natura. / Ma la tua eterna estate non dovrà svanire / né perdere possesso di quella bellezza che è tua, / né la morte si vanterà che tu vaghi nella sua ombra, / quando in versi eterni tu crescerai nel tempo. / Finché uomini respireranno o occhi vedranno, / fin tanto vivrà questa poesia, e questa darà vita a te.</div><p></p>
+<div id="testo3" style="visibility:hidden;border:1px solid red;">
+SONETTO N. 24 / 
+Il mio occhio ha fatto il pittore e ha tracciato / la forma della tua bellezza sulla tavola del mio cuore. / Il mio corpo è la cornice in cui essa è tenuta, / e, fatta in prospettiva, essa è la miglior arte del pittore: / perché attraverso il pittore devi vedere la sua maestrìa, / per scoprire dove sia la tua fedele immagine dipinta, / che sempre pende nella bottega del mio petto, / nelle cui finestre si specchia il vetro dei tuoi occhi: / Ora vedi che bei servigi gli occhi hanno reso agli occhi: / i miei hanno ritratto la tua figura, e i tuoi per me / sono finestre sul mio petto, attraverso cui il sole / si diletta a sbirciare, per ammirare, là dentro, te. / Ma agli occhi manca l&#39;abilità che dia grazia alla loro arte: / ritraggono solo ciò che vedono, non conoscono il cuore.</div><p></p>
+<div id="testo4" style="visibility:hidden;border:1px solid red">
+SONETTO N. 37 / Come un padre decrepito prende diletto / vedendo il suo svelto figlio fare atti di giovinezza, / così io, storpiato dal durissimo dispetto della Fortuna, / traggo ogni mio conforto dal tuo valore e onore; / perché, siano bellezza, nascita, o ricchezza o intelligenza, / o una di tutte queste, o tutte, o altre / titolate a loro modo, a regnare incoronate in te, / io innesto il mio amore in questo ceppo. / Allora non sono storpio, povero, o spregiato, / quando quest&#39;ombra offre tale sostanza / che nella tua abbondanza io mi soddisfo / e vivo di una parte di tutta la tua gloria. / Il meglio che ci sia, quel meglio lo desidero in te; / questo desidero l&#39;ho io, dieci volte allora felice me.</div><p></p>
+<div id="testo5" style="visibility:hidden;border:1px solid red">
+SONETTO N. 43 / Quando più chiudo gli occhi, allora meglio vedono, / perché per tutto il giorno guardano cose indegne di nota; / ma quando dormo, essi nei sogni scorgono te, / e, oscuramente luminosi, sono luminosamente diretti nell&#39;oscuro. / Allora tu, la cui ombra le ombre illumina, / quale spettacolo felice formerebbe la forma della tua ombra / al chiaro giorno con la tua assai più chiara luce, / quando ad occhi senza vista la tua ombra così splende! / Quanto, dico, benedetti sarebbero i miei occhi, / guardando a te nel giorno vivente, / quando nella morta notte la tua bella ombra imperfetta, / attraverso il greve sonno, su ciechi occhi posa! / Tutti i giorni sono notti a vedersi, finché non vedo te, / e le notti giorni luminosi, quando i sogni ti mostrano a me.</div><p>
+
+<script type="text/javascript">
+function cambia(x) {
+zoom+=x;
+var idtesto = Math.floor((Math.random() * 5) + 1);
+if (zoom>14) zoom=4;
+if (zoom<4) zoom=14;
+var nome = "testo"+idtesto;
+document.getElementById("testo").innerHTML=document.getElementById(nome).innerHTML;
+document.getElementById("testo").style.fontSize=zoom+"pt";
+document.getElementById("sopra").innerHTML=zoom;
+document.getElementById("sotto").innerHTML=zoom;
+}
+var zoom = 14;
+cambia(0);
+</script>
+
+</p>
+
+</body>
+
+</html>

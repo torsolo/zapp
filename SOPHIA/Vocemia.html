@@ -1,0 +1,3531 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="../zapp.css" />
+<script type="text/javascript" src="../zapp.js"></script>
+<title>READ</title>
+</head>
+<body id="spr">
+<div id="content">
+<div id="barratesta"></div>
+<div id="tools">
+<table id="toolgrid" border="0" width="100%" cellpadding="4">
+    <tr>
+        <td align="center">
+            <input id="cuno" type="color" name="head" value="#202020" style="height:40px">
+        </td>
+        <td align="center">
+            <input id="cdue" type="color" name="head" value="#F5F5F5" style="height:40px">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="goto" type="button" class="bottone" value="TOP" onclick="gotop()">
+         </td>
+        <td align="center">
+            <input id="ics" type="button" class="bottone" value="HIDE" onclick="chiudimi()">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="book" type="button" class="bottone" value="SALVA" onclick="salva()">
+        </td>
+        <td align="center">
+			<input id="vuoto" type="button" class="bottone" value="VUOTO" onclick="tree()">
+		</td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="book" type="button" class="bottone" value="LEGGI" onclick="leggi()">
+        </td>
+        <td align="center">
+            <input id="zoom" type="button" class="bottone" value="ZOOM" onclick="spr_zoom()">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="provauno" type="button" class="bottone" value="TREE" onclick="htotree()">
+        </td>
+        <td align="center">
+            <input id="provadue" type="button" class="bottone" value="TOPX" onclick="provadue()">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="coloreuno" type="button" class="bottone" value="BACK" onclick="coloresfondo()">
+        </td>
+        <td align="center">
+            <input id="coloredue" type="button" class="bottone" value="TEXT" onclick="coloretesto()">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <input id="next1" type="button" class="bottone" value="RLS" onclick="rls()">
+        </td>
+        <td align="center">
+            <input id="next2" type="button" class="bottone" value="FONT" onclick="cara()">
+        </td>
+    </tr>
+</table>
+</div>
+<div id="albero">T.o.c.</div>
+<div id="corpo">        <!--<h1>Regalo</h1>-->
+        <h1>Regalo</h1>
+
+<p>
+Il regalo senza fiocco
+</p>
+
+<p>
+PIOVE
+</p>
+
+<p>
+Goccia a goccia cade la pioggia<br>
+sulla superficie dell'arido suolo<br>
+e sembra segnare la sua fine<br>
+sprofondando o rimbalzando spaccandosi.<br>
+Termina il meraviglioso vagar nell'aria libero,<br>
+lo strano gioco che si ripete<br>
+quasi fosse compiacimento questa sorte,<br>
+ma forse è solo solidarietà.
+</p>
+
+<p>
+PENSIERO
+</p>
+
+<p>
+Quando lo stesso pensiero accompagna il tempo<br>
+di tutto ciò che facciamo, allora,<br>
+non si può parlare solo di ricordo.<br>
+Il coraggio aumenta,<br>
+la compagnia spirituale ci da forza<br>
+e la fantasia ci aiuta a credere.<br>
+La vita è come un fiume in discesa<br>
+che scorre in un letto già designato<br>
+e si getta nell'immenso mare dell'eternità.<br>
+Noi siamo delle piccole gocce<br>
+che rotolano nella forza della tempesta.
+</p>
+
+<p>
+DEDICA
+</p>
+
+<p>
+La tua personalità non ha più raffigurazione<br>
+ma pur sempre un modello rimane<br>
+delle tue virtù nella mente di chi ti ama.<br>
+C'è chi ti ringrazia, chi ti compiange e chi ti deride,<br>
+ma la giustizia che conta non è quella dell'uomo,<br>
+l'anima non ha un'immagine e si nutre solo di fede.<br>
+Volere bene è la risposta al tuo sguardo nel pensiero<br>
+così grande da colmare l'indifferenza<br>
+di questo mondo che ci nasconde.<br>
+Siamo tutti sullo stesso piano<br>
+a godere la tua presenza nella fantasia<br>
+per sperare nella tua pace.<br>
+Quello che ha valore deve emergere,<br>
+non importa quale sia il prezzo del distacco<br>
+ognuno sceglie la propria ruota della fortuna.
+</p>
+
+<p>
+SOLITUDINE
+</p>
+
+<p>
+Solo una musica per compagnia,<br>
+il resto non ha forma. E` un mondo cieco<br>
+che non sente e non dice niente,<br>
+è un pensiero che passa e ritorna liberamente.<br>
+Continuo a perdermi nella sua folle corsa,<br>
+ma sento il bisogno di seguirlo<br>
+per parlare con la mia anima solitaria<br>
+in questa terra di sconosciuti.<br>
+Ho gettato la maschera nel pozzo e,<br>
+nessuno mi riconosce più o fa finta,<br>
+nella ricerca di questo pensiero dentro me<br>
+come espressione del mio amore.<br>
+Non basta chiudere gli occhi<br>
+per non vedere più la luce,<br>
+è così forte che non c'e buio senza colore.
+</p>
+
+<p>
+NOTTE SERENA
+</p>
+
+<p>
+La notte è un mondo piccolo piccolo,<br>
+sentirsi felici in mezzo al globo<br>
+come padroni della natura e del tempo.<br>
+Nella mia anima non è mai buio,<br>
+c'è un pensiero intoccabile<br>
+una stella che si è accesa troppo in fretta<br>
+e mi sta bruciando con il suo calore.<br>
+La notte è una verità che fa paura<br>
+più di una guerra, ma non ci sono armi<br>
+e nemici da combattere.<br>
+La vittoria è lontana quanto più si cerca di scappare<br>
+e finché c'è un sole che sorge,<br>
+la vita corre appresso la luce.
+</p>
+
+<p>
+SOFFIO
+</p>
+
+<p>
+Le cose belle sono molto fragili.<br>
+Per farle durare bisogna sfiorarle con una piuma,<br>
+sono come un respiro che soffia sulla vita<br>
+senza che l'uomo se ne accorga.
+</p>
+
+<p>
+LA PORTA APERTA
+</p>
+
+<p>
+Il tuo sguardo è una mancanza,<br>
+come i muri di una stanza vuota.<br>
+Ci vuole una vita per trovare la porta<br>
+da cui siamo entrati.<br>
+Non c'è forza o grido superiore,<br>
+salvare l'anima è la chiave per<br>
+la stanza accanto.
+</p>
+
+<p>
+URLO DI RABBIA
+</p>
+
+<p>
+Tu, tu che mi punti quel dito<br>
+non accusarmi senza spiegare le mie colpe.<br>
+Indicami se puoi la strada per trovarti,<br>
+è un gioco pericoloso il nostro.<br>
+Io non volevo scappare e<br>
+aspettavo che mi cercassi tu,<br>
+invece ci siamo persi entrambi in noi stessi.<br>
+Ora che ho capito la tua scelta<br>
+non posso sopportare la mia ignoranza e<br>
+sei diventato improvvisamente la mia rabbia<br>
+e la mia speranza di fede.
+</p>
+
+<p>
+LA PRIMA VETTA
+</p>
+
+<p>
+Dolce aria di montagna,<br>
+fai gelare le gocce di sudore<br>
+sulla mia pelle infuocata.<br>
+Forse c'è qualche occhio di vetro<br>
+che mi scruta dalla cima più alta<br>
+e chissà quale pensiero susciterà<br>
+il mio sorriso solitario.<br>
+Sei fantastico Creatore dell'universo,<br>
+ti diverti con questo cielo azzurro all'infinito,<br>
+i pendii e le pianure musicate dal volo<br>
+e dal canto degli uccelli.<br>
+Ti ringrazio per questi magici momenti<br>
+e aspetto che una rondine<br>
+si posi sul mio braccio, per<br>
+dedicarmi il suo cinguettio.
+</p>
+
+<p>
+IL PESO DELLA VITA
+</p>
+
+<p>
+Un pensiero che vale tutti,<br>
+un dolore che sa di mistero<br>
+il battito del mio cuore austero.
+</p>
+
+<p>
+NATURA VIVA
+</p>
+
+<p>
+Il sole cala e lascia posto<br>
+alla faccia sorridente della luna;<br>
+com'è bella la natura,<br>
+è così felice del tempo che passa,<br>
+con quanta pazienza si arrende<br>
+ai violenti attacchi e,<br>
+come una madre serena continua<br>
+a profumare e colorare di gioia<br>
+l'innocenza dei suoi figli.<br>
+Ahimè!. Loro non sanno di essere fratelli<br>
+e si sentono orfani come gli ultimi rami<br>
+di una quercia che vogliono crescere<br>
+per catturare l'ultimo sole.
+</p>
+
+<p>
+VOLO LIBERO
+</p>
+
+<p>
+Adagiato nel vuoto, lontano senza emozioni,<br>
+il momento migliore in pace con lo spirito.<br>
+Un abbraccio soave che mi avvolge di piacere,<br>
+un respiro che soffia sulla mia pelle.<br>
+L'amore più bello è dentro di me,<br>
+l'amore che non finisce,<br>
+i pensieri senza suono.
+</p>
+
+<p>
+LA FRETTA DI ESSERE
+</p>
+
+<p>
+Credere per sperare<br>
+aspettare per non sbagliare<br>
+la fede è un gesto da rispettare.<br>
+Viaggiare è il mestiere del pensare,<br>
+scoprire l'anima e la pace<br>
+la mia mano nella tua.<br>
+Dare tutto per amore,<br>
+ma non è il corpo il regalo<br>
+per dimenticare di tornare.
+</p>
+
+<p>
+ESPLOSIONE
+</p>
+
+<p>
+Il silenzio cala sulle speranze,<br>
+sentimento senza volto,<br>
+pensiero che schiude l'anima<br>
+e fa tremare le mie membra.<br>
+Gli orizzonti si allargano,<br>
+le sensazioni scompaiono.<br>
+Un saluto senza addio<br>
+come un messaggio che ritorna muto<br>
+dritto al cuore.
+</p>
+
+<p>
+COSI' SIA
+</p>
+
+<p>
+Mio Creatore non oso darti un nome<br>
+perché conosco solo la tua fede.<br>
+Tu mi hai insegnato a credere nell'amore,<br>
+ho scoperto che non è facile<br>
+ma spero si conservi nella mia anima<br>
+la speranza della pace,<br>
+tanto da concedermi con gioia,<br>
+al tuo volere giusto ed eterno.
+</p>
+
+<p>
+SI, PER ESEMPIO
+</p>
+
+<p>
+La vita è la filosofia del povero;<br>
+s'impara con l'esperienza.
+</p>
+
+<p>
+NO, PER ESEMPIO
+</p>
+
+<p>
+L'orgoglio è una pianta selvatica che attecchisce ovunque,<br>
+chi desidera il suo rigoglio gli da concime<br>
+e si avvelena dell'amarezza delle sue radici.
+</p>
+
+<p>
+STRANO MA VERO
+</p>
+
+<p>
+Se tutti gli uomini si volessero bene,<br>
+chi saprà mai cos'è l'amore?.
+</p>
+
+<p>
+IL PICCOLO UOMO
+</p>
+
+<p>
+L'uomo è l'essere più debole e solo della natura,<br>
+per resistere a se stesso elimina ciò che gli sta intorno.
+</p>
+
+<p>
+RIFLESSIONE SILENZIOSA
+</p>
+
+<p>
+Non v'è dì che non pensi ai miei errori,<br>
+quale confessione può togliere i dolori?.<br>
+Ogni dubbio del mio bene e del mio male<br>
+mi tortura perché non conosco il suo finale.<br>
+Gli auguri sono per i festeggiati,<br>
+il mio perdono è per i destinati.<br>
+Con orgoglio sono partito,<br>
+di un'amicizia mi sono rafforzato,<br>
+ma l'inganno mi ha tradito.<br>
+Come un orfano sto aspettando<br>
+che il destino mi raggiunga<br>
+ed intanto, passo il tempo amando.
+</p>
+
+<p>
+LIBERTA' SILENZIOSA
+</p>
+
+<p>
+Oh! Cielo notturno, limpido e calmo,<br>
+i miei occhi ed il mio animo<br>
+catturano la fiducia del tuo infinito,<br>
+seguono i segnali delle tue stelle,<br>
+sperano sempre nella tua mitezza<br>
+sopra il mio sguardo vuoto e aperto.<br>
+Il cuore s'addolcisce alla poesia d'amore,<br>
+la mente si sazia del suo pensiero,<br>
+l'ira e la vergogna si allontanano dall'anima.
+</p>
+
+<p>
+CONFORTO
+</p>
+
+<p>
+Le lacrime scendono sul seno della mamma<br>
+che non vede più gli occhi della vita,<br>
+il gioiello scomparso ha conquistato il cuore<br>
+e brilla di amore senza misura.<br>
+Una madre non sbaglia mai perché<br>
+dona speranza al mondo e di fede<br>
+protegge il divino Figlio dell'amore.
+</p>
+
+<p>
+PAURA DELLA PACE
+</p>
+
+<p>
+Immobile è la pazienza della vita<br>
+nel silenzio della veglia solitaria,<br>
+dei pensieri che non si vedono.<br>
+La pace si posa sulle paure<br>
+e cambia ogni cosa nella sua immagine.<br>
+Chiniamo il capo alla grazia infinita,<br>
+al magnifico potere dell'amore.
+</p>
+
+<p>
+VICINO ALLA META
+</p>
+
+<p>
+Io sono dove non mi vedo,<br>
+due ali di un sol essere<br>
+sopra la verità trasparente.
+</p>
+
+<p>
+LA SETTA DELL'AMORE
+</p>
+
+<p>
+Sul pavimento mi son prostrato<br>
+per sentire il peso del pensiero conquistato;<br>
+non è dolore o vergogna, il freddo desiderio<br>
+della pace senza menzogna.<br>
+Un canto risuona per accompagnarmi:<br>
+'Oh Dio vieni a salvarmi!'.<br>
+Sto aspettando le lacrime divine<br>
+per amore della mia fede incline.<br>
+Se voglio so gioire le risposte<br>
+della preghiera che fa arrossire,<br>
+io da solo con l'anima ardente<br>
+sempre ignaro e timoroso, ma credente.
+</p>
+
+<p>
+L'EREMO DISTRUTTO
+</p>
+
+<p>
+Di tutti i sogni è il migliore<br>
+l'essere amato dal Signore,<br>
+lo core aperto alle genti<br>
+per dare le virtù innocenti.<br>
+Il primo passo della fede<br>
+parte dal mio stesso piede,<br>
+pel cammino della gioia<br>
+dell'anime degli uomini di voglia.
+</p>
+
+<p>
+Credere nel dubbio della speranza<br>
+è una via che porta lontano abbastanza.<br>
+Quale piacere fia rimpianto<br>
+di quelli che il corpo finisce nel pianto?<br>
+Al momento del giudizio<br>
+ogni cosa cade nel precipizio<br>
+e se la fine sarà,<br>
+almeno un sogno rimarrà.
+</p>
+
+<p>
+Il vizio della vita è sostenere d'esser primi<br>
+finché paura di morir vince tutti i regimi.<br>
+Il pover uomo dell'avere<br>
+non teme fine del suo potere,<br>
+ogni luogo che l'ospiterà<br>
+gli darà pace e serenità.<br>
+Il tempo non è numero di secondo<br>
+per la pace dell'eterno mondo.
+</p>
+
+<p>
+DICIOTTO SETTEMBRE
+</p>
+
+<p>
+Alla festa del giorno della vita<br>
+ogni stima è attesa e gradita,<br>
+l'umor triste è soppiantato<br>
+dall'augurio sincero e meritato.<br>
+Più greve è il peso del passato<br>
+ma giammai vorrei tornare dove ho iniziato.<br>
+Goliardia sta scemando<br>
+nel giovine che vive pensando.
+</p>
+
+<p>
+SOLO IN CASA
+</p>
+
+<p>
+C'è un grido che mi desta,<br>
+la tentazione di un mondo in festa;<br>
+non è sorriso quello della gente,<br>
+ma pur sempre è divertente.<br>
+Trasgressione e rinuncia si corrono appresso<br>
+tanto se si fermano è turbamento lo stesso,<br>
+la ragione che non sia speranza<br>
+mai darà al vivere una costanza.
+</p>
+
+<p>
+RICERCA IMMOBILE
+</p>
+
+<p>
+Con gli occhi chiusi guardo in alto<br>
+per sentir l'amore innominato;<br>
+i confini della grazia divina<br>
+sono dentro la mia anima inchina,<br>
+una lode per accoglier la presenza<br>
+del sentimento di cui sono essenza.<br>
+Dimandar non voglio, ascoltare non è possibile<br>
+quella fede grande più del mondo conoscibile.
+</p>
+
+<p>
+SAGGIO ETERNO
+</p>
+
+<p>
+Se di ira è la luce dei tuoi occhi<br>
+di sicuro è sbagliata la strada che imbocchi<br>
+e se la rabbia non vuol passare,<br>
+pensa al male che ti può dare.<br>
+Nulla è tornato a chi ha odiato,<br>
+solo il peso di essersi trascurato<br>
+per aver cercato l'altrui ragione<br>
+dimentico dei doveri del proprio nome.
+</p>
+
+<p>
+ALBA TRISTE
+</p>
+
+<p>
+Il nuovo giorno s'è levato al bello<br>
+pieno di luce chiara e calda<br>
+sopra di me che alzo il cappello.<br>
+Si è fatta ancora la volontà dell'amore<br>
+nell'uomo in attesa di tempo migliore.<br>
+Prima che sera non ci prenda,<br>
+diamo gioia che il volere intenda<br>
+e cediamo ogni figura vuota<br>
+alla rabbia inerme che non ci importa.
+</p>
+
+<p>
+L'OGGETTO DIMENTICATO
+</p>
+
+<p>
+Quello che i sensi non hanno<br>
+è il pensiero più leggero,<br>
+il brivido dell'anima in pena<br>
+che si congiunge al Creatore.<br>
+Una dose di speranza<br>
+per l'amore che torna al vero padre.
+</p>
+
+<p>
+"CI VUOL PAZIENZA"
+</p>
+
+<p>
+La pazienza è un'attesa felice<br>
+se è la pace che l'appuntamento ci dice.<br>
+Possiamo aspettare all'infinito<br>
+con la compagnia di un amore garantito,<br>
+il tempo arditamente passerà<br>
+prima della rivelazione che stupirà.<br>
+La pazienza crede alla volontà del costruire<br>
+e da vigore alla mano per finire.
+</p>
+
+<p>
+PAROLE LUMINOSE
+</p>
+
+<p>
+Le mie parole sono colorate,<br>
+un arcobaleno che sfuma nella volta del cielo<br>
+dopo che la pioggia ha riempito i fiumi.<br>
+Non temo di tuffarmi nella limpidezza<br>
+del vaporoso amore, nel cielo disteso<br>
+in un nuovo caldo disegno di luce.
+</p>
+
+<p>
+FRAGOROSO BUIO
+</p>
+
+<p>
+Tristezza viene a riva,<br>
+l'onda alta non arriva<br>
+passi sulla sabbia senza impronta.<br>
+Chi ha detto che la fede non conta?.<br>
+Una favola senza fine<br>
+dalla morale sublime.<br>
+Tutte le forze sono d'accordo<br>
+a lasciar correre il ricordo.
+</p>
+
+<p>
+L'ORA DI PARTIRE
+</p>
+
+<p>
+Il treno della notte è puntuale,<br>
+si ferma in ogni dove<br>
+aspetta senza far rumore.<br>
+Quando parte lo saluto<br>
+forse prima di sera ritornerà,<br>
+una corsa per il destino<br>
+che avanti tutti fa la verità.
+</p>
+
+<p>
+LO SPECCHIO DI CARTA
+</p>
+
+<p>
+Una foto tagliata in due<br>
+nasconde l'immagine<br>
+dell'altra faccia del profilo.
+</p>
+
+<p>
+IGNORANTE DELUSIONE
+</p>
+
+<p>
+Un amore solitario<br>
+incontrò un'amicizia,<br>
+ma lei disse:<br>
+sono io che già ti amavo.
+</p>
+
+<p>
+POESIA
+</p>
+
+<p>
+Parole ch'escono in poesia<br>
+come il mistero di una dolce spia.<br>
+Un singhiozzo tanto sembra dire,<br>
+ma la nube scura non lascia trasparire<br>
+il fuoco di un freddo inverno<br>
+sopra la bianca innocenza, intorno.<br>
+Bel tempo in quiete si scioglierà<br>
+dopo il passaggio che la nuvola spaccherà.
+</p>
+
+<p>
+TROPPI MURI
+</p>
+
+<p>
+Più largo s'è fatto il muro<br>
+dopo la polvere dei tristi cori,<br>
+il fiore gobbo giace insicuro<br>
+nelle paure del vento di fuori.
+</p>
+
+<p>
+Lo sparire di un'ombra non finisce<br>
+il giorno in un lento morire<br>
+del lampo che scandisce,<br>
+pronto è un trono a rifiorire.
+</p>
+
+<p>
+ARIA DI FESTA
+</p>
+
+<p>
+Luce non tiene gli occhi miei<br>
+svegli, ma stanchi parea essere<br>
+d'aspettare la neve candida<br>
+di un Natale che sognar vorrei.
+</p>
+
+<p>
+Tra un bosco di illusioni<br>
+e un ciel di stelle rade,<br>
+scorre un fiume di passioni<br>
+dal color dell'aria brine.
+</p>
+
+<p>
+MIRAGGIO SUL MARE
+</p>
+
+<p>
+Riecheggiar di un'onda lieve<br>
+odo sullo scoglio<br>
+di un'isola quiete.
+</p>
+
+<p>
+Guardiano di un faro spento<br>
+è il profondo turchino<br>
+del mare attento.
+</p>
+
+<p>
+MI SONO VISTO PIANGERE
+</p>
+
+<p>
+Fremeva cattivo il tempo nel paese,<br>
+bambini giocavano a fare il migliore<br>
+prima che lacrime sopra piovesse<br>
+al viso dell'ultimo corridore.
+</p>
+
+<p>
+Si era fermato a sentire<br>
+il profumo di un fiore ferito,<br>
+da un piede che voleva finire<br>
+per primo, la pace di un vecchio appassito.
+</p>
+
+<p>
+ILLUSIONE
+</p>
+
+<p>
+Era li vicino,<br>
+nell'aria sentivo l'odore<br>
+inebriante dell'amore.<br>
+Era così vicino<br>
+quando aprii il cuore<br>
+al suo muto splendore.
+</p>
+
+<p>
+SECONDA VETTA
+</p>
+
+<p>
+Guida di antica vita,<br>
+il sole tra i bianchi sassi<br>
+sotto gli affannosi passi<br>
+per la vetta di mia salita.
+</p>
+
+<p>
+La paura vince l'altezza,<br>
+l'imprevedibile dio mi ferma<br>
+a metà della mirabile grandezza<br>
+che limpido trasparir afferma.
+</p>
+
+<p>
+SERA DI NATALE
+</p>
+
+<p>
+O anonimo passeggiare<br>
+nel dopo festa dello sporco corso,<br>
+manichini stentano a riposare<br>
+coi loro sorrisi da concorso.
+</p>
+
+<p>
+CORRENDO
+</p>
+
+<p>
+Quanta energia in cor mio vampava<br>
+ed il pensiero non voleva fermare<br>
+la mia paura che qui bastava<br>
+di correre senza affatto amare.
+</p>
+
+<p>
+Dietro il vuoto, la vita s'alzava<br>
+per forza voleva passare<br>
+sul male ovunque devastava<br>
+una gran fretta di arrivare.
+</p>
+
+<p>
+Diverso si fece il raccontare<br>
+quando la corsa non si fermava<br>
+solo una speranza poteva salvare<br>
+l'irrequieta macchina che pensava.
+</p>
+
+<p>
+RACCOLTO INVERNALE
+</p>
+
+<p>
+La semina è ormai passata.
+</p>
+
+<p>
+Rimira il timido germoglio<br>
+tra la terra poco affinata<br>
+seme che sente nobile rigoglio<br>
+giovani fatiche dello zappatore<br>
+troppo avezzo alla spiga dorata.
+</p>
+
+<p>
+Nuova stagione e nuovo stupore,<br>
+fertili crepe per amore.
+</p>
+
+<p>
+L'IDEA NASCOSTA
+</p>
+
+<p>
+L'idea di nessuno,<br>
+triste pena sconsolata<br>
+presto dimenticata<br>
+mai superata<br>
+sempre aspettata, insomma<br>
+già passata.
+</p>
+
+<p>
+OASI
+</p>
+
+<p>
+Si sa,<br>
+sesso è ossesso<br>
+se usi i sassi.<br>
+Ossia, esso è sasso<br>
+se sei ossesso.
+</p>
+
+<p>
+MEZZANOTTE
+</p>
+
+<p>
+Vorrei dirlo a mezzanotte,<br>
+mentre la pesante euforia<br>
+presto se ne va via.<br>
+Mi basta una parola per<br>
+far bella mezzanotte:<br>
+Etienne, amico mio<br>
+per i momenti che son niente.
+</p>
+
+<p>
+Poi udirò infrangersi la sua eco<br>
+e la voce del tempo assoluto<br>
+ritornare meco pensando.
+</p>
+
+
+<hr>
+
+<h1>Pensieri1</h1>
+
+<p>
+CALCOLO IMPERFETTO (28/4/91)
+</p>
+
+<p>
+Quando volevo bruciare il mondo<br>
+non sapevo che il suo fumo m'inebriasse<br>
+fino a stordire la pace dei miei sensi<br>
+e prevalere sui voli di purezza,<br>
+ora nascosti di vergogna nell'anima.<br>
+Di chi è la colpa se lussuria e speranza<br>
+condividono la stessa disperazione<br>
+della giustizia difficile quanto reale?<br>
+Dio è il tempo,<br>
+la vita il colore,<br>
+la morte il pensiero.<br>
+Ecco perché vorrei essere senza immagine,<br>
+senza ombra dal lato della verità,<br>
+ma pieno di ricordi che si chiamino passato.<br>
+Se ricominciassi non farei che percorrere<br>
+lo stesso fiume al contrario, per finire<br>
+travolto dagli altri vortici<br>
+fedeli al destino di sfruttare la corrente.<br>
+Solo due estremi a me son rimasti:<br>
+la compagnia della provocazione<br>
+e l'immenso pensiero della libertà.
+</p>
+
+<p>
+L'ETA' DEI SONETTI
+</p>
+
+<p>
+Or corrugata, la sua pelle vanta,<br>
+sostenendo il greve sacco degli anni,<br>
+di contenerne un po' più d'ottanta,<br>
+ma dire che sian troppi mai c'inganni.
+</p>
+
+<p>
+Di tutti i luoghi solo uno l'incanta:<br>
+quell'angolo di promesse solenni<br>
+dove l'ansia pone segreta impronta<br>
+e lo spirito culla dagli affanni.
+</p>
+
+<p>
+Col tatto ci scambiamo nella mano<br>
+l'ignoto brivido di una conchiglia<br>
+che respira le armonie dell'oceano.
+</p>
+
+<p>
+L'amore dei fanciulli è la sua voglia,<br>
+la salute il desiderio piú mondano<br>
+con il quale l'eterna fede veglia.
+</p>
+
+<p>
+"O MIA BELLA MADONNINA"
+</p>
+
+<p>
+Com'era bello indovinare l'arte dei tuoi sogni<br>
+sulle vibranti note dei miei blues impolverati,<br>
+mentre seguivi l'onda degli arpeggi di chitarra<br>
+dentro una trasparente bolla di muti pensieri.
+</p>
+
+<p>
+Per me, che mi sentivo un'anfora di lacrime rotta,<br>
+tu sei stata il ricordo delle verdi fantasie d'amore<br>
+che un tempo vedevo spuntare sulle colline<br>
+giovani, fertili di colore e calde piú del sole.
+</p>
+
+<p>
+Proprio come te crescevano le bionde speranze:<br>
+con casta e debole saggezza posso ancora sfiorarle<br>
+cercandone il riflesso nei tuoi profondi occhi<br>
+che attraversano la sontuosa piazza duomo.
+</p>
+
+<p>
+Oh, com'era diverso il mondo di quel giorno,<br>
+quando persino le nubi cariche di pioggia,<br>
+si erano scansate per nostra soddisfazione<br>
+schiarendo la lontananza del panorama montano.
+</p>
+
+<p>
+Ma tuttora sciocco sarei se non avessi saputo<br>
+che la luce dell'estate e gli sguardi della gente<br>
+di proposito rimbalzavano su tutta la mia sagoma,<br>
+come un tappeto d'ombra su cui volteggia un fiore.
+</p>
+
+<p>
+Si... Questa favola merita d'essere speciale<br>
+perché una fine non ce l'ha come la realtà,<br>
+e, se vorrai, nel sentiero della tua immaginazione,<br>
+ritroverai quel bosco diffondere l'eco della pace<br>
+in splendida compagnia, mano nella mano.
+</p>
+
+<p>
+MONUMENTO ALLA SOLITUDINE
+</p>
+
+<p>
+Tu sei l'amica dopo il tradimento.<br>
+La tua estasi trafigge ogni pensiero.<br>
+Quassù ti ho dedicato un monumento<br>
+affinché per nessuno sia un mistero
+</p>
+
+<p>
+Ciò che fa l'anima quando nasconde<br>
+le rughe sulla vetta di un groppone,<br>
+fiduciosa che qualcuno risponde<br>
+e proprio tu ne sia testimone.
+</p>
+
+<p>
+Con duri massi, sull'elmo ho costruito<br>
+un altare che nel centro mostra<br>
+indelebile messaggio scolpito.
+</p>
+
+<p>
+Grazie al tuo suggerimento divino,<br>
+ti uso come una solida fortezza<br>
+contro l'arroganza del meschino.
+</p>
+
+<p>
+SOGNI REALIZZATI
+</p>
+
+<p>
+Ma quale sogno può durare stretto<br>
+nelle miserie della cruda pelle<br>
+o, come rimano buffe storielle,<br>
+in un fantasmagorico cassetto?
+</p>
+
+<p>
+La notte capovolge anche i deserti<br>
+con un sabbioso diluvio che muore<br>
+strozzato nella clessidra del cuore,<br>
+impossibile cruna ad occhi aperti.
+</p>
+
+<p>
+Coraggio mia libertà di sognare!<br>
+Túffati nella brina dei paesaggi<br>
+addormentati e naviga sui raggi<br>
+infiniti del tempo oltre il pensare.
+</p>
+
+<p>
+Il vuoto inchioda l'ago della bussola<br>
+verso quel luogo sacro e sconosciuto,<br>
+venerato finché nulla e assoluto,<br>
+sono lontani quanto buona nuvola.
+</p>
+
+<p>
+I sogni non hanno lunga memoria<br>
+perché sono soltanto ardua realtà,<br>
+ma rispecchiano sempre verità<br>
+nascoste sotto una pioggia d'incuria.
+</p>
+
+<p>
+Per colpa di vecchie paure finisce<br>
+cosí, nel fondo di un lurido stagno,<br>
+la complicata trama del mio sogno,<br>
+recisa da un pendolo che impazzisce.
+</p>
+
+<p>
+COSTANTEMENTE
+</p>
+
+<p>
+Se chi tace acconsente<br>
+preferisco un diverbio<br>
+al futile proverbio<br>
+che provoca la mente.
+</p>
+
+<p>
+Se non fosse abusato<br>
+contro la povertà<br>
+o in complice omertà,<br>
+avrei già terminato;
+</p>
+
+<p>
+Purtroppo il muto viver<br>
+sembra essere vigliacco,<br>
+triste, segreto e fiacco,<br>
+buono solo per pianger,
+</p>
+
+<p>
+Mentre il vero silenzio<br>
+è l'ansia di due voci<br>
+che sussurrano: "Amiamoci,<br>
+senza ostentar giudizio!".
+</p>
+
+<p>
+L'una è l'anima bella,<br>
+l'altra è ragione mia,<br>
+nel dubbio quale sia<br>
+la migliore favella.
+</p>
+
+<p>
+CONTRAPPUNTO
+</p>
+
+<p>
+L'amore è una sublime dichiarazione<br>
+che l'esistenza del bene ha sancita<br>
+per coniare sulla faccia della vita<br>
+un rilievo di magica soddisfazione.
+</p>
+
+<p>
+A me piace considerarlo un tesoro,<br>
+piú ricco di ogni altro nobile sentimento,<br>
+con il quale rendere valido un giuramento,<br>
+solitario o intonato da un grande coro.
+</p>
+
+<p>
+Non assomiglia a nessuna figura nostra,<br>
+perciò, quando porta liete ambasciate,<br>
+le sue vibrazioni crescono immediate<br>
+facendo nell'anima libera mostra.
+</p>
+
+<p>
+Irripetibile variazione di legge primitiva,<br>
+l'amore quando sboccia è ancora promessa<br>
+maggiore per l'anima che sommessa,<br>
+in lacrime, il suo ristoro ambiva.
+</p>
+
+<p>
+INDOVINELLO
+</p>
+
+<p>
+L'uomo saggio vive bene solo se<br>
+ama lei piú di tutte le altre e<br>
+per esser certo fin dal principio di<br>
+aver scelto la migliore delle<br>
+celebrità, basta che sappia che è fra quelle<br>
+eterne, sopra l'amore e la libertà.
+</p>
+
+<p>
+CARTOLINA
+</p>
+
+<p>
+Fantasia, amica mia,<br>
+questo verso cordiale<br>
+per te un augurio sia<br>
+di giornata speciale.
+</p>
+
+<p>
+Mi onora ricambiare<br>
+come tu lo scorso anno<br>
+facesti a me brindare<br>
+un lieto compleanno.
+</p>
+
+<p>
+Il mio sfoggio di rime<br>
+è uno spazio radioso<br>
+dove la poesia imprime<br>
+un incontro armonioso.
+</p>
+
+<p>
+Ricordi il monte Cucco?<br>
+Deh, ci salgo proprio ora,<br>
+non per poetico trucco,<br>
+ma in festa come allora.
+</p>
+
+<p>
+Per me un giorno felice<br>
+nel ricordo racchiude,<br>
+sé dentro aurea cornice,<br>
+cosí mai si conclude.
+</p>
+
+<p>
+Forte devi soffiare<br>
+sulle nubi del tempo;<br>
+nuove stelle brillare<br>
+vedrai, non c'è scampo
+</p>
+
+<p>
+CIN CIN - DIN DON
+</p>
+
+<p>
+Stanno in testa di cavallo,<br>
+ad un passo dal gran ballo,<br>
+curvi sul passato diario<br>
+prossimo al bimillenario,<br>
+bianchi monaci che fanno<br>
+santi cori pel nuovo anno,<br>
+invitando alle preghiere<br>
+chi è fedele nel tacere.
+</p>
+
+<p>
+Sia pur con verità minima,<br>
+sembra annuire nell'anima,<br>
+destato dopo il rimprovero,<br>
+lo sguardo del fiero povero<br>
+che di scatto drizza il ciglio<br>
+e stenta come un bisbiglio,<br>
+una lode per obbedire,<br>
+a ciò che non basta udire.
+</p>
+
+<p>
+Vuota è la strada statale,<br>
+confine di guerra leale<br>
+esplosa in raggiosi fuochi<br>
+e malinconie di pochi.<br>
+Botti di cannone a salve,<br>
+lunga attesa che dissolve<br>
+nel mondano buonumore,<br>
+tempo di festa migliore.
+</p>
+
+<p>
+Io respingo la coerenza<br>
+in solitaria astinenza:<br>
+l'anno nuovo è un'emozione,<br>
+ma provo la sensazione<br>
+di un mondo che ringrazia<br>
+la vita che da se vizia<br>
+la ragione al bel piacere<br>
+di lasciare ogni mestiere<br>
+per brindare a mezzanotte<br>
+col vino di antica botte.
+</p>
+
+<p>
+SOGNI REALIZZATI
+</p>
+
+<p>
+Il più bel sogno nel cassetto?<br>
+Per miseria di dura pelle,<br>
+non chiudete me così stretto.
+</p>
+
+<p>
+Vagante anima nelle stelle,<br>
+fantasiose ali, voli incerti,<br>
+senza che l'aria sia ribelle.
+</p>
+
+<p>
+Come la sabbia dei deserti,<br>
+clessidra di eterni miraggi,<br>
+inseguo sogni ad occhi aperti.
+</p>
+
+<p>
+Un battello nell'alto mare,<br>
+a pesca d'un segreto avaro<br>
+che sembra solo mareggiare,
+</p>
+
+<p>
+ma l'amore di sapore amaro,<br>
+s'impiglia con fare sincero<br>
+al mio sogno infinito e caro.
+</p>
+
+<p>
+CONTRAPPUNTO
+</p>
+
+<p>
+L'amore è una magica sensazione<br>
+che la vita vorrebbe catturare<br>
+con la pece della soddisfazione,
+</p>
+
+<p>
+ma la fine non riesce a sopportare<br>
+della speranza di cui fa menzione;<br>
+così per sempre è da considerare
+</p>
+
+<p>
+un ricco esempio senza spiegazione<br>
+del più nobile e vero sentimento<br>
+che agli uomini non da mai assuefazione.
+</p>
+
+<p>
+Porta la pace sotto giuramento,<br>
+come unico diletto ambasciatore<br>
+del regno salvo d'ogni fallimento.
+</p>
+
+<p>
+Del suo misterioso e divino autore<br>
+rifugge la figura che gli mostra<br>
+con l'immagine solo un falso onore.
+</p>
+
+<p>
+La sua potenza è la verità nostra,<br>
+la sua saggezza resta primitiva<br>
+legge che in assoluto si dimostra.
+</p>
+
+<p>
+Si annuncia solo quando primo arriva<br>
+trovando ristoro nel pio calore<br>
+dell'anima che sommessa lo ambiva.
+</p>
+
+<p>
+Talvolta giunge in vetta di stupore,<br>
+come una sublime favola svela<br>
+la pietà delle lacrime del cuore.
+</p>
+
+<p>
+COSTANTEMENTE
+</p>
+
+<p>
+- chi tace acconsente -<br>
+è un proverbio abusato<br>
+da ogni tipo di mente.
+</p>
+
+<p>
+Nobile nel significato,<br>
+il detto è intelligente,<br>
+ma non può essere beato
+</p>
+
+<p>
+se la vita del presente,<br>
+lo considera il reato<br>
+di modesto incompetente.
+</p>
+
+<p>
+Il coraggio del parlato<br>
+è assai poco divertente,<br>
+quando si è dimenticato
+</p>
+
+<p>
+che il silenzio consente,<br>
+senza deprecare il fato,<br>
+di pensare costantemente!
+</p>
+
+<p>
+PER FORTUNA SOLO
+</p>
+
+<p>
+Un vagabondo si meravigliava<br>
+della desolata piazza nota<br>
+dove in casa di cartone stava.
+</p>
+
+<p>
+Si lamentava con la bocca vuota<br>
+contro un cane che pure ameria<br>
+se non lo scambiasse per una ruota.
+</p>
+
+<p>
+Cose che accadono in periferia<br>
+quando la gente deve intendere<br>
+agli annunci della ricca lotteria.
+</p>
+
+<p>
+GIOIA MIA
+</p>
+
+<p>
+Tantissimi modi per descrivere<br>
+le sfumature dentro l'esistenza,<br>
+ma finora nessuno sembra avere
+</p>
+
+<p>
+il giusto contatto con l'essenza<br>
+della sola bellezza sentimentale<br>
+che nell'immagine è grave mancanza.
+</p>
+
+<p>
+La gioia è una passione virtuale<br>
+che il cielo sereno fa trasparente<br>
+e d'ogni essere un raggio spirituale.
+</p>
+
+<p>
+L'ERBA DEL GIARDINO
+</p>
+
+<p>
+Magari fosse una bugia,<br>
+il bimbo fermo che piange<br>
+sul giocattolo ad energia.
+</p>
+
+<p>
+Lì vicino un gatto finge<br>
+della natura l'istinto<br>
+che prevale e si stringe
+</p>
+
+<p>
+al bimbo che per incanto<br>
+sorride e dorme cullato<br>
+dal morbido pelo stinto.
+</p>
+
+<p>
+CREDETEMI E' VERO
+</p>
+
+<p>
+Se credevo di essere arrabbiato<br>
+con gli amici dei quartieri svaniti,<br>
+ora è per quanto mi hanno aiutato,<br>
+che li scopro come vecchi spartiti<br>
+abbandonati in uno scrigno dorato<br>
+nella soffitta dei pensieri falliti.<br>
+Di essere loro pari non ho voluto:<br>
+per questo la tristezza ho vissuto.
+</p>
+
+<p>
+E' più strano il leone tranquillo<br>
+di tutti gli uomini che son normali<br>
+a sopportare con viltà lo spillo,<br>
+là dove pungono miserie bestiali<br>
+caparbie come un potente zampillo.<br>
+Prima l'abisso è un volo senza ali:<br>
+l'eco del nulla domanda perché io,<br>
+ma un altro corvo risponde anch'io.
+</p>
+
+<p>
+Cerco un saldo ponte per l'incontro<br>
+che attraversi la turbinosa verità;<br>
+cerco un ignoto amore per arbitro<br>
+della nostra traboccante vanità,<br>
+che uccida questo velenoso mostro<br>
+in lotta con l'angelo dell'umanità.<br>
+Qui l'infinita piena aspetterò,<br>
+oppure con un gesto mi deciderò.
+</p>
+
+<p>
+Nel mio cuore è continuo litigare,<br>
+almeno in due contendiamo la pace:<br>
+tutto il mondo vorrebbe comandare<br>
+l'uno che ostenta virtù da loquace;<br>
+mentre il compagno sembra sperare<br>
+nelle leggerezze di cui si tace.<br>
+Entrambi rimangono chicchi verdi<br>
+dentro il dolce frutto dei ricordi.
+</p>
+
+<p>
+SETTE MENO UNO
+</p>
+
+<p>
+Quasi tutti il lunedì,<br>
+grevi di sonno passano<br>
+al rassegnato martedì.
+</p>
+
+<p>
+Gli affanni aumentano<br>
+nel mezzo di mercoledì,<br>
+di certo non cessano
+</p>
+
+<p>
+con lo stanco giovedì,<br>
+però l'ultimo sperano<br>
+sia un breve venerdì.
+</p>
+
+<p>
+Il tempo così è passato<br>
+e la gioia sa di sabato;
+</p>
+
+<p>
+Guarita la noia cronica<br>
+c'è libertà tutta domenica!
+</p>
+
+<p>
+NEVICATA SUL CATRIA
+</p>
+
+<p>
+Incredibile passione bianca!<br>
+Accoglie sui morbidi declini<br>
+coloro a cui tornare bambini,<br>
+nemmeno qualche ruga stanca.
+</p>
+
+<p>
+Sono lento, pesante, sprofondo<br>
+i miei passi sulla furba strada,<br>
+tra l'orizzonte e la contrada<br>
+dove un altro giorno sta morendo!
+</p>
+
+<p>
+Ombre crescono ignote<br>
+sulle rilieve impronte<br>
+del solitario passante,<br>
+artista di buche vuote.
+</p>
+
+<p>
+Ferrea legge di natura,<br>
+sul vegeto immobile,<br>
+vive come l'adorabile<br>
+rivo di brulla pianura.
+</p>
+
+<p>
+Giace dormiente, strano fiore<br>
+affacciato con gemma sì dura,<br>
+ai sogni di poetica scrittura,<br>
+sotto i fiocchi del freddo amore.
+</p>
+
+<p>
+Nel buio si accende il riflesso<br>
+della terra viva e fosforescente;<br>
+la luna ci gioca sorridente,<br>
+quasi fosse una statua di gesso.
+</p>
+
+
+<hr>
+
+<h1>Pensieri2</h1>
+
+<p>
+ETERNO COMPLEANNO
+</p>
+
+<p>
+Come allora, fiacco sole d'inverno<br>
+illumina fantasie disperate<br>
+davanti lo specchio di acque spirate.
+</p>
+
+<p>
+Anche se lo chiamano anniversario,<br>
+nelle onde sono svaniti da un anno,<br>
+ricordi che in eterno annegheranno.
+</p>
+
+<p>
+I miei pensieri costruiscono versi<br>
+sull'amarezza di fredde lacrime,<br>
+versate per restare sempre anonime.
+</p>
+
+<p>
+Quanto ai manifesti convenzionali,<br>
+intristiscono queste ricorrenze,<br>
+più definitive delle partenze.
+</p>
+
+<p>
+ANCORA
+</p>
+
+<p>
+Fui adirato in quel momento:<br>
+compresso da pesante rabbia,<br>
+mi guardai con sordo sgomento.
+</p>
+
+<p>
+La mia mente non immaginava<br>
+la presenza di spirito amico<br>
+che nel cuore assente bussava.
+</p>
+
+<p>
+Come un fantasma del destino,<br>
+la spada avvelenata d'ansia,<br>
+colpiva un vulnerabile mirino.
+</p>
+
+<p>
+L'incompiuta opera divina,<br>
+empie gli occhi di remote tele<br>
+e l'amor di fede affascina.
+</p>
+
+<p>
+Caduto il vanto razionale,<br>
+distende su ali di farfalla,<br>
+l'annunciata discesa fatale.
+</p>
+
+<p>
+UNO DOPO L'ALTRO
+</p>
+
+<p>
+Del ricordo il sollievo<br>
+non riesco abbandonare<br>
+come amore che prelevo<br>
+da goccia di eterno mare.
+</p>
+
+<p>
+Piega o scusa di sbaglio,<br>
+la realtà è un obbligo<br>
+e il dolore un ritaglio<br>
+in umana veste d'intrigo.
+</p>
+
+<p>
+ASPETTANDO
+</p>
+
+<p>
+Gran subbuglio di un vento forte<br>
+condensa il buio del mio essere.<br>
+Non tengono più le bardate porte,
+</p>
+
+<p>
+inconfessate si muovono le paure,<br>
+assomigliano a cancrenose macchie<br>
+sul marmo di abbandonate sculture.
+</p>
+
+<p>
+Consideriamole malattie indolori,<br>
+ma nel fuoco bruciano lentamente<br>
+e impestano di mortali fetori.
+</p>
+
+<p>
+Oh, la mia stupenda moderatezza,<br>
+sugli spini di acacia genuflessa,<br>
+si dimena per una lieve carezza.
+</p>
+
+<p>
+Più non si distingue nella cera,<br>
+l'acre fumo di candela accesa,<br>
+dal sorgere della divina sera.
+</p>
+
+<p>
+CONCERTO JAZZ
+</p>
+
+<p>
+Sui cavalletti della prima scena,<br>
+pavoneggiano i brillanti ottoni:<br>
+una famiglia di dorati tromboni,<br>
+aspetta il negro fiato con pena.
+</p>
+
+<p>
+Dietro, tra un pianoforte a coda<br>
+e goffo contrabbasso sul fianco,<br>
+la batteria ed un leggio sbilenco,<br>
+guarniscono il ritmo e la moda.
+</p>
+
+<p>
+Un gesto del maestro in posizione<br>
+mette fiati e mani sugli attenti<br>
+come un plotone di allegri fanti,<br>
+pronti al segnale d'esecuzione.
+</p>
+
+<p>
+Le luci del teatro si abbassano<br>
+mentre bollono gli amplificatori;<br>
+schioccano le dita gli spettatori<br>
+in sintonia col tempo del brano.
+</p>
+
+<p>
+CODICE
+</p>
+
+<p>
+Nei libri appendono l'indice<br>
+per segnar a tappe il traguardo;<br>
+nei quadri inchiodano la cornice<br>
+per difendere l'artistico sguardo.
+</p>
+
+<p>
+Il mondo fortifica il confine<br>
+delle sensualità che scappano<br>
+al dubbio delle gioie divine<br>
+e nelle infami paure si riparano.
+</p>
+
+<p>
+Per orgoglio si stimano le arti,<br>
+per la natura crescono i gigli,<br>
+quindi dividere l'anima in parti<br>
+genera passione per gli imbrogli.
+</p>
+
+<p>
+Tanti fan gara di solidarietà,<br>
+ma servire la rogna di critico<br>
+per assoggettare le necessità,<br>
+regala un bene che parte scarico.
+</p>
+
+<p>
+La libertà è nulla possedere<br>
+di quello che tutti non hanno<br>
+che si giudichi col potere.<br>
+Basterebbe avere meno affanno!
+</p>
+
+<p>
+FILOSOFIA FREDDA
+</p>
+
+<p>
+Sta già scritto sulla montagna<br>
+quello che l'uomo nemmeno sogna.
+</p>
+
+<p>
+Qui la vita è una canzone<br>
+di farfalle e coccinelle<br>
+che danzano stornelle<br>
+felici come ubriacone.
+</p>
+
+<p>
+Sulle vie del bosco,<br>
+tra le radiche dei lecci<br>
+ed i rovi in mille intrecci,<br>
+ho incontrato Francesco.
+</p>
+
+<p>
+Noi siamo fedeli alla montagna,<br>
+dove la fede pace guadagna.
+</p>
+
+<p>
+NERO SU BIANCO
+</p>
+
+<p>
+Con il taccuino in bianco<br>
+e l'ebrezza di un miraggio<br>
+parto per un ignoto viaggio<br>
+alla cui sorte m'affianco.
+</p>
+
+<p>
+In men che l'ombra svolti,<br>
+il passo scivola in sogno;<br>
+con audace e puro ingegno<br>
+trova ricordi nei risvolti.
+</p>
+
+<p>
+Poi, riaccesa la ragione,<br>
+sono spicciolo capitale<br>
+conteggiato come rituale<br>
+dal ragioniere in azione.
+</p>
+
+<p>
+Ahimè! La passata folgore<br>
+per invaghita sedicenne,<br>
+trascina gelosia perenne:<br>
+pesante slitta dell'amore!
+</p>
+
+<p>
+APPUNTI DI SCUOLA
+</p>
+
+<p>
+Paffute guance rosa,<br>
+volto da contadinella,<br>
+dolce come rondinella,<br>
+entrava sempre gioiosa.
+</p>
+
+<p>
+Amavo così guardarla,<br>
+tra vezzosi rapaci,<br>
+soffiare sui miei baci<br>
+mentre di lei si parla.
+</p>
+
+<p>
+Ora, aperte le grate,<br>
+come angelo libero,<br>
+vola con un passero<br>
+che invidio in cantate.
+</p>
+
+<p>
+Ho sognato la scuola,<br>
+le speranze sciupate,<br>
+le angosce meritate<br>
+stringersi alla gola.
+</p>
+
+<p>
+NO SMOKING
+</p>
+
+<p>
+La poesia è un vizio<br>
+a tutti non ammesso<br>
+soffrirne lo strazio.
+</p>
+
+<p>
+Il mio male confesso<br>
+senza troppe finzioni<br>
+accusando me stesso.
+</p>
+
+<p>
+Siamo tutti faraoni<br>
+in cerca di riposo<br>
+fumando illusioni.
+</p>
+
+<p>
+Nel verso vanitoso<br>
+esaltiamo l'incerto<br>
+camminando a ritroso.
+</p>
+
+<p>
+MAL D'AUTO
+</p>
+
+<p>
+L'ansia è l'angoscia della puntualità<br>
+al primo appuntamento con la libertà.
+</p>
+
+<p>
+L'ansia è verità assoluta che scappa,<br>
+ma alle spalle della vita s'aggrappa.
+</p>
+
+<p>
+L'ansia è sospetto pellegrino<br>
+in cerca di favorevole destino
+</p>
+
+<p>
+L'ansia è ammalarsi di aspettare:<br>
+perché si dovrebbe continuare?
+</p>
+
+<p>
+L'ansia è la luna sulla mia tomba.
+</p>
+
+<p>
+STRETTA DI MANO
+</p>
+
+<p>
+Ali di soffice colomba sola,<br>
+la splendida pace delle sue mani,<br>
+rilassata e leggera ancor vola<br>
+sfiorando vivi ostacoli malsani.
+</p>
+
+<p>
+La gioia di quelle mani è pensarle<br>
+con la costanza del mio respiro,<br>
+dopo che ho scansato di toccarle,<br>
+per soffrire così del freddo tiro.
+</p>
+
+<p>
+Di giorno, dal sole indisturbata,<br>
+la morte prelevò senza ritorno<br>
+il piccolo lume dall'aria consumata<br>
+lasciando grande notte intorno.
+</p>
+
+<p>
+Aahh!. Le tue addormentate mani,<br>
+sotto i fascicoli dell'autopsia,<br>
+stringono nei pensieri del domani<br>
+il bene ed il male della fantasia.
+</p>
+
+<p>
+LINDA
+</p>
+
+<p>
+Il piacere fa la differenza<br>
+tra lo scoprire della realtà<br>
+libera di morali difficoltà<br>
+ed il gusto dell'esperienza.
+</p>
+
+<p>
+Linda è la strada del peccato,<br>
+dove nascono fuochi illusori<br>
+di diavoli come falsi onori<br>
+che ardono dopo aver pagato.
+</p>
+
+<p>
+Straniere dalla pelle scura,<br>
+concedono per resto il nome<br>
+e fanno pace, non so come<br>
+con la loro sporca tortura.
+</p>
+
+<p>
+Da remoto tempo Linda adesca<br>
+animali randagi con l'arpione<br>
+ricoperto di carne per esca<br>
+e mangia loro con soddisfazione.
+</p>
+
+<p>
+La corrente del calmo fato<br>
+è scivolata sopra un'onda<br>
+ed io mi sono innamorato<br>
+delle giovani curve di Linda.
+</p>
+
+<p>
+PARTITO LIBERO
+</p>
+
+<p>
+Perché esiste il poeta e lo scienziato?<br>
+Questo è il dilemma del mezzo bastonato.
+</p>
+
+<p>
+Mentre il potere dell'avere aumenta,<br>
+l'anima piange e il pensiero si lamenta.
+</p>
+
+<p>
+L'entusiasmo d'inventare certo non manca,<br>
+ma il bisogno di scoprire purtroppo stanca.
+</p>
+
+<p>
+Sapete come giudico la lotta di partito?<br>
+Un inutile grattarsi dal finto prurito.
+</p>
+
+<p>
+DISTRAZIONE
+</p>
+
+<p>
+La felicità è il ladro della mia paura<br>
+cacciata fuori sullo zerbino dell'anima<br>
+in rannicchiata attesa che la porta scura<br>
+s'apra e da dentro qualcuno la biasima.
+</p>
+
+<p>
+Contemporaneamente invecchiano gli amici<br>
+usurati dalle magnificenze della prassi<br>
+o malati di presunzione; gravi complessi<br>
+che scaricano i mali di cui sono nemici,
+</p>
+
+<p>
+ad un ladro in fuga e insieme confuso<br>
+perché bottino invisibile dell'umiltà,<br>
+ora caro come un tesoro senza rivalità,<br>
+si sente un cane ululante e disilluso.
+</p>
+
+<p>
+ARTISTA DI QUINTA
+</p>
+
+<p>
+Oh! La vita scopiazzata nei versi,<br>
+le sbavature di anime vibranti,<br>
+vezzosi pensieri a volte perversi,<br>
+la luce sempre spenta ma coscienti.
+</p>
+
+<p>
+Stasera un poeta replica l'attore,<br>
+la farsa sul palco è una chimera,<br>
+un monologo con lo spettatore<br>
+che la medesima parte in se avvera.
+</p>
+
+<p>
+Tanta voglia di bruciare la poesia<br>
+e col suo fumo arrossire gli occhi<br>
+di chi è felice sordo per altra via,<br>
+sperando che la quinta non invecchi.
+</p>
+
+<p>
+I FIGLI DELLA NEVE
+</p>
+
+<p>
+Tutti sanno godere la neve<br>
+cadendo sul bianco materasso,<br>
+ma per loro è un soffio lieve,
+</p>
+
+<p>
+l'amore nelle palle di neve<br>
+venute dal cielo terribile,<br>
+di un inverno sempre più breve.
+</p>
+
+<p>
+Gli storpi che rifiutano cure,<br>
+vivono un'ora di sana libertà,<br>
+sono felici e ridono pure.
+</p>
+
+<p>
+Fate che questo gelo imperi<br>
+finch'è bello battere il culo<br>
+sulle morbide nostalgie di ieri!.
+</p>
+
+<p>
+la neve colora la vostra pelle<br>
+e vi fa correre senza freni<br>
+verso spiagge assai meno belle!.
+</p>
+
+<p>
+TRANSUMANZA
+</p>
+
+<p>
+Un folto gregge di pecore e di lupi<br>
+va fischiettando un allegro motivetto<br>
+nel vecchio teatrino piantato dai pupi<br>
+oltre il cancello, oltre l'archetto:
+</p>
+
+<p>
+Vive a lungo più una pecora maligna,<br>
+di un lupo che morde o s'indigna.
+</p>
+
+<p>
+La luna indica la strada e l'ovile<br>
+dove il padrone riposa aspettando<br>
+disteso sul fresco prato del cortile,<br>
+la pregiata razza che vien cantando:
+</p>
+
+<p>
+La natura al sole triste ingrassa<br>
+il cuore di bestia che ancora bussa.
+</p>
+
+<p>
+La romanza carovana dell'alpeggio<br>
+vagabondo non si è mai smarrito<br>
+e non teme assolutamente il peggio;<br>
+la carne senza sangue è il suo mito.
+</p>
+
+<p>
+Arrosti, fritti e cervelli lessi<br>
+per un menù che non conosce eccessi
+</p>
+
+<p>
+Nello squallido salone incorniciato<br>
+si odono gridi di feroci ruminanti<br>
+che non amano pranzare con i canti<br>
+e fremono di gioia al grido scannato.
+</p>
+
+<p>
+L'ANIMA DEL CATRIA
+</p>
+
+<p>
+Salgo, battendo i passi con i perché<br>
+senza ben sapere per quale sposa<br>
+la fatica mi da forza tantoché<br>
+divoro sentieri di pace ansiosa<br>
+tra spogli rami di lecci secolari,<br>
+e radici scoperte anche se rari.
+</p>
+
+<p>
+Il cuore galoppa fino all'estremo<br>
+sopra le foglie secche per mantarsi<br>
+se succedesse quello che non temo,<br>
+ma il coraggio rifiuta d'arrendersi<br>
+e s'abissa nella nebbia davanti<br>
+strapazzata dai venti roboanti.
+</p>
+
+<p>
+Come un rito bacio le quattro curve<br>
+ai piedi della scultura a braccia aperte<br>
+alquanto sopra le piccole larve<br>
+strette nelle gabbie e ricoperte<br>
+dai vortici che sembrano rapirmi<br>
+e dei mille perché un poco capirmi.
+</p>
+
+<p>
+Dal golgota mi lascio dominare<br>
+e felice discendo al suo riparo<br>
+benedicendo quel grande altare<br>
+dal cui panorama scorgo sì caro<br>
+eremo che racchiudo dentro il pugno<br>
+d'una cosmica prospettiva da sogno.
+</p>
+
+<p>
+DOPO I FISCHI GLI SPUTI
+</p>
+
+<p>
+Un fischio molesta il sonno della stazione:<br>
+signora ingrassata dallo sputo dei barboni<br>
+confusi per terra fra bagagli e commilitoni.
+</p>
+
+<p>
+"Sollecitiamo la partenza causa ritardo!"<br>
+Inavvertito soffio chiude tutte le porte,<br>
+dell'arcigno treno puzzolente e bastardo.
+</p>
+
+<p>
+Straordinaria sorpresa è un posto libero;<br>
+quello solo e scomodo sotto il finestrino,<br>
+riservato al pensiero di nero clandestino.
+</p>
+
+<p>
+Non una volta il treno è partito commosso<br>
+dagli abbracci sui marciapiedi affollati,<br>
+ma aspetta il fischio taciturno e sommesso.
+</p>
+
+<p>
+L'OFFESA
+</p>
+
+<p>
+In paradiso non ci sono fotografie<br>
+e nessuno inveisce il giorno d'oggi,<br>
+mentre in quel bosco di barbute spie,<br>
+ti trattano come un ladro che fuggi.
+</p>
+
+<p>
+A molti offrono un santino strabico,<br>
+se per affetto pretendi la loro mano,<br>
+temono il contagio d'un male demonico<br>
+che le preghiere non restituirà sano.
+</p>
+
+<p>
+Quest'è l'immagine fatta a somiglianza<br>
+per coloro a cui è più conveniente<br>
+sbraitare la povertà con arroganza<br>
+dell'accogliere uno spirito penitente.
+</p>
+
+<p>
+ROMA
+</p>
+
+<p>
+Vecchia lupa dal cuore d'oro stanca!
+</p>
+
+<p>
+Generosa mammella per figli adottivi<br>
+e vecchi imperatori vestiti di nero<br>
+in groppa a bronzi cavalli corrosivi<br>
+nella schiavitù del duemila cone zero.
+</p>
+
+<p>
+Maledetto sia il suono delle sirene<br>
+che schizza da automobili assassine,<br>
+tra immigrati venditori di bustine<br>
+e topi campagnoli grassi come iene.
+</p>
+
+<p>
+Città mondiale, cosa ancora ti manca?
+</p>
+
+<p>
+VIVA L'ITALIA
+</p>
+
+<p>
+Il niente del tuo passaggio mi ha sfiorato<br>
+nella leggera notte invasa dai sogni reali<br>
+restituiti alla ragione nel lutto avverato<br>
+che in equo segreto distingue gli umani mali.
+</p>
+
+<p>
+Un nome lontano che suona chiaro e valoroso,<br>
+dell'onestà un'ideale che lascia nei destini<br>
+l'esemplare saggezza di un presidente famoso.<br>
+Libertà! E' l'eterna bandiera di S. Pertini.
+</p>
+
+<p>
+L'AMBRO
+</p>
+
+<p>
+Magiaca gola dei Sibillini,<br>
+Vellutata e mistica ferita,<br>
+invasa di sani pellegrini.
+</p>
+
+<p>
+Miracoli, leggende, Santuario,<br>
+quivi una pastorella è guarita<br>
+tracciando celeste itinerario.
+</p>
+
+<p>
+Una cascata d'acqua fragorosa,<br>
+nella devota valle smarrita,<br>
+silenzio e pace di luce ombrosa.
+</p>
+
+<p>
+OTTO MARZO MILLENOVECENTONOVANTA
+</p>
+
+<p>
+Per codesto dì, voli un fiore sulla primavera<br>
+che rassereni l'anima in tenera accoglienza<br>
+dell'amore e della pace, anche la più severa.
+</p>
+
+<p>
+Un ramoscello bagna le radici dentro un ricordo<br>
+ritrovando nella sublime volontà della pazienza<br>
+la viva forza di accettare il presente accordo.
+</p>
+
+<p>
+Quanti sentimenti per addolcire la cruda natura!<br>
+Il destino inventa una donna per ogni evenienza<br>
+in cui bellezza e amore sono assai splendida cura.
+</p>
+
+<p>
+Con un profumo, oggi sono l'orgoglio di quel tarlo<br>
+che vive abbracciato alla fede nell'esistenza<br>
+colorata di giallo e di poesia con cui ti parlo.
+</p>
+
+<p>
+DONNA NEL RITRATTO
+</p>
+
+<p>
+Il tuo destino è come un fiore<br>
+innestato nel profondo del cuore.
+</p>
+
+<p>
+Donna di nome brivido,<br>
+sull'onda del tuo seno<br>
+piove un sangue gelido<br>
+di vari rancori pieno.
+</p>
+
+<p>
+L'immagine ti fan brutale<br>
+sposa, generosa e fatale.
+</p>
+
+<p>
+Mi svegli con spavento:<br>
+regista dei sogni miei,<br>
+metà del cuore spento<br>
+e infiniti vizi rei.
+</p>
+
+<p>
+L'alba dell'amore pregate,<br>
+le mamme gelose perdonate!
+</p>
+
+<p>
+MONTE CORONA
+</p>
+
+<p>
+C'è un sole che risveglia la foresta<br>
+tra i solchi della vecchia mulattiera<br>
+che al favore del passo non si presta.
+</p>
+
+<p>
+La povertà si è stabilita fiera<br>
+Tra i rovi d'un eremo incancellabile,<br>
+con il coraggio fuor d'ogni maniera.
+</p>
+
+<p>
+Piccolo mondo del nulla dove l'umile<br>
+gioia trascina lo sconosciuto carro<br>
+della fede sulle vie del redimibile.
+</p>
+
+<p>
+Taciuta sofferenza vicino all'azzurro,<br>
+cuore di giovane colombella assorta,<br>
+del suo divino amore odo un sussurro.
+</p>
+
+<p>
+Che dolce il suo saluto che mi scorta<br>
+nell'austera fortezza di auree glorie<br>
+dove respiro l'incenso che mi conforta.
+</p>
+
+<p>
+Un'altra oasi nel deserto delle memorie,<br>
+mitica isola bagnata da fredde correnti<br>
+e giardino incantato di sublimi arie.
+</p>
+
+<p>
+A RILENTO
+</p>
+
+<p>
+L'arciere del mio cuore ha perso la mira<br>
+nel beato centro dell'universo incantato;<br>
+ormai neanche un verso avvelenato più tira<br>
+e rantola come un razzo spento e spuntato.
+</p>
+
+<p>
+La paura è diventata un'economia vigliacca<br>
+che vibra quando un granello di polvere<br>
+si posa sulla pietra tremendamente fiacca<br>
+del mio destino tramutato in nera cenere.
+</p>
+
+<p>
+LA VITA IN SCIOPERO
+</p>
+
+<p>
+Dove andrà questo mondo senza benzina<br>
+che scappa dagli scarichi dell'eterno<br>
+nell'improvvisa notte senza lampadina,<br>
+svanita nel nebuloso chiarore moderno?
+</p>
+
+<p>
+Oh, gelosa e amica si leva la Speranza<br>
+che mi concede appuntamenti immediati<br>
+malgrado le manchi la voce e l'eleganza<br>
+per convenire insieme nei cuori amati.
+</p>
+
+<p>
+Tu hai scelto per me la via più stretta<br>
+che finisce presto in una grotta deserta<br>
+consacrata alla solitaria pace benedetta<br>
+dalla natura dittatrice anche se aperta.
+</p>
+
+<p>
+Una fuga durata non più di tre quartine<br>
+e sento espandersi le ali del mio cuore<br>
+nel cielo della caverna che non è fine.<br>
+Scorre in libertà il sangue dell'amore,
+</p>
+
+<p>
+baciato dal verde suono; nuova stagione<br>
+finisce negli schiamazzi e nei ritiri<br>
+usati dal popolo per cantare la ragione<br>
+della vita di comuni e rari martiri.
+</p>
+
+
+<hr>
+
+<h1>Pensieri3</h1>
+
+<p>
+PASSATO E FUTURO
+</p>
+
+<p>
+Viaggiando sulle rotte della musica,<br>
+dall'oriente sono appena ritornato<br>
+con i ricordi della fede magica.
+</p>
+
+<p>
+Finora lo sguardo avevo posato<br>
+nel vuoto, ma accarezzandomi il mento<br>
+scoprii che dovevo essere invecchiato.
+</p>
+
+<p>
+Sulla lunga barba grigia ancor sento<br>
+l'ispida discesa che in anni misurai<br>
+fermandomi poco prima di cento.
+</p>
+
+<p>
+Sopra le membra disfatte, notai<br>
+una tunica dal colore vermiglio:<br>
+ad un lama tibetano, pensai!.
+</p>
+
+<p>
+I MALEDETTI
+</p>
+
+<p>
+Per me tutto sarà sempre la metà<br>
+finché i grassi vermi consoleranno<br>
+il corpo e l'anima di fragile pietà.
+</p>
+
+<p>
+Il desiderio è una saetta di diavolo<br>
+fuggito dalle viscere del suo vulcano<br>
+saltellando felice come un idolo.
+</p>
+
+<p>
+La lumaca di fuoco avvalla rotolante<br>
+verso la remota città di ghiaccio,<br>
+bella come la faccia di un diamante.
+</p>
+
+<p>
+Sulla rossa lingua di lava, spuntano<br>
+le rigogliose spine dei fiori del male;<br>
+le stesse ortiche che i poeti piantano
+</p>
+
+<p>
+fra i loro sogni di bellezza ancestrale,<br>
+l'amore con gli spiriti delle tenebre<br>
+e le tentazioni del piacere carnale.
+</p>
+
+<p>
+Tutte le mete sono il progetto lugubre<br>
+di un paradiso nella follia artificiale<br>
+che conserva le carogne nelle ombre.
+</p>
+
+<p>
+Questi signori della città adorabile<br>
+gettano le povere maschere nell'abisso<br>
+dei demoni e del terrore irriducibile.
+</p>
+
+<p>
+IL PRECIPIZIO
+</p>
+
+<p>
+Sempre l'uomo è stato così cattivo<br>
+da respingere l'idea che la morte<br>
+potesse fare miracoli ad un vivo.
+</p>
+
+<p>
+Solo un Santo chiese vero rispetto<br>
+per la segreta arma dell'esistenza,<br>
+e pregava questa sorella con affetto.
+</p>
+
+<p>
+Morire, è vero, per molti è una brama<br>
+di tuffarsi sulle nubi dei pensieri<br>
+in un luogo dal profondo panorama.
+</p>
+
+<p>
+Sappiate che il Poverello non salverà<br>
+chi sfida i poteri del suo amore.<br>
+L'eterna speranza dell'anima tenterà
+</p>
+
+<p>
+un accordo che non sia profanazione<br>
+delle sacre vie dove sostano i corpi<br>
+e l'anime in estasi sentono l'emozione
+</p>
+
+<p>
+dei venti lontani che portano bonaccia.<br>
+Tutti dobbiamo riposare sul ripido trono<br>
+delle paure, incollati alla dura roccia.
+</p>
+
+<p>
+SERATA DI RIPIEGO
+</p>
+
+<p>
+Sono sempre io il puntello dei lampioni<br>
+rimasti soli nella ballerina notte,<br>
+a far luce a vecchie e nuove stazioni.
+</p>
+
+<p>
+Le attese sono modestie corrotte<br>
+da vili insulti di chi è esausto<br>
+delle false promesse galeotte.
+</p>
+
+<p>
+Vivere per sé non è affatto giusto<br>
+tanto vale affrettarsi a partire,<br>
+o come un'inutile oggetto vetusto,
+</p>
+
+<p>
+nella melmosa storia finire<br>
+senza il peccato di viltà<br>
+che certo non mi può impedire
+</p>
+
+<p>
+di essere stato amante della lealtà;<br>
+l'unica virtù favorevole all'angoscia<br>
+mai seppellita con troppa umiltà.
+</p>
+
+<p>
+Ahimè, la fioca luce che s'ammoscia,<br>
+fa scappare i pensieri di segrete trame<br>
+ch'io credevo la mia forza inconscia.
+</p>
+
+<p>
+L'ULTIMO GIRONE
+</p>
+
+<p>
+Se un poema Dante riscrivesse,<br>
+di sicuro la resistenza non avrebbe<br>
+di narrare le nuove scommesse;
+</p>
+
+<p>
+il numero dei gironi aumenterebbe,<br>
+fino a creare uno sterminato inferno<br>
+dove i maligni, ognuno ritroverebbe
+</p>
+
+<p>
+l'amico a soffiare sul fuoco eterno.<br>
+Quivi comanda uno sciagurato negro<br>
+contento di vendicarsi all'inferno
+</p>
+
+<p>
+di quei che l'hanno voluto sì pigro<br>
+e inerme ai dolori delle fiamme,<br>
+se non addirittura sereno e allegro
+</p>
+
+<p>
+RISULTATI PARZIALI
+</p>
+
+<p>
+Certe passioni il cuor languisce<br>
+fino a gonfiarlo d'aria mistica;<br>
+quella malinconia che mi punisce<br>
+e fa sognare la mia anima rustica.
+</p>
+
+<p>
+Come la luce di una pudica luna,<br>
+la fede tra le nuvole s'addormenta<br>
+soggiogata da un re senza fortuna,<br>
+perché il mondo l'ama e lo tormenta.
+</p>
+
+<p>
+Oh! Raggio del sacrificio, vorrei<br>
+per te bruciare sulle folli passioni<br>
+affinché svaniscano i dubbi miei<br>
+tra le bieche amicizie e le finzioni.
+</p>
+
+<p>
+VIGILIA
+</p>
+
+<p>
+Pensate davvero al digiuno una volta,<br>
+e pensatelo così a lungo che almeno<br>
+l'attesa possa somigliare a raccolta.
+</p>
+
+<p>
+Sale leggera la voglia come un baleno<br>
+desideroso di arrivare all'assoluto,<br>
+proprio per incollarsi all'eterno seno.
+</p>
+
+<p>
+Si, quel niente da tutti riconosciuto<br>
+come il disteso e morbido abbandono<br>
+ai dolci attriti del celeste velluto.
+</p>
+
+<p>
+Così scoprirete il mistero del perdono<br>
+venirsene sulle fitte senza aperte piaghe<br>
+e prendersi il dolore come umano dono.
+</p>
+
+<p>
+Le penitenze, che in vero sembrano vaghe,<br>
+rifanno il trucco all'anima di una sirena<br>
+con adorabili tinte, e splendore di maghe.
+</p>
+
+<p>
+... UGUALE TANTI PIU' UNO
+</p>
+
+<p>
+Poi che la settimana è tosto passata,<br>
+diavoli e santi hanno di che pensare:<br>
+più triste è la vita assai invecchiata.<br>
+Gli anni, tutti si vorrebbe scartare,<br>
+ma non c'è altra cosa meglio incollata<br>
+al tempo del vivere: Oh inutile buttare!<br>
+Conviene comunque non averla calcolata<br>
+perché il risultato non fa certo sperare<br>
+nella crudeltà assolta e così liberata.<br>
+I rimorsi duramente andranno a parare<br>
+contro l'indifferenza non contemplata<br>
+dal giudizio dell'esistenza lineare.<br>
+Giorni, mesi, anni: sono logica misurata<br>
+per chiedere poco, e ancor meno dare<br>
+all'auspicio di una mirabile scalata.<br>
+Studi inconcludenti ed esperienze rare<br>
+senza che l'anima venga considerata<br>
+la via su cui il divino amore cercare.<br>
+Il tempo dondola sulla lancetta colorata<br>
+scatenando infinite bufere per indorare<br>
+di attimi la preziosa dea addormentata.<br>
+Non trova pace il mio muto contestare<br>
+e allora trascuro se l'idea è sbagliata<br>
+e un poco mi permetto, anche di odiare.
+</p>
+
+<p>
+DI TRAVERSO
+</p>
+
+<p>
+Il tradimento è la bussola della passione:<br>
+quando il tremante ago nero impazzisce,<br>
+un remoto oblio si impossessa del timone<br>
+deviando nei luoghi dove il rimorso agisce.
+</p>
+
+<p>
+Se fosse lì, il vecchio tribunale di pace,<br>
+io mi costituirei chiedendo modesta pena<br>
+che basti ad esaudire la fame del rapace<br>
+invitato alla festa della mia ultima cena.
+</p>
+
+<p>
+Se fosse lì, di atroce vendetta saziato,<br>
+non spremerebbe più fatiche il mesto sole<br>
+per la luce del nostro tenebroso creato<br>
+disperso nell'arcipelago di piccole isole.
+</p>
+
+<p>
+Il tradimento è bellezza in rea confusione<br>
+con cui il mondo audacemente affievolisce<br>
+le calamità cadute sopra ogni oscura ragione.<br>
+Vanitoso orgoglio anche in guerra fallisce!
+</p>
+
+<p>
+IL PUGNALE DELLA NATURA
+</p>
+
+<p>
+Là, dove rintrona una goccia d'acqua<br>
+e dove dimora stabile la solitudine,<br>
+spargo i versi di una serena Pasqua.
+</p>
+
+<p>
+Gli uccelli sfilano in moltitudine,<br>
+aleggiando su scheletri d'acciaio<br>
+creature di terrena altitudine.
+</p>
+
+<p>
+Sulla vetta m'aspetta un cielo gaio<br>
+per scambiare vecchi amori con nuova<br>
+strofa del suo dolcissimo calamaio.
+</p>
+
+<p>
+Ma l'ambiguo mistero anche qui trova<br>
+l'oscura voracità d'una grotta<br>
+dentro la quale l'abisso riprova
+</p>
+
+<p>
+la vertigine del nulla mai ghiotta<br>
+del suo delirante e perpetuo moto,<br>
+sul peso della mia anima che fiotta.
+</p>
+
+<p>
+AMMIRAZIONE
+</p>
+
+<p>
+Sulla tonda posa di un letto ridente,<br>
+dagli spasmodici affanni contrita,<br>
+una giovane che giaceva sofferente<br>
+come spirito di veggente invaghita,<br>
+colse gioia immensa di estasi ardente<br>
+nella sua anima completamente rapita.
+</p>
+
+<p>
+Ora, i colori delle sue nude forme,<br>
+fissano sulla tela, l'equivoca bellezza<br>
+del Dio immutabile ed a tutti informe,<br>
+ma vicino agli umani atti di purezza:<br>
+misteriosa quanto lo è d'amore enorme,<br>
+la sorpresa che il cuore le accarezza.
+</p>
+
+<p>
+Di lacrime e lamenti è fatta la virtù<br>
+donata al mondo per gioia prematura<br>
+della verità, come l'adorata gioventù<br>
+sembra illudere con la sua duratura<br>
+e poi farsi vittima di questa schiavitù<br>
+stabilita dal giusto potere della natura.
+</p>
+
+<p>
+L'arte per il poeta è una dea incinta<br>
+dalla cui crescente adorazione s'aspetta<br>
+molto più di una magica figura dipinta<br>
+come una maliziosa brama che lo alletta<br>
+e lo infanga di speranza nera e finta,<br>
+invece di altra femmina ben più perfetta.
+</p>
+
+<p>
+Perde l'ignobile coraggio nel muschio<br>
+e impietrisce sulla voragine del grembo<br>
+dove le grida schiudono un nuovo occhio,<br>
+il mondo illuminato da un triste rombo<br>
+contro colui che non è apparso maschio,<br>
+ma esile spirito simile a dolce colombo.
+</p>
+
+<p>
+LA FESTA DELLA TERRA
+</p>
+
+<p>
+Che una festa la guarisca<br>
+è dubbio se non contrario,<br>
+perciò fate che finisca<br>
+il gioco per lei martirio.
+</p>
+
+<p>
+Madre terra, a te la scelta!<br>
+Sii padrona d'arte viva;<br>
+non conosco altra svolta<br>
+perché tu non sia cattiva.
+</p>
+
+<p>
+Cosa puoi da me temere,<br>
+più d'un verme non diverrò.<br>
+Giura invece di godere<br>
+il bene che ti recherò.
+</p>
+
+<p>
+Del resto siamo la prole<br>
+dello stesso cielo azzurro,<br>
+che cova sotto il sole<br>
+allegro popolo buzzurro.
+</p>
+
+<p>
+No, non sei come noi vile:<br>
+l'uomo in te si nasconde<br>
+quando nevica d'aprile<br>
+per colpa delle baraonde
+</p>
+
+<p>
+che hanno sempre abusato<br>
+della tua contemplazione,<br>
+quasi t'avessero obbligato<br>
+all'eterna maledizione.
+</p>
+
+<p>
+Chi danna questo pianeta<br>
+e non venera la sua oasi,<br>
+inquina la vita quieta<br>
+di cui è re in tutti i casi!
+</p>
+
+<p>
+INSISTENZA ALPINA
+</p>
+
+<p>
+Se ogni rabbia del vivere è una ruga,<br>
+io conosco un modo abbastanza lesto<br>
+per rimuoverla compiendo una fuga.
+</p>
+
+<p>
+Con greve passo al limite mi presto,<br>
+scalando terrazze aride di monti<br>
+e ascoltando la pace del Dio onesto.
+</p>
+
+<p>
+Quanto amore altrove mi si racconti,<br>
+qui le lacrime sono preferite<br>
+e spargono la mestizia nei canti.
+</p>
+
+<p>
+Per le anime che ascoltano infinite,<br>
+sono come la neve solitaria,<br>
+dalla parte delle ombre ingigantite.
+</p>
+
+<p>
+L'intenso amore dolcemente varia<br>
+la salute del mio uomo appena nato<br>
+che riconosce il saluto dell'aria.
+</p>
+
+<p>
+FRAMMENTI
+</p>
+
+<p>
+Ai piedi della vecchia Croce,<br>
+sul Monte Cucco ho posto un sasso<br>
+che ricorda la mia vera voce:<br>
+La pace delle anime,<br>
+duri più di questo sasso.
+</p>
+
+<p>
+Ho visto strane donne<br>
+camminare sui vetri<br>
+mostrando minigonne<br>
+sopra gambe come otri.
+</p>
+
+<p>
+Strisciando nel fango<br>
+rosei vermi sbuffano,<br>
+mai la testa alzano<br>
+dal sinuoso tango.
+</p>
+
+<p>
+Quando i giardini soffrono la sete<br>
+e la pietra affiora in superficie,<br>
+vana è la fatica che spremete!.
+</p>
+
+<p>
+I ladri scovano le poesie<br>
+come fanno quei gelosi<br>
+che sanno di essere peggio<br>
+degli amanti:<br>
+non capiscono le fantasie,<br>
+e i segreti li fa sentire<br>
+importanti.
+</p>
+
+<p>
+Babbo e io,<br>
+bue e buio.<br>
+Eccoci a caccia:<br>
+cieco e cicca,<br>
+cuoco e oca,<br>
+eco e coccio.<br>
+Io e Dio,<br>
+duo di ode.<br>
+Addio odio<br>
+ed idee.
+</p>
+
+<p>
+PER CHI HA DONATO TUTTO
+</p>
+
+<p>
+O luce, soave carezza dei sensi,<br>
+di nuovo la vita sfiora il mio cuore<br>
+spoglio degli ardori che appena spensi<br>
+nel gradito sonno del tuo colore.
+</p>
+
+<p>
+O cielo, culla di speranza eterna<br>
+dove echeggiano dediche segrete<br>
+per la verità che piú non ritorna,<br>
+schiudi la sorgente della mia sete!
+</p>
+
+<p>
+O terra, ponte sul magico lago<br>
+che riflette le stelle del profondo,<br>
+ondeggia verso un tempo meno vago<br>
+per coloro che lo stanno attraversando.
+</p>
+
+<p>
+O seme, tu mi rendi tanto ricco<br>
+donandomi il frutto del tuo germoglio,<br>
+ed eri solamente un duro chicco,<br>
+ma pieno di vita e di sano orgoglio.
+</p>
+
+<p>
+O goccia, le modeste mie fatiche<br>
+per una d'acqua sembrano sparire;<br>
+quanto, per le cascate sono poche,<br>
+degne del dolce e fresco trasparire!
+</p>
+
+<p>
+O uomo, d'esser fortunato padrone<br>
+ringrazia la natura serva madre<br>
+dei tuoi bisogni, con abnegazione,<br>
+pregando il volere del sommo padre.
+</p>
+
+<p>
+O pace, nemica della sofferenza,<br>
+dimora fedele sullo spirito,<br>
+fammi sentire la reale presenza<br>
+del pensiero di cui sono nutrito.
+</p>
+
+<p>
+SOGNO
+</p>
+
+<p>
+Frammenti d'infanzia<br>
+ed enigmi esteriori<br>
+confluiscono nei sogni<br>
+certezze senza leggi<br>
+di piacevoli racconti nulli.<br>
+Si scoprono luoghi<br>
+dove il pensiero gioca<br>
+da solo a nascondino<br>
+tramutando le sue forme<br>
+con le maschere della natura.<br>
+La mia anima si divarica<br>
+e si flagella di orrore<br>
+alla caccia della talpa<br>
+che scava gallerie franose<br>
+e innalza dighe al passaggio<br>
+dell'universo irrefrenabile.<br>
+Perché cercare nei sogni<br>
+l'amante che non da appuntamenti?<br>
+Nella notte insidiosa<br>
+irrompe su un treno vuoto,<br>
+o grida il superstizioso verso<br>
+della terribile civetta.
+</p>
+
+<p>
+SOGNO
+</p>
+
+<p>
+Sulla torre cercavo un sogno<br>
+che fosse un perenne brivido,<br>
+ma la scala di sospesi pioli<br>
+io non sapevo come salire.<br>
+Invece il vecchio campanaro<br>
+si arrampicava come un ragno<br>
+e non pensava di aiutarmi.<br>
+Infine ho rinunciato al desiderio<br>
+e sono tornato a vedere fuori<br>
+la desolazione della torre<br>
+senza campana, fare ombra<br>
+su tutta la valle addormentata.
+</p>
+
+<p>
+SOGNO
+</p>
+
+<p>
+Mi arrampico ovunque,<br>
+soprattutto nelle difficoltà<br>
+sia esse siano dei sentieri sperduti,<br>
+sia sui miracoli piú tenebrosi.<br>
+Il piú delle volte nelle strade ricercate<br>
+cerco altrettante persone singolari<br>
+e la mamma di Etienne è comparsa<br>
+con la sua forza di verità<br>
+che solo mi dava il fiato<br>
+di arrivare in cima all'ideale mistico,<br>
+ma il sogno vuole che ci giriamo intorno<br>
+ad uno strano tornante in pianura<br>
+che costeggia una buca di putrido letame.<br>
+Forse lei conosceva bene il tragitto,<br>
+com'io l'immaginavo la strada di campagna<br>
+dove l'erba ha quasi ricoperto la ghiaia,<br>
+le passeggiate solitarie da piccolo<br>
+tra le vigne, verso la casa dei cacciatori.<br>
+Ma stavolta portava ad un monte aspro<br>
+detto Corona forse per la regalità<br>
+del suo eterno spirito del nulla.
+</p>
+
+<p>
+SOGNO
+</p>
+
+<p>
+Trovarsi in casa d'una signora sconosciuta,<br>
+piuttosto anziana, ma insieme ad una bambima<br>
+che sembra interessarmi molto:<br>
+la proteggo della sua innocenza<br>
+perché ho paura che veda la morte,<br>
+perché intorno a lei non esiste altro.<br>
+Non voglio che veda quella fotografia<br>
+del ragazzo finito in disgrazia<br>
+proprio dove finiscono le disgrazie,<br>
+per di piú se quivi sventolano bandiere<br>
+a strisce e gagliardetti presi a calci.<br>
+Chi sei bambina del mio amore,<br>
+perché vivi nel paese in collina<br>
+da dove sono scivolato come una fogna<br>
+al verde fiume, piú lento a morire<br>
+nel mare nero come la notte di sempre.
+</p>
+
+<p>
+SOGNO
+</p>
+
+<p>
+Non so giocare senza perdere con disprezzo,<br>
+magari per scherzo mi abbaglia un faro<br>
+a forma di viso umano e io cado nei pozzi<br>
+appena misurati; solo allora comincia<br>
+il vero divertimento degli "amici",<br>
+che mi gettano un pesante arpione<br>
+per farmi sprofondare col suo colpo<br>
+fin dove il sogno non può raccontare,<br>
+ma io aspetto o forse mi nascondo<br>
+finché nessuno piú mi cerca e questo<br>
+è piú pauroso perché non so chi mi aspetterà<br>
+quando uscirò arrampicandomi sul tubo<br>
+al centro del grande buco senza fine.
+</p>
+
+<p>
+SOGNO
+</p>
+
+<p>
+I sogni non hanno paura della morte,<br>
+cosí al capezzale di un lutto<br>
+il distacco della paura vestita di nero<br>
+risorge e non per miracolo,<br>
+ma per ritrovare l'unione spirituale<br>
+bella quanto un sogno e<br>
+lunga quanto l'eterno.
+</p>
+
+<p>
+IL PUNTO
+</p>
+
+<p>
+Io non sono piú fra quelli<br>
+che strisciano le scarpe sui marciapiedi insabbiati<br>
+per imporre l'odio della loro rilassatezza.<br>
+Io mi invento un sentiero spinoso<br>
+per vedere se esce sangue azzurro<br>
+dalla mia anima martoriata<br>
+dalla perenne vacanza nello sperduto cielo.<br>
+Si accende un buio splendore<br>
+nei gesti di quella mano superiore<br>
+che batte la schiena del mio uomo addormentato<br>
+e lo fa tossire e sputare pensieri<br>
+sugli orrori che aveva dentro.<br>
+Cosí preferisce scappare come un pipistrello<br>
+quando due amanti si appoggiano<br>
+alla ragnatela dei suoi sensi<br>
+per le loro effusioni d'amore.
+</p>
+
+
+<hr>
+
+<h1>Vocemia</h1>
+
+<p>
+15/11/92<br>
+La disperazione che porta promesse lusingatrici con sempre meno fervore perché la realtà uccide i sogni ed i sogni traditi si vendicano sulla realtà.<br>
+Per carità datemi la noia se la fiducia e la libertà si investono così.
+</p>
+
+<p>
+16/11/92<br>
+Una donna che seppellisce "lo scheletro" del proprio figlio appena morto per la malnutrizione e per la tracotanza del potere privo del senso del futuro.
+</p>
+
+<p>
+17/11/92<br>
+Se odi tutti e sei allergico agli altri, almeno convinciti che quando pensi e gli altri ti pensano ci si può voler bene nel modo più sincero; e non è poco perché basta niente per crederci.
+</p>
+
+<p>
+19/11/92<br>
+"Non ti odio perché questo è un sentimento che riservo a coloro cui vorrei voler bene".
+</p>
+
+<p>
+20/11/92<br>
+Per un pessimista non c’è dolcezza o cola di mare che non porti verso una tempestosa.....novità
+</p>
+
+<p>
+22/11/92<br>
+Antisemiti, neonazisti, razzisti - da oggi viene quotidianamente replicato il film di Hitchcock su Hauschwitz - a voi sono riservati i migliori posti in platea ed anche il biglietto è gratuito, anzi riceverete gli inviti senza sapere chi ve li manda.
+</p>
+
+<p>
+23/11/92<br>
+Questo è il mondo!? "Una busta di siringa sul prato di una scuola, o di una chiesa abbandonata".
+</p>
+
+<p>
+25/11/92<br>
+Chi fa del bene, lo fa solo per se.
+</p>
+
+<p>
+26/11/92<br>
+Ciò che non rende noiosa la mia vita è la rabbia per una trasparente voglia di solitudine.
+</p>
+
+<p>
+27/11/92<br>
+Un giorno bello è quello colmo di ansia per ciò che avverrà l’indomani.
+</p>
+
+<p>
+28/11/92<br>
+Se il corpo fosse immortale, l’anima si getterebbe nell’inferno per sterilizzarsi degli orrori del suo oppressore.
+</p>
+
+<p>
+29/11/92<br>
+Non c’è cosa più retorica di pensare che ciò che si sta per dire non è retorica!.
+</p>
+
+<p>
+E’ vero, il lavoro ci tiene ottimamente occupati, ma è la domenica che produce buoni propositi.
+</p>
+
+<p>
+30/11/92<br>
+Vivo in una famiglia di gliaccio: ha un cuore che brucia d’amore, ma dimostra solo l’istinto di conservazione.
+</p>
+
+<p>
+01/12/92<br>
+La vita prova l’esistenza, quanto la fede la verità.
+</p>
+
+<p>
+03/12/92<br>
+Quando diminuisce la perseverenza, o è finita la fantasia, o tutto è drammaticamente certo
+</p>
+
+<p>
+Dicembre 1996
+</p>
+
+<p>
+Giammai la mia mano si stanca,<br>
+la tua folta chioma accarezzando.<br>
+Dopo il taglio ricresce ed un po' sbianca<br>
+il turgido ricciolo, fino a quando,<br>
+una coltre di fitta passione ritornerà.
+</p>
+
+<p>
+Capodanno 1996
+</p>
+
+<p>
+Per me capodanno è<br>
+la folgore che violenta il buio<br>
+della mia mezzanotte supina.
+</p>
+
+<p>
+Per me capodanno è<br>
+l’impotente artificio bellico<br>
+contro il nemico dell’anima.
+</p>
+
+<p>
+Per me capodanno è<br>
+l’impenetrabile coltre nebbiosa<br>
+su questo monte di passione.
+</p>
+
+<p>
+Per me capodanno è<br>
+la gioia d’afferrare più bella stagione<br>
+da questo ingannevole orizzonte d’inverno
+</p>
+
+<p>
+11/02/1997
+</p>
+
+<p>
+Oggi mi sento una carogna,<br>
+putrido di costosa vergogna,<br>
+di più la carne già agogna.
+</p>
+
+<p>
+17 gennaio 2002
+</p>
+
+<p>
+Vigile assenza<br>
+Eterna ricorrenza<br>
+Sublime sentenza
+</p>
+
+<p>
+avete rapito la mia anima<br>
+non cederò ad un solo ricatto<br>
+voi siete me<br>
+ed io sono voi<br>
+insieme non c'è tempo<br>
+ormai la mia storia è vostra<br>
+l'ho cercato<br>
+l'ho voluto<br>
+è la fine senza passato<br>
+è l'inizio senza futuro
+</p>
+
+
+<hr>
+
+<h1>Frammenti</h1>
+
+<p>
+Il troppo orgoglio è come il menefreghismo, lascia tutte le cose come stanno.
+</p>
+
+<p>
+L’ottimismo della volontà - il pessimismo della ragione.
+</p>
+
+<p>
+L’esistenza è il ritmo, la vita la danza e la musica.
+</p>
+
+<p>
+La libertà può avere una sua immagine collettiva, ma come l’amore è una verità personale e pertanto difficile da imitare. Quella politica non è altro che un condizionamento, un investimento di ideali altrui per l’interesse del potere.
+</p>
+
+<p>
+Oh libertà, poliedrica figura,<br>
+come ingannevole amor ben disponi,<br>
+nel fondo della tua pupilla scura,<br>
+sguardi corrotti che sempre perdoni!.
+</p>
+
+<p>
+Una montagna coperta di spessa neve ghiacciata, deve rimanere tale, se dovendosi sciogliere diventasse un sasso brullo con alle pendici una palude di melma.<br>
+Ci sono due tipi di fuoco: quello interiore che da forza, e quello esteriore che distrugge.
+</p>
+
+<p>
+Forse sarà quel sanguigno veleno<br>
+che sgorga dalle ferite dei sensi<br>
+l’insospettabile stridulo freno,<br>
+la vertigine di oscuri immensi
+</p>
+
+<p>
+La bici per me è vivere le stagioni dell’anno come della vita.
+</p>
+
+<p>
+Dichiarazione spontanea
+</p>
+
+<p>
+Vicino a te si arrendono i sogni<br>
+distratti dalla tua bellezza.<br>
+Non solo apparenza nei tuoi colori:<br>
+quel mimetico nero con le ombre del prato<br>
+ravvivato nelle sfumature fuxia come la mia penna,<br>
+non sembra più stonare nemmeno quel verde<br>
+che tanto ho criticato per rinnegare<br>
+la passione sfacciata per la mia cara......
+</p>
+
+<p>
+Così sinceramente condividi le mie avventure<br>
+nelle lunghe passeggiate montane<br>
+dove gli affanni sono la gioia di abbandonarsi,<br>
+sdraiati l'uno vicino all'altra,<br>
+con di fronte uno squarcio d'infinito.<br>
+Sotto il riflesso del sole, poi, il raggioso<br>
+tuo sguardo nega ogni parola di lode,<br>
+poiché solo il mio cuore conosce<br>
+quanto io soffra per la mia cara.....mountain-bike.
+</p>
+
+<p>
+Non regalo novità,<br>
+anzi, cerco il passato<br>
+come dolce carità,<br>
+per nutrire il fato.
+</p>
+
+<p>
+Per esser meno triste<br>
+fingo d'esser lontano:<br>
+libertà giammai viste,<br>
+di me s'innamorano.
+</p>
+
+<p>
+Solo, ignudo, tra bestie e piante rozze,<br>
+il primo uomo così perduto visse<br>
+finché trovò la donna per far nozze,<br>
+sia pure una costola gli mancasse.
+</p>
+
+<p>
+La femmina era bella e seducente,<br>
+con tutti si mostrava assai cordiale,<br>
+ma d'astuzia la convinse un serpente<br>
+che la saggezza non era letale.
+</p>
+
+<p>
+Solitudine, che già ti rinnovi<br>
+con il lento trasmutar dell'inverno,<br>
+ogni ansiosa tristezza in me ritrovi<br>
+curvata sul bianco vuoto quaderno.
+</p>
+
+<p>
+Questo risveglio non cambia la notte,<br>
+ma raddensa di frenetica rabbia<br>
+quelle solite formiche bigotte<br>
+che scavano prigioni senza gabbia.
+</p>
+
+<p>
+Non basterà mai un normale riposo<br>
+contro forzature dell'emozione<br>
+dirette ad uno come me curioso<br>
+e scultore della propria ambizione.
+</p>
+
+<p>
+La forma che assume con semplicità<br>
+riempe il comune stampo del rimpianto<br>
+di quando non poteva dirsi libertà<br>
+la voglia di assomigliare soltanto.
+</p>
+
+<p>
+La natura, per fortuna, è l'erede<br>
+luminoso del mio cieco passato:<br>
+con piacere disinvolto concede<br>
+di abbracciare l'amore mai svelato.
+</p>
+
+<p>
+Uno stimolo vale tutti, la neve<br>
+mostrarsi compagna mentre morendo<br>
+offre i suoi resti come manto lieve<br>
+per chi l'ammira anche tanto soffrendo.
+</p>
+
+<p>
+Come stretto da amorevole abbraccio,<br>
+seppur avvinto con dolce brivido,<br>
+nascondo nel mio preistorico ghiaccio<br>
+l'incandescenza di un sole timido.
+</p>
+
+<p>
+Col vento gioverebbe amalgamarsi<br>
+per estorcergli quella possibilità<br>
+della quale altrimenti confidarsi<br>
+lecito consenso non dà la verità.
+</p>
+
+<p>
+La forza del suo moto trasparente<br>
+sembra virtuosa opera sinfonica,<br>
+la natura, il pentagramma fiorente,<br>
+ed insieme perfetta musica.
+</p>
+
+
+<hr>
+
+
+        <span class="backlinks">
+            <hr class='footnotes'>
+            <b>Backlinks:</b>
+            <br />
+            <a href=''>ABATO</a>
+            
+        </span>
+        
+</div>
+
+<div id="links" style="visibility:hidden">
+<ul>
+<li><b>Vocemia</b></li>
+</ul>
+
+</div>
+
+</div>
+ 
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
+<link rel="icon" type="image/x-icon" href="zapp.ico"/>
+<title>ZAPP</title>
+<base target="_self">
+<style>
+html, body {
+height: 100%;
+margin: 0;
+background:grey;
+}
+#wrapper {
+height: 100%;
+display: flex;
+flex-direction: column;
+visibility:hidden;
+}
+#header, #footer {
+background-color:#330000;
+/*text-align:center;*/
+color:whitesmoke;
+font:italic 18pt georgia;
+padding:4px;
+}
+#content {
+flex: 1;
+overflow: auto;
+font-family: Georgia, Times, serif;
+font-size:16pt;
+background-image:url('sfondouno.png');
+background-repeat: no-repeat;
+background-position: center; 
+background-size: cover;
+text-align:center;
+}
+#content::-webkit-scrollbar {display:none}
+a {text-decoration:none; color:cyan;}
+.voce {
+font-family: Tahoma, Geneva, sans-serif;
+color:lime;
+}
+.elenco {
+display:none; 
+font-size:22pt; 
+text-align:center; 
+padding:20px;
+border:1px solid lime;
+}
+</style>
+
+<script type="text/javascript">
+fisa = function (o) {
+	var d = o.innerHTML;
+	var p = document.getElementById(prima);
+	if (p && d != prima) {
+		p.style.display = "none";
+	}
+	var z = document.getElementById(d);
+	prima = d;
+	var v = z.style.display;
+	v = (v == "" || v == "none") ? "block" : "none";
+	z.style.display = v;
+}
+prima="";
+acaso = function () {
+var db = document.getElementById("aforismi");
+var tutti = db.getElementsByTagName("p");
+var n = Math.floor(Math.random() * tutti.length);
+document.getElementById("footer").innerHTML=tutti[n].innerHTML;
+document.getElementById("wrapper").style.visibility="visible";
+}
+document.onreadystatechange = function () {
+	if (document.readyState == "complete") {
+		//document.getElementById("header").innerHTML=new Date().toLocaleDateString();
+		if (screen.width>640) {
+			document.getElementById("wrapper").style.width="428px";
+		}
+		acaso();
+	}
+}
+</script>
+
+</head>
+<body>
+
+<div id="wrapper">
+<div id="header" ondblclick="javascript:location.href='./ARTEMI/Cripta2.html'"><marquee behavior="alternate" scrollamount="1">Io sono la memoria dell'amore</marquee></div>
+<div id="content">
+<div id="centro">
+<p><img border="0" src="YinYang.png" onclick="javascript:acaso()" ondblclick="javascript:location.href='./ARTEMI/Cripta.html'"></p>
+<!-- inizio contenuto calcolato -->
+
+
+<h1 onclick="fisa(this)" class="voce">ARTEMI</h1>
+<div id="ARTEMI" class="elenco">
+<p><a href="ARTEMI/ARTEMI1.html">ARTEMI1</a></p>
+<p><a href="ARTEMI/Cripta.html">Cripta</a></p>
+<p><a href="ARTEMI/FAMIGLIA.html">FAMIGLIA</a></p>
+<p><a href="ARTEMI/Mujica.html">Mujica</a></p>
+<p><a href="ARTEMI/PLAYWEB.html">PLAYWEB</a></p>
+<p><a href="ARTEMI/Start.html">Start</a></p>
+</div>
+<h1 onclick="fisa(this)" class="voce">LECTIO</h1>
+<div id="LECTIO" class="elenco">
+<p><a href="LECTIO/Angelus_Silesius.html">Angelus_Silesius</a></p>
+<p><a href="LECTIO/CatechismoCompendio.html">CatechismoCompendio</a></p>
+<p><a href="LECTIO/Confessioni.html">Confessioni</a></p>
+<p><a href="LECTIO/DiarioFaustina.html">DiarioFaustina</a></p>
+<p><a href="LECTIO/NuovaFilocalia.html">NuovaFilocalia</a></p>
+</div>
+<h1 onclick="fisa(this)" class="voce">PRAXIS</h1>
+<div id="PRAXIS" class="elenco">
+<p><a href="PRAXIS/Compieta.html">Compieta</a></p>
+<p><a href="PRAXIS/CorMeum.html">CorMeum</a></p>
+<p><a href="PRAXIS/Detti.html">Detti</a></p>
+<p><a href="PRAXIS/Filocalia.html">Filocalia</a></p>
+<p><a href="PRAXIS/Imitazione.html">Imitazione</a></p>
+<p><a href="PRAXIS/Motus.html">Motus</a></p>
+<p><a href="PRAXIS/Oremus.html">Oremus</a></p>
+<p><a href="PRAXIS/Rosarium.html">Rosarium</a></p>
+<p><a href="PRAXIS/Spiritus.html">Spiritus</a></p>
+<p><a href="PRAXIS/Tau.html">Tau</a></p>
+<p><a href="PRAXIS/XBIBBIA.html">XBIBBIA</a></p>
+</div>
+<h1 onclick="fisa(this)" class="voce">QUID</h1>
+<div id="QUID" class="elenco">
+<p><a href="QUID/Aridiamo.html">Aridiamo</a></p>
+<p><a href="QUID/AutoriVari1.html">AutoriVari1</a></p>
+<p><a href="QUID/AutoriVari2.html">AutoriVari2</a></p>
+<p><a href="QUID/Eileen_Caddy.html">Eileen_Caddy</a></p>
+<p><a href="QUID/Haiga.html">Haiga</a></p>
+<p><a href="QUID/Links.html">Links</a></p>
+<p><a href="QUID/MidiPlay.html">MidiPlay</a></p>
+<p><a href="QUID/MyCats.html">MyCats</a></p>
+<p><a href="QUID/PILLS_AFORISMI.html">PILLS_AFORISMI</a></p>
+<p><a href="QUID/PILLS_GAIAS.html">PILLS_GAIAS</a></p>
+<p><a href="QUID/Spinoza.html">Spinoza</a></p>
+<p><a href="QUID/Stampa1.html">Stampa1</a></p>
+<p><a href="QUID/TEST1.html">TEST1</a></p>
+<p><a href="QUID/TEST2.html">TEST2</a></p>
+<p><a href="QUID/TRADING.html">TRADING</a></p>
+<p><a href="QUID/Visus1.html">Visus1</a></p>
+<p><a href="QUID/Visus2.html">Visus2</a></p>
+<p><a href="QUID/Vocemia.html">Vocemia</a></p>
+</div>
+<h1 onclick="fisa(this)" class="voce">SOPHIA</h1>
+<div id="SOPHIA" class="elenco">
+<p><a href="SOPHIA/101_Storie_Zen.html">101_Storie_Zen</a></p>
+<p><a href="SOPHIA/AivanhovPills.html">AivanhovPills</a></p>
+<p><a href="SOPHIA/AnimaCal.html">AnimaCal</a></p>
+<p><a href="SOPHIA/AnimaCalQ1.html">AnimaCalQ1</a></p>
+<p><a href="SOPHIA/AnimaCalQ2.html">AnimaCalQ2</a></p>
+<p><a href="SOPHIA/AnimaCalQ3.html">AnimaCalQ3</a></p>
+<p><a href="SOPHIA/AnimaCalQ4.html">AnimaCalQ4</a></p>
+<p><a href="SOPHIA/BhagavadGita.html">BhagavadGita</a></p>
+<p><a href="SOPHIA/BibbiaEdu.html">BibbiaEdu</a></p>
+<p><a href="SOPHIA/Clement_PadreNostro.html">Clement_PadreNostro</a></p>
+<p><a href="SOPHIA/Dhammapada.html">Dhammapada</a></p>
+<p><a href="SOPHIA/Eileen_Caddy.html">Eileen_Caddy</a></p>
+<p><a href="SOPHIA/Emily_Dickinson.html">Emily_Dickinson</a></p>
+<p><a href="SOPHIA/Gitanjaliz.html">Gitanjaliz</a></p>
+<p><a href="SOPHIA/Guida_indiana.html">Guida_indiana</a></p>
+<p><a href="SOPHIA/Homo_Universalis.html">Homo_Universalis</a></p>
+<p><a href="SOPHIA/Incontro_con_Gesu.html">Incontro_con_Gesu</a></p>
+<p><a href="SOPHIA/Kahlil_Gibran.html">Kahlil_Gibran</a></p>
+<p><a href="SOPHIA/KOAN.html">KOAN</a></p>
+<p><a href="SOPHIA/Mantra.html">Mantra</a></p>
+<p><a href="SOPHIA/Mathnawi1.html">Mathnawi1</a></p>
+<p><a href="SOPHIA/PILLS_ANTROPOS.html">PILLS_ANTROPOS</a></p>
+<p><a href="SOPHIA/PILLS_KHAYYAM.html">PILLS_KHAYYAM</a></p>
+<p><a href="SOPHIA/PILLS_KRISHNAMURTI.html">PILLS_KRISHNAMURTI</a></p>
+<p><a href="SOPHIA/PILLS_TAO.html">PILLS_TAO</a></p>
+<p><a href="SOPHIA/POETARIO.html">POETARIO</a></p>
+<p><a href="SOPHIA/Poetica.html">Poetica</a></p>
+<p><a href="SOPHIA/TAO365.html">TAO365</a></p>
+<p><a href="SOPHIA/TaoTheChing.html">TaoTheChing</a></p>
+<p><a href="SOPHIA/Turoldo.html">Turoldo</a></p>
+<p><a href="SOPHIA/TuroldoPane.html">TuroldoPane</a></p>
+<p><a href="SOPHIA/turoldoUltime.html">turoldoUltime</a></p>
+<p><a href="SOPHIA/Upanishad.html">Upanishad</a></p>
+<p><a href="SOPHIA/VIVIZEN.html">VIVIZEN</a></p>
+</div>
+	
+
+<!-- fine contenuto calcolato -->
+
+</div> <!-- centro -->
+</div> <!-- content -->
+<div id="footer" ondblclick="javascript:acaso()"></div>
+</div> <!-- wrapper -->
+
+<div id="aforismi" style="display:none">
+
+<p>Dio è tutto. (Peter Deunov)</p>
+<p>Chi dubita sta al bivio. (?)</p>
+<p>Grande amore, gran dolore. (?)</p>
+<p>Scegli la strada di mezzo. (?)</p>
+<p>l'ape spagnola? l'APESETAS! (?)</p>
+<p>L'amore eterno dura tre mesi. (?)</p>
+<p>Taxi scomparso. E' un giallo. (?)</p>
+<p>Chi sa fa, chi non sa insegna. (?)</p>
+<p>La volontà non si impara. (Seneca)</p>
+<p>L'amore è un duello. (Jack Kerouac)</p>
+<p>l'ape religiosa? L'APENTECOSTE! (?)</p>
+<p>Il culo non mente mai! (Tinto Brass)</p>
+<p>La libreria non fa l'uomo dotto. (?)</p>
+<p>Colmo dell'ignoranza: non lo so. (?)</p>
+<p>L'amore è un lusso. (Honoré De Balzac)</p>
+<p>L'odio è sete d'amore. (Cesare Pavese)</p>
+<p>I libri pensano per me. (Charles Lamb)</p>
+<p>La civiltà è individuale. (Ezra Pound)</p>
+<p>L'amore è l'unica estasi. (Victor Hugo)</p>
+<p>I bei culi sono ipnotici. (Tinto Brass)</p>
+<p>Un gatto non chiede, prende. (Garfield)</p>
+<p>Bisogna salvare capra e cavolo. [1] (?)</p>
+<p>Bussa al cielo e ascolta il suono!  (?)</p>
+<p>Colmo di un negro: chiamarsi Bruno! (?)</p>
+<p>La stanchezza è il miglior cuscino. (?)</p>
+<p>L'amore è autodidatta. (Roberto Gervaso)</p>
+<p>L'arte è un antidestino. (André Malraux)</p>
+<p>Chi è felice non si muove. (Thomas Mann)</p>
+<p>Per la strada s’accomodan le valige. (?)</p>
+<p>Se si vende, è arte. (Frank Lloyd Wright)</p>
+<p>Amor ogni cosa vince. (Leonardo Da Vinci)</p>
+<p>PESSIMISTA: ottimista con esperienza. (?)</p>
+<p>Colmo del dispettoso: non te lo dico! (?)</p>
+<p>Colmo della gallina: covare un ovino. (?)</p>
+<p>Pensiamo perché non sappiamo. (Ezra Pound)</p>
+<p>Colmo di una maestra: non aver classe. (?)</p>
+<p>In terra di ladri, la valigia dinanzi. (?)</p>
+<p>L'arte è fatica ispirata. (Roberto Gervaso)</p>
+<p>L'arte non imita, interpreta. (Carlo Dossi)</p>
+<p>Se vuoi essere amato, sii amabile. (Ovidio)</p>
+<p>Colmo per un dentista: essere incisivo. (?)</p>
+<p>Colmo dello stitico: nascere a Chicago. (?)</p>
+<p>Colmo dell'antipatia?: Non te lo dico!. (?)</p>
+<p>Il viaggio è nella testa. (Jean Baudrillard)</p>
+<p>In amore, o tutto o niente. (Cesarina Vighy)</p>
+<p>Nessun viaggio è definitivo. (Josè Saramago)</p>
+<p>La mia mente è la mia chiesa. (Thomas Paine)</p>
+<p>Non pecca chi pecca per amore. (Oscar Wilde)</p>
+<p>I gatti sono ornamenti viventi. (Edwin Lent)</p>
+<p>Il vero amore non si vende né si compra. (?)</p>
+<p>Qual'è il maschile di Orchidea? Orcodio! (?)</p>
+<p>Cosa fa un Ape in tribunale? L'APENTITA! (?)</p>
+<p>Colmo per un sordo: non sentire ragioni. (?)</p>
+<p>Colmo di un altoparlante: sentirsi male. (?)</p>
+
+</div>
+</body>
+</html> 
+

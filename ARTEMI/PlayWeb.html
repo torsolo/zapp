@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="../pills.css" />
+<script type="text/javascript" src="../pills.js"></script>
+<title>ZAPP</title>
+</head>
+
+<body>
+
+<div id="dbase" class="buio">
+
+<div id="DB0">
+<p><a href="../index.html">ZAPP</a></p>
+<p onclick="cambia(1)">SACRED</p>
+<p onclick="cambia(2)">STREAMING</p>
+<p onclick="cambia(3)">PROVA</p>
+</div>
+
+<div id="DB1">
+<p onclick="suona('1d0-arJKowgTfTS98B3gDZ9nhbjBbKWoI')">VeniSancteSpiritus</p>
+<p onclick="suona('1c7gG6Uxaf-obWxsIKJWVncGd543ADeoY')">PregoMattino</p>
+<p onclick="suona('1Ljq5aabqb7rzdIRMU8cYMwD4sn59caf5')">PregoSera</p>
+</div>
+
+<div id="DB2">
+<p><a href="suona('https://dreamsiteradiocp5.com/proxy/rmitalia?mp=/stream')">RadioMaria</a></p>
+<p onclick="suona('http://nrf1.newradio.it:9664/stream')">RadioSantoSpirito</p>
+<p onclick="suona('http://s3.shoutitaly.com:8016/;stream.nsv')">RadioMater</p>
+<p onclick="suona('https://icestreaming.rai.it/1.mp3')">RadioRaiUno</p>
+<p onclick="suona('https://icestreaming.rai.it/2.mp3')">RadioRaiDue</p>
+<p onclick="suona('https://icestreaming.rai.it/3.mp3')">RadioRaiTre</p>
+</div>
+
+<div id="DB3">
+<p>PROVA</p>
+<video controls><source src="https://drive.google.com/uc?authuser=0&id=15GH-jO_nPOaeEUl49hJ5WTAUf5T2yLgb" type="video/mp4"></video>
+</div>
+
+
+</div>
+
+
+<script type="text/javascript">
+
+var custom = function () {
+document.getElementById("titolo").innerHTML="PlayWeb";
+document.getElementById("verso").style.font="normal 20pt monospace";
+var corpo = document.getElementById("corpo");
+corpo.style.textAlign="center";
+var sotto = document.getElementById("sotto");
+sotto.style.width = "90%";
+var p = document.createElement("audio");
+p.id="myplayer";
+p.src="../audiobell.mp3";
+p.type="audio/mpeg";
+p.setAttribute("controls","");
+p.setAttribute("preload","none");
+p.style.width = "100%";
+sotto.append(p);
+cambia(0);
+}
+
+var subuno = function(e) {
+return;
+}
+
+var subdue = function() {
+return;
+}
+
+var suona = function(gid) {
+var l = "https://drive.google.com/uc?authuser=0&id="+gid+"&export=download";
+if (gid.substr(0,4)=="http") l = gid;
+var p = document.getElementById("myplayer");
+p.src = l;
+p.type = "";
+p.load();
+p.play();
+}
+
+</script>
+
+</body>
+</html>

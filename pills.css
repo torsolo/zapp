@@ -1,0 +1,93 @@
+﻿html, body {
+  height:100%;
+  min-height:100%;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  background: black;
+  background-image:url('sfondouno.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+}
+b{color:lime}
+sup {
+color:salmon;
+vertical-align: 0.6em;
+font-size: 0.6em;
+}
+
+.buio {display:none}
+#dbase {display:none}
+
+.dentro {
+	padding:10px;
+	margin: auto;
+	color:gold;
+}
+
+#opzioni {
+visibility:hidden;
+position:absolute;
+top:10px;
+left:10px;
+padding:4px;
+border:1px solid red;
+background:darkblue;
+color:whitesmoke;
+font: normal 18pt monospace;
+text-align:center;
+}
+
+#notes {
+display:block;
+width:400px;
+min-height:200px;
+background:darkblue;
+color:whitesmoke;
+font: normal 18pt monospace;
+}
+
+#testa, #piede {
+flex: 0 0 auto;
+color:#979A9A;
+padding:2px;
+}
+
+#testa {
+font:italic 18pt georgia;
+}
+
+#piede {
+font:normal 28pt monospace;
+}
+
+#corpo {
+	flex: 1 1 auto;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: row;
+	font:italic 16pt georgia;
+	/*border:1px solid red;*/
+}
+
+#sotto {
+	flex: 0 0 auto;
+	overflow-y: auto;
+	margin:auto;
+	display: flex;
+	flex-direction: row;
+	font:italic 16pt georgia;
+	text-align:center;
+	/*border:1px solid cyan;*/
+}
+
+.opuls {
+display:inline-block;
+margin:10px;
+border:1px solid grey;
+padding:4px;
+}

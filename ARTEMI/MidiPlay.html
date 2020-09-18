@@ -1,0 +1,65 @@
+<html>
+    <head>
+		<script src='../mp_WebAudioFontPlayer.js'></script>
+		<script src='../mp_0000_JCLive_sf2_file.js'></script>
+        <script>
+			var AudioContextFunc = window.AudioContext || window.webkitAudioContext;
+			var audioContext = new AudioContextFunc();
+			var player=new WebAudioFontPlayer();
+			player.loader.decodeAfterLoading(audioContext, '_tone_0000_JCLive_sf2_file');
+			function playKey(pitch){
+				player.queueWaveTable(audioContext, audioContext.destination, _tone_0000_JCLive_sf2_file, 0, pitch, 0.75);
+			}
+        </script>
+		<style>
+		td {width:50px; height:150px; text-align:center; cursor:pointer}
+		td:hover {background-color:yellow}
+		a {text-decoration:none}
+		</style>
+</head>
+    <body style="background-color:black; color:whitesmoke; font-size:24pt">
+		<div align="center">
+		<table border="3" bgcolor="whitesmoke" style="color:blue; border-collapse:collapse; font-family:monospace; font-size:24pt" bordercolor="#800000" cellpadding="2" cellspacing="4">
+			<tr>
+				<td onclick="playKey(4*12+0);" valign="top">D<br>O</td>
+				<td onclick="playKey(4*12+2);" valign="top">R<br>E</td>
+				<td onclick="playKey(4*12+4);" valign="top">M<br>I</td>
+				<td onclick="playKey(4*12+5);" valign="top">F<br>A</td>
+				<td onclick="playKey(4*12+7);" valign="top">S<br>O<br>L</td>
+				<td onclick="playKey(4*12+9);" valign="top">F<br>A</td>
+				<td onclick="playKey(4*12+11);" valign="top">S<br>I</td>
+			</tr>
+		</table>
+		<hr>
+		<table border="1" bgcolor="whitesmoke" style="color:blue; border-collapse:collapse; font-family:monospace; font-size:24pt" bordercolor="#800000" cellpadding="2" cellspacing="4">
+		<tr><td><a href="javascript:playKey(4*12+0);"><div class="c4">c4</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(4*12+1);"><div class="c_4">c_4</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(4*12+2);"><div class="d4">d4</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(4*12+3);"><div class="d_4">d_4</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(4*12+4);"><div class="e4">e4</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(4*12+5);"><div class="f4">f4</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(4*12+6);"><div class="f_4">f_4</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(4*12+7);"><div class="g4">g4</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(4*12+8);"><div class="g_4">g_4</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(4*12+9);"><div class="a4">a4</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(4*12+10);"><div class="a_4">a_4</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(4*12+11);"><div class="b4">b4</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(5*12+0);"><div class="c5">c5</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(5*12+1);"><div class="c_5">c_5</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(5*12+2);"><div class="d5">d5</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(5*12+3);"><div class="d_5">d_5</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(5*12+4);"><div class="e5">e5</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(5*12+5);"><div class="f5">f5</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(5*12+6);"><div class="f_5">f_5</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(5*12+7);"><div class="g5">g5</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(5*12+8);"><div class="g_5">g_5</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(5*12+9);"><div class="a5">a5</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(5*12+10);"><div class="a_5">a_5</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(5*12+11);"><div class="b5">b5</div></a></td></tr>
+		<tr><td><a href="javascript:playKey(6*12+0);"><div class="c6">c6</div></a></td></tr>
+		</table>
+
+		<p><a href="https://surikov.github.io/webaudiofont/">source</a></p>
+				</div>
+</body>
+</html>

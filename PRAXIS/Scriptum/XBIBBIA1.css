@@ -1,0 +1,27 @@
+﻿
+body {background-color:black;
+color:whitesmoke;
+font-family: Georgia, Times, sans-serif;
+font-size:14pt;
+}
+sup {color:orangered;}
+.abcd {color:gold;}
+#barratesta {
+    position:fixed;
+    width:100%;
+    display:inline-block;
+    white-space: nowrap;
+    overflow-x: auto;
+	top:0;
+	background-color:#4e0606;
+	padding:4px;
+	text-align:center; 
+    z-index:1;
+}
+#content {position:relative;}
+#studio {position:absolute; border:1px solid #0E457D; padding:4px; background-color:#021A32; display:none}
+#VERBUM {display:none}
+#leggo {display:inline-block; border:1px solid yellow; margin-top:40px; padding:4px;}
+td {font:18pt monospace}
+input {font:18pt monospace; text-align:center}
+hr {border:1px solid #0E457D}
