@@ -11,13 +11,7 @@ var cambiaxx = function () {
 }
 
 var callzero = function () {
-    var v = document.getElementById("verso");
-    while (v.firstChild) {
-        v.removeChild(v.firstChild)
-    }
-    var e = pensieri[0].cloneNode(true);
-    v.append(e);
-    document.getElementById("aid").value = "0";
+    cambia(0);
 }
 
 var cambia = function (x) {

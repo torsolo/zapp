@@ -13,7 +13,7 @@
 <div id="dbase" class="buio">
 
 <div id="DB0">
-<p>invocazioni <br> mons. Costantino Di Bruno</p>
+<p>INVOCAZIONI / Mons. / Costantino Di Bruno</p>
 </div>
 
 <p>otteneteci una fede vera in ogni Parola di Cristo Gesù (A001)</p>
@@ -1247,7 +1247,7 @@ corpo.style.textAlign="center";
 
 var subuno = function(e) {
 	var v = e.innerHTML;
-	v = v.replace(/\//g, '<br>');
+	v = v.replace(/\s\/\s/g, '<br>');
 	v = v.replace(" (", "<br><sup>(");
 	v = v + "</sup>";
 	e.innerHTML=v;
@@ -1261,7 +1261,7 @@ var subdue = function() {
 	var tutti = db.getElementsByTagName("p");
 	n = Math.floor(Math.random() * tutti.length);
 	v = tutti[n].innerHTML;
-	v = v.replace(/\//g, '<br>');
+	v = v.replace(/\s\/\s/g, '<br>');
 	sotto.innerHTML = v;
 }
 
