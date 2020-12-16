@@ -78,7 +78,7 @@ var salva = function () {
     zapp.last = document.getElementById("aid").value;
     zapp.ctext = document.getElementById("ctext").value;
     if (zapp.ctext == "#000000")
-        zapp.ctext = "#ffbf00";
+        zapp.ctext = "#d5a6bd"; // "#ffbf00"
     //console.log(zapp);
     localStorage.setItem(questapagina, JSON.stringify(zapp)); // valori default
     nopop();
@@ -160,7 +160,7 @@ document.onreadystatechange = function () {
         img.id = "logo";
         img.src = "../mm_pills.png";
         img.style.cursor = "pointer";
-        img.ondblclick = cambiaxx;
+        img.onclick = cambiaxx;
         cella.append(img);
         riga.append(cella);
 

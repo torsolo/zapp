@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0" />
 <link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="../pills.css" />
+<link rel="icon" type="image/x-icon" href="../zapp.ico"/>
 <script type="text/javascript" src="../pills.js"></script>
 <title>ZAPP</title>
 </head>
@@ -14,22 +15,25 @@
 
 <div id="DB0">
 <p><a href="../index.html">ZAPP</a></p>
-<p onclick="cambia(1)">ETF OGGI</p>
-<p onclick="cambia(2)">BTP OGGI</p>
-<p onclick="cambia(3)">BTP 3MM</p>
-<p onclick="cambia(4)">DJI 3MM</p>
-<p onclick="cambia(5)">FTSE-MIB</p>
-<p onclick="cambia(6)">EURONEXT</p>
-<p onclick="cambia(7)">SP500</p>
+<p onclick="cambia(1)">CHARTS</p>
 </div>
 
-<div id="D1" onclick="cambia(0)"><p>ETF OGGI</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=BIT^BTP2S&t=23&p=0" width="400" height="240"></div>
-<div id="D2" onclick="cambia(0)"><p>BTP OGGI</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=MOT%5E789311&t=23&p=0" width="400" height="240"></div>
-<div id="D3" onclick="cambia(0)"><p>BTP 3MM</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=MOT%5E789311&t=23&p=2" width="400" height="240"></div>
-<div id="D4" onclick="cambia(0)"><p>DJI 3MM</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=DJI%5EI%5CDJI&t=23&p=1" width="400" height="240"></div>
-<div id="D5" onclick="cambia(0)"><p>FTSE-MIB</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=BITI^FTSEMIB&p=0&t=35" width="400" height="240"></div>
-<div id="D6" onclick="cambia(0)"><p>EURONEXT</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=EU^N100&p=0&t=35" width="400" height="240"></div>
-<div id="D7" onclick="cambia(0)"><p>SP500</p><img src="https://it.advfn.com/p.php?pid=staticchart&s=SPI^SP500&p=0&t=35" width="400" height="240"></div>
+<div id="DB1">
+<p>ETF OGGI<br><img onclick="this.src='https://it.advfn.com/p.php?pid=staticchart&s=BIT^BTP2S&t=23&p=0'" width="400" height="240"></p>
+<p>BTP FUTURA WEEK<br><img onclick="this.src='https://business-customer.vwd.com/chartInterface/Mondadori/chartNG.gfn?instrumentId=44736337&time=5'" width="400" height="240"></p>
+<p>BTP OGGI<br><img onclick="this.src='https://it.advfn.com/p.php?pid=staticchart&s=MOT%5E789311&t=23&p=0'" width="400" height="240"></p>
+<p>BTP 3MM<br><img onclick="this.src='https://it.advfn.com/p.php?pid=staticchart&s=MOT%5E789311&t=23&p=2'" width="400" height="240"></p>
+<p>DJI 3MM<br><img onclick="this.src='https://it.advfn.com/p.php?pid=staticchart&s=DJI%5EI%5CDJI&t=23&p=1'" width="400" height="240"></p>
+<p>FTSE-MIB<br><img onclick="this.src='https://it.advfn.com/p.php?pid=staticchart&s=BITI^FTSEMIB&p=0&t=35'" width="400" height="240"></p>
+<p>EURONEXT<br><img onclick="this.src='https://it.advfn.com/p.php?pid=staticchart&s=EU^N100&p=0&t=35'" width="400" height="240"></p>
+<p>SP500<br><img onclick="this.src='https://it.advfn.com/p.php?pid=staticchart&s=SPI^SP500&p=0&t=35'" width="400" height="240"></p>
+<p>EURUSD<br><img onclick="this.src='https://it.advfn.com/p.php?pid=staticchart&s=FX%5EEURUSD&t=35&p=0&dm=0&vol=0&min_pre=0&min_after=0'" width="400" height="240"></p>
+<p>GOLD<br><img onclick="this.src='https://it.advfn.com/p.php?pid=staticchart&s=COM%5EGC%5CZ20&p=2&t=35'" width="400" height="240"></p>
+<p>OIL<br><img onclick="this.src='https://it.advfn.com/p.php?pid=staticchart&s=NYM%5ECL%5CZ20&p=2&t=35'" width="400" height="240"></p>
+<p>BITCOIN<br><img onclick="this.src='https://it.advfn.com/p.php?pid=staticchart&s=COIN%3ABTCUSD&t=23&p=2&dm=0'" width="400" height="240"></p>
+
+
+</div>
 
 </div>
 
@@ -41,7 +45,7 @@ document.getElementById("titolo").innerHTML="Sterco";
 document.getElementById("verso").style.font="normal 20pt monospace";
 var corpo = document.getElementById("corpo");
 corpo.style.textAlign="center";
-cambia(0);
+cambia(1);
 }
 
 var subuno = function(e) {

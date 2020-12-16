@@ -21,10 +21,10 @@ copy zapp.js ARTEMI\
 copy zapp.js LECTIO\ 
 copy zapp.js PRAXIS\ 
 copy zapp.js SOPHIA\ 
-copy zapp.js VERBUM\ 
+copy zapp.js PRAXIS\QUOTIDIE_files\
 
 copy zapp.css ARTEMI\ 
 copy zapp.css LECTIO\ 
 copy zapp.css PRAXIS\ 
 copy zapp.css SOPHIA\ 
-copy zapp.css VERBUM\ 
+copy zapp.css PRAXIS\QUOTIDIE_files\
