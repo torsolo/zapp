@@ -7,6 +7,10 @@
 <link rel="icon" type="image/x-icon" href="../zapp.ico"/>
 <script type="text/javascript" src="../pills.js"></script>
 <title>ZAPP</title>
+<base target="_blank">
+<style>
+.quno {border:1px solid firebrick;padding:4px;margin-bottom:10px}
+</style>
 </head>
 
 <body>
@@ -16,35 +20,202 @@
 <div id="DB0">
 <p><a href="../index.html">ZAPP</a></p>
 <p onclick="cambia(1)">SACRED</p>
-<p onclick="cambia(2)">STREAMING</p>
-<p onclick="cambia(3)">PROVA</p>
+<p onclick="cambia(2)">KYRIE</p>
+<p onclick="cambia(3)">RADIO</p>
+<p onclick="cambia(4)">TV</p>
+<p onclick="cambia(9)">PROVA</p>
 </div>
 
 <div id="DB1">
-<p onclick="suona('1d0-arJKowgTfTS98B3gDZ9nhbjBbKWoI')">VeniSancteSpiritus</p>
-<p onclick="suona('1c7gG6Uxaf-obWxsIKJWVncGd543ADeoY')">PregoMattino</p>
-<p onclick="suona('1Ljq5aabqb7rzdIRMU8cYMwD4sn59caf5')">PregoSera</p>
+<p onclick="funo(this)" src="1d0-arJKowgTfTS98B3gDZ9nhbjBbKWoI">VeniSancteSpiritus</p>
+<p onclick="funo(this)" src="1c7gG6Uxaf-obWxsIKJWVncGd543ADeoY">PregoMattino</p>
+<p onclick="funo(this)" src="1Ljq5aabqb7rzdIRMU8cYMwD4sn59caf5">PregoSera</p>
 </div>
 
 <div id="DB2">
-<p><a href="suona('https://dreamsiteradiocp5.com/proxy/rmitalia?mp=/stream')">RadioMaria</a></p>
-<p onclick="suona('http://nrf1.newradio.it:9664/stream')">RadioSantoSpirito</p>
-<p onclick="suona('http://s3.shoutitaly.com:8016/;stream.nsv')">RadioMater</p>
-<p onclick="suona('https://icestreaming.rai.it/1.mp3')">RadioRaiUno</p>
-<p onclick="suona('https://icestreaming.rai.it/2.mp3')">RadioRaiDue</p>
-<p onclick="suona('https://icestreaming.rai.it/3.mp3')">RadioRaiTre</p>
+<div class="quno">
+<p onclick="funo(this)" src="https://dreamsiteradiocp5.com/proxy/rmitalia?mp=/stream">Radio Maria</p>
+<a href="https://radiomaria.it">home</a>
+<a href="https://radiomaria.it/trasmissioni/rosari-dai-santuari-del-mondo/">rosario</a>
+<a href="https://radiomaria.it/trasmissioni/letture-in-versione-radiofonica-a-cura-di-radio-maria/">letture</a>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="http://s3.shoutitaly.com:8016/;stream.nsv">Radio Mater</p>
+<a href="http://www.radiomater.org/P/RadioSchedule.aspx">home</a>
+<p>SR:23</p>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="http://radiokolbemelfi.ddns.net:1337/;">Radio Kolbe Melfi</p>
+<a href="http://www.radiokolbe.com/radiokolbe/Benvenuto.html">home</a>
+<p>SR+COMP:22</p>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="http://94.23.67.172/proxy/aieconlu?mp=/stream&1551869401500">Radio Sacra Famiglia</p>
+<a href="https://www.radiosacrafamiglia.it/">home</a>
+<p onclick="funo(this)" src="https://nr8.newradio.it/proxy/paoadami?mp=/stream">Radio Voce</p>
+<a href="https://www.radiovoce.it/palinsesto">home</a>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="https://streams.radio.co/s42344a806/listen">Radio Giovani Arcobaleno</p>
+<a href="http://www.radiogiovaniarcobaleno.it/">home</a>
+<p>SR:23</p>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="http://onair11.xdevel.com:8200/;">Radio Oreb</p>
+<a href="http://www.radioreb.org/ascolta-in-diretta/">home</a>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="http://s3.shoutitaly.com:8030/stream">Radio Missione Francescana</p>
+<a href="http://www.rmf.it/palinsesto">home</a>
+<p>SR:2020</p>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="https://cldwz.tv2000.it/HLS/RadioInBlu/webradiolive/media-ug5gclk0e_98392.aac">Radio inBlu</p>
+<a href="https://www.radioinblu.it/live/">home</a>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="http://s6.mediastreaming.it:9070/;listen&ext=.mp3">Radio Luce</p>
+<a href="http://www.radiolucesanzenone.it/">home</a>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="https://dreamsiteradiocp3.com/proxy/radiokaris?mp=/stream">Radio Karis</p>
+<a href="https://www.radiokaris.it/palinsesto.html">home</a>
+<p>COMP:23</p>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="https://www.shoutcastitalia.com/proxy/kalaritana?mp=%2Fstream%2F%3Bstream.mp3&_=1">Radio Kalaritana</p>
+<a href="https://www.radiokalaritana.it/palinsesto/">home</a>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="http://nr8.newradio.it:9532/stream/1/">Radio Christus</p>
+<a href="https://www.radiochristus.it/rch/index.php/palinsesto">home</a>
+<p>SR:22</p>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="https://s6.mediastreaming.it:17480/;&type=mp3?amazingrnd=yc70yq3dr9">Radio Alfa</p>
+<a href="https://www.radioalfanet.it/">home</a>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="http://94.23.66.155/proxy/costella?mp=/stream&1593240596954">Radio Voce Nel Deserto</p>
+<a href="https://www.voceneldeserto.org/w/">home</a>
+<p>COMP:2330</p>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="https://rvl.azureedge.net/channel5.mp3">Radio VaticaNews</p>
+<a href="https://www.vaticannews.va/it/epg.html#schedules">home</a>
+</div>
+<div class="quno">
+<p>COMP:2145</p>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="https://streaming.radiobuonconsiglio.it/;">Radio Buon Consiglio</p>
+<a href="http://trbc.altervista.org/">home</a>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="http://nrf1.newradio.it:9664/stream">Radio Santo Spirito</p>
+<a href="https://www.radiospiritosanto.org/programmi/">web</a>
+<a href="https://www.facebook.com/radiospiritosanto/">fb</a>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="???">?????</p>
+</div>
 </div>
 
 <div id="DB3">
-<p>PROVA</p>
-<video controls><source src="https://drive.google.com/uc?authuser=0&id=15GH-jO_nPOaeEUl49hJ5WTAUf5T2yLgb" type="video/mp4"></video>
+<div class="quno">
+<p onclick="funo(this)" src="https://icestreaming.rai.it/1.mp3">Radio Uno</p>
 </div>
+<div class="quno">
+<p onclick="funo(this)" src="https://icestreaming.rai.it/2.mp3">Radio Due</p>
+</div>
+<div class="quno">
+<p onclick="funo(this)" src="https://icestreaming.rai.it/3.mp3">Radio Tre</p>
+</div>
+</div>
+
+<div id="DB4">
+
+<div class="quno">
+<p><a href="https://www.tvdream.net/web-tv/categorie/religione/">|TvDream</a></p>
+</div>
+<div class="quno">
+<p><a href="https://www.sanfrancescopatronoditalia.it/web-cam-cripta-di-san-francesco-assisi">San Francesco Assisi</a></p>
+<p>TOMBA</p>
+</div>
+<div class="quno">
+<p><a href="https://www.chiesamia.it/eremo-delle-carceri">Santuario Eremo delle Carceri Assisi</a></p>
+</div>
+<div class="quno">
+<p><a href="https://www.chiesamia.it/chiese">ChiesaMia</a></p>
+<p>messa 08:30</p>
+</div>
+<div class="quno">
+<p><a href="https://www.tv2000.it/guida-tv/">TV2000</a></p>
+<p>messa 08:30</p>
+</div>
+<div class="quno">
+<p><a href="http://www.teledehon.it/">TeleDehon</a></p>
+</div>
+<div class="quno">
+<p><a href="https://giovannipaolotv.it/palinsesto/">GiovanniPaoloTv</a></p>
+</div>
+<div class="quno">
+<p><a href="https://www.occhioallanotizia.it/guarda-in-diretta-fano-tv/">FanoTv</a></p>
+</div>
+<div class="quno">
+<p><a href="https://www.lavocecattolica.com/">LaVoceCattolica</a></p>
+</div>
+<div class="quno">
+<p><a href="https://telechiara.gruppovideomedia.it/it/guida-tv/guida-tv">TeleChiara</a></p>
+<p>messa 08:30</p>
+</div>
+<div class="quno">
+<p><a href="http://www.radiokolbe.it/web-tv/">RadioKolbeTv</a></p>
+</div>
+<div class="quno">
+<p><a href="https://www.youtube.com/user/radioalfariascolta/live">YT-RadioAlfa</a></p>
+</div>
+<div class="quno">
+<p><a href="https://www.youtube.com/channel/UCpE3NF-27WpON2wufQ28y7g/featured">YT-LaTenda</a></p>
+</div>
+<div class="quno">
+<p><a href="https://www.youtube.com/watch?v=WDvenn_8JZE">YT-TeleSanFrancesco</a></p>
+</div>
+<div class="quno">
+<p><a href="https://www.youtube.com/watch?v=maOFXovmYtc">YT-Bussero</a></p>
+<p>Orari delle celebrazioni: LUN-VEN ore 18.00 SABATO prefestiva ore 18.00 DOMENICA  ore 08.00 - 10.30 - 18.00</p>
+</div>
+<div class="quno">
+<p><a href="https://youtu.be/UEMbFEvn_T0">YT-BuonConsiglio</a></p>
+</div>
+<div class="quno">
+<p><a href="https://www.youtube.com/watch?v=H5oxtTJT974">YT-SantuarioBonaria</a></p>
+<p>LODI 7:20 / MESSE FERIALI 7,8,9,10,18 / ROSARIO 17:15 / VESPRI 17:45</p>
+</div>
+<div class="quno">
+<p><a href="https://www.youtube.com/watch?v=oWN9iQIrzO0">YT-BasilicaBonaria</a></p>
+<p>SS. Messe prefestive: ore 17:30 e 19:00 SS. Messe festive: ore 7, 08:30, 10:00, 11:30, 17:30 e 19:00 S. Rosario: mezz’ora prima di ogni SS. Messa</p>
+</div>
+<div class="quno">
+<p><a href="https://www.youtube.com/watch?v=fynSxb24eAg">YT-MariaVision</a></p>
+</div>
+
+</div>
+
+
+<div id="DB9">
+<p onclick="vedo()">PROVA</p>
+</div>
+<video id="vedo" controls><source id="vedo" src="" type="video/mp4"></video>
 
 
 </div>
 
 
 <script type="text/javascript">
+
+var zprima;
+var zdopo;
 
 var custom = function () {
 document.getElementById("titolo").innerHTML="PlayWeb";
@@ -81,6 +252,25 @@ p.type = "";
 p.load();
 p.play();
 }
+
+var vedo = function(gid) {
+document.getElementById("vedo").src="https://drive.google.com/uc?authuser=0&id=15GH-jO_nPOaeEUl49hJ5WTAUf5T2yLgb";
+}
+
+var funo = function(o) {
+o.style.color="yellow";
+if(zprima&&zprima!=o)zprima.style.color="";
+zprima=o;
+var s = o.getAttribute("src");
+var l = "https://drive.google.com/uc?authuser=0&id="+s+"&export=download";
+if (s.substr(0,4)=="http") l = s;
+var p = document.getElementById("myplayer");
+p.src = l;
+p.type = "";
+p.load();
+p.play();
+}
+
 
 </script>
 
