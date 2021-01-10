@@ -9,7 +9,10 @@
 <title>ZAPP</title>
 <base target="_blank">
 <style>
+.ita {display:block; margin:0; color:lightgreen;}
+.lat {display:block; margin:0; color:cyan;}
 .quno {border:1px solid firebrick;padding:4px;margin-bottom:10px}
+.cantext {text-align:left; font:italic 14pt georgia;}
 </style>
 </head>
 
@@ -23,6 +26,7 @@
 <p onclick="cambia(2)">KYRIE</p>
 <p onclick="cambia(3)">RADIO</p>
 <p onclick="cambia(4)">TV</p>
+<p onclick="cambia(5)">provauno</p>
 <p onclick="cambia(9)">PROVA</p>
 </div>
 
@@ -202,6 +206,47 @@
 
 </div>
 
+<div id="DB5">
+
+<div class="cantext">
+<p onclick="lingua()">LINGUA</p>
+<p onclick="funo(this)" src="1d0-arJKowgTfTS98B3gDZ9nhbjBbKWoI">GD</p>
+<p class="ita">Veni, Sancte Spíritus,</p><p class="lat">Vieni, Santo Spirito,</p>
+<p class="ita">et emítte cǽlitus</p><p class="lat">mandaci dal cielo</p>
+<p class="ita">lucis tuæ rádium.</p><p class="lat">un raggio della tua luce.</p>
+<p class="ita">Veni, pater páuperum,</p><p class="lat">Vieni, padre dei poveri,</p>
+<p class="ita">veni, dator múnerum,</p><p class="lat">vieni, datore dei doni,</p>
+<p class="ita">veni, lumen córdium.</p><p class="lat">vieni, luce dei cuori.</p>
+<p class="ita">Consolátor óptime,</p><p class="lat">Consolatore perfetto,</p>
+<p class="ita">dulcis hospes ánimæ,</p><p class="lat">ospite dolce dell&#39;anima,</p>
+<p class="ita">dulce refrigérium.</p><p class="lat">soave refrigerio.</p>
+<p class="ita">In labóre réquies,</p><p class="lat">Nella fatica, riposo,</p>
+<p class="ita">in æstu tempéries,</p><p class="lat">nella calura, riparo,</p>
+<p class="ita">in fletu solácium.</p><p class="lat">nel pianto, conforto.</p>
+<p class="ita">O lux beatíssima,</p><p class="lat">nel pianto, conforto.</p>
+<p class="ita">reple cordis íntima</p><p class="lat">invadi nel profondo</p>
+<p class="ita">tuórum fidélium.</p><p class="lat">il cuore dei tuoi fedeli.</p>
+<p class="ita">Sine tuo númine,</p><p class="lat">Senza il tuo soccorso,</p>
+<p class="ita">nihil est in hómine</p><p class="lat">nulla è nell&#39;uomo,</p>
+<p class="ita">nihil est innóxium.</p><p class="lat">nulla senza colpa.</p>
+<p class="ita">Lava quod est sórdidum,</p><p class="lat">Lava ciò che è sordido,</p>
+<p class="ita">riga quod est áridum,</p><p class="lat">bagna ciò che è arido,</p>
+<p class="ita">sana quod est sáucium.</p><p class="lat">sana ciò che sanguina.</p>
+<p class="ita">Flecte quod est rígidum,</p><p class="lat">Piega ciò che è rigido,</p>
+<p class="ita">fove quod est frígidum,</p><p class="lat">scalda ciò che è gelido,</p>
+<p class="ita">rege quod est dévium.</p><p class="lat">raddrizza ciò ch&#39;è sviato.</p>
+<p class="ita">Da tuis fidélibus,</p><p class="lat">Dona ai tuoi fedeli</p>
+<p class="ita">in te confidéntibus,</p><p class="lat">che solo in te confidano</p>
+<p class="ita">sacrum septenárium.</p><p class="lat">i tuoi santi doni.</p>
+<p class="ita">Da virtútis méritum,</p><p class="lat">Dona virtù e premio,</p>
+<p class="ita">da salútis éxitum,</p><p class="lat">dona morte santa,</p>
+<p class="ita">da perénne gáudium.</p><p class="lat">dona gioia eterna.</p>
+<p class="ita">Amen.</p><p class="lat">Amen.</p>
+</div>
+
+</div>
+
+
 
 <div id="DB9">
 <p onclick="vedo()">PROVA</p>
@@ -231,6 +276,9 @@ p.type="audio/mpeg";
 p.setAttribute("controls","");
 p.setAttribute("preload","none");
 p.style.width = "100%";
+p.style.height = "24px";
+p.style.margin = "10px";
+p.style.display = "none";
 sotto.append(p);
 cambia(0);
 }
@@ -269,8 +317,27 @@ p.src = l;
 p.type = "";
 p.load();
 p.play();
+p.style.display = "block";
 }
 
+function lingua() {
+var s = document.styleSheets[1];
+if (l=="I") {
+s.cssRules[0].style.display="block";
+s.cssRules[1].style.display="none";
+l="L"
+} else if (l=="L") {
+s.cssRules[0].style.display="block";
+s.cssRules[1].style.display="block";
+l="";
+} else if (l=="") {
+s.cssRules[0].style.display="none";
+s.cssRules[1].style.display="block";
+l="I";
+}
+}
+
+var l="";
 
 </script>
 
