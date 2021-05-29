@@ -1,3 +1,4 @@
+// ZAPP
 zapp = {}
 zapp.questapagina = location.href.split("/").slice(-1)[0]; // nome pagina
 zapp.nomefont = 0;
@@ -9,7 +10,7 @@ zapp.scromem = 0;
 
 zapp.dft = {
 	inizio: 0,
-	zoompt: 18,
+	zoompt: 16,
 	coloretesto: "#E6C300",
 	coloresfondo: "#000000"
 }
